@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*----- For visualization purposes only ---- */
+div, a {
+  border: 1px solid red;
+}
+
+/*----------------------------------------*/
+.home-title {
+  font-family: "GT America Light", sans-serif;
+  font-size: 17px;
+  color: #0b4269;
+}
+/*# sourceMappingURL=main.css.map */
