@@ -3,3 +3,71 @@
     font-size: $regular-desktop;
     color: $darkblue;
 }
+
+.home-card{
+    position: relative;
+    height: 415px;
+    &.seguros-card{
+        background-image: url(../../img/home/ico/svg/fondo_seguros_home.svg);
+        background-color: aqua;
+    }
+    &.asistencia-card{
+        background-image: url(../../img/home/jpeg/asistencia.jpg);
+        background-size: contain;
+    }
+    &.equipo-card{
+        background-image: url(../../img/home/jpeg/equipo-mask.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.home-card-text{
+    position: absolute;
+    bottom: 0;
+}
+
+/*------- Home slider ------- */
+
+.slider-img{
+    height: 372px;
+    background-image: url(../../img/home/jpeg/Pinguinas_rugby_burgos.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*----- End Home slider ----- */
+
+section.index-seguros{
+    background-color: $lightbrown;
+}
+
+section.equipo{
+    background-color: $darkblue;
+
+    .equipo-img{
+        height: 450px;
+        overflow: hidden;
+    
+        img{
+            object-position: 0 -125px;
+        }
+    }
+    
+    .equipo-text{
+        background-color: $darkblue;
+        color: $white;
+        text-align: center;
+    }
+}
+
+.contacto-card{
+    background-color: $lightbrown;
+
+    .card-foot{
+        background-color: $lightpeach;
+    }
+}
+
+
+
