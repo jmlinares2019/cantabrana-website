@@ -1,3 +1,24 @@
+header.header-cntb{
+    height: 200px;
+
+    .home-brand img{
+        width: 150px;
+    }
+
+    .top-contact-tlf{
+        @extend %contact-tlf;
+        padding-left: 0;
+        align-self: flex-end;
+    }
+
+    .top-sm-icon{
+        padding:{
+            left: 0;
+            right: 5px;
+        }
+    }
+}
+
 .home-title{
     font-family: $primary-light;
     font-size: $regular-desktop;
@@ -8,8 +29,10 @@
     position: relative;
     height: 415px;
     &.seguros-card{
-        background-image: url(../../img/home/ico/svg/fondo_seguros_home.svg);
-        background-color: aqua;
+        background-image: url(../../img/home/ico/png/fondo_seguros_home-w-gradient.png);
+        background-color: #25d4c6;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     &.asistencia-card{
         background-image: url(../../img/home/jpeg/asistencia.jpg);
@@ -20,29 +43,123 @@
         background-size: cover;
         background-position: center;
     }
+
+    .home-card-title{
+        @extend %main-title;
+        color: $white;
+    }
+
+    .home-card-paragraph{
+        font-family: $primary-medium;
+        line-height: $regular-lh-desktop;
+        &:not(.seguros){
+            color: $white;
+        }
+    }
+
+    .home-card-name{
+        font-family: $primary-black;
+        font-size: 21px;
+        color: $white;
+    }
 }
 
 .home-card-text{
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
 }
 
 /*------- Home slider ------- */
 
-.slider-img{
-    height: 372px;
-    background-image: url(../../img/home/jpeg/Pinguinas_rugby_burgos.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+section.slider{
+    padding-top: $sp-100;
+    margin-bottom: $sp-50;
+
+    .slider-img{
+        height: 372px;
+        background-image: url(../../img/home/jpeg/Pinguinas_rugby_burgos.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    .slider-item-title{
+        @extend %serif-title;
+    }
 }
 
 /*----- End Home slider ----- */
 
 section.index-seguros{
+    padding:{
+        top: $sp-50;
+        bottom: $sp-60;
+    }
     background-color: $lightbrown;
+
+    .seguros-title{
+        @extend %serif-title;
+        padding-bottom: $sp-50;
+    }
+
+    .seguros-tab{
+        font-family: 'GT America Expanded Ultra Light', sans-serif;
+        font-size: 10px;
+        text-transform: uppercase;
+        span{
+            font-weight: bolder; // only when tab is selected!
+        }
+
+    }
+
+    .slider-item-price{
+        margin-bottom: $sp-80;
+
+        span{
+            font-family: $primary-light;
+            font-size: $regular-desktop;
+            line-height: $regular-lh-desktop;
+        }
+    } 
+    
+    .ver-seguros-button{
+        @extend %cntb-button;
+    }
+}
+
+section.seguros-reminder{
+    padding-bottom: $sp-70;
+
+    .seguros-reminder-text{
+        padding-top: 225px;
+        
+
+        .seguros-reminder-title{
+            @extend %main-title;
+            color: $darkblue;
+        }
+    
+        .seguros-reminder-paragraph{
+            font-family: $primary-light;
+            font-size: $small-desktop;
+            line-height: $regular-lh-desktop;
+            padding-bottom: $sp-50;
+        }
+    
+        .seguros-reminder-button{
+            @extend %cntb-button;
+        }
+
+    }
+
+    img{
+        width: 375px;
+        height: 610px;
+    }
 }
 
 section.equipo{
+    padding-bottom: $sp-60;
     background-color: $darkblue;
 
     .equipo-img{
@@ -58,7 +175,43 @@ section.equipo{
         background-color: $darkblue;
         color: $white;
         text-align: center;
+
+        .equipo-brand{
+            padding:{
+                top: $sp-50;
+                bottom: $sp-20;
+           }
+           font-family: $primary-light;
+           font-size: $small-desktop;
+           color: $lighterblue;
+        }
+
+        .equipo-slogan{
+            @extend %serif-title;
+            color: $white;
+            font-weight: 500;
+        }
+
+        .equipo-paragraph{
+            padding-bottom: $sp-50;
+            font-family: $primary-light;
+            font-size: $small-desktop;
+            line-height: $regular-lh-desktop;
+
+        }
+
+        .equipo-button{
+            @extend %cntb-button;
+            border-color: $lightpeach;
+            color: $lightpeach;
+
+        }
     }
+}
+
+.contacto-title{
+    @extend %serif-title;
+    color: $darkblue;
 }
 
 .contacto-card{
