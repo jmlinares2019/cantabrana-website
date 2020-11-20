@@ -14,9 +14,91 @@ div, a {
 }
 
 /*----------------------------------------*/
+.slider-item-title, .seguros-title,
+.contacto-title, .equipo-title {
+  font-family: "Canela-Bold", serif;
+  font-size: 55px;
+  line-height: 61px;
+}
+
+.slider-item-title {
+  color: #0b4269;
+}
+
+.equipo-title {
+  color: #ffffff;
+}
+
 .home-title {
   font-family: "GT America Light", sans-serif;
   font-size: 17px;
   color: #0b4269;
+}
+
+.home-card {
+  position: relative;
+  height: 415px;
+}
+
+.home-card.seguros-card {
+  background-image: url(../../img/home/ico/svg/fondo_seguros_home.svg);
+  background-color: aqua;
+}
+
+.home-card.asistencia-card {
+  background-image: url(../../img/home/jpeg/asistencia.jpg);
+  background-size: contain;
+}
+
+.home-card.equipo-card {
+  background-image: url(../../img/home/jpeg/equipo-mask.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home-card-text {
+  position: absolute;
+  bottom: 0;
+}
+
+/*------- Home slider ------- */
+.slider-img {
+  height: 372px;
+  background-image: url(../../img/home/jpeg/Pinguinas_rugby_burgos.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*----- End Home slider ----- */
+section.index-seguros {
+  background-color: #fbe3c6;
+}
+
+section.equipo {
+  background-color: #0b4269;
+}
+
+section.equipo .equipo-img {
+  height: 450px;
+  overflow: hidden;
+}
+
+section.equipo .equipo-img img {
+  -o-object-position: 0 -125px;
+     object-position: 0 -125px;
+}
+
+section.equipo .equipo-text {
+  background-color: #0b4269;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contacto-card {
+  background-color: #fbe3c6;
+}
+
+.contacto-card .card-foot {
+  background-color: #fed198;
 }
 /*# sourceMappingURL=main.css.map */
