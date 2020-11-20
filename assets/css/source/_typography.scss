@@ -1,0 +1,20 @@
+%serif-title{
+    font-family: $secondary-bold;
+    font-size: $huge-title-desktop;
+    line-height: $huge-title-lh-desktop;
+}
+
+.slider-item-title{
+    @extend %serif-title;
+    color: $darkblue;
+}
+
+.seguros-title,
+.contacto-title{
+    @extend %serif-title;
+}
+
+.equipo-title{
+    @extend %serif-title;
+    color: $white;
+}
