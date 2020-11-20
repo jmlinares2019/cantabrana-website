@@ -5,8 +5,8 @@ header.header-cntb{
         width: 150px;
     }
 
-    .top-contact-tlf{
-        @extend %contact-tlf;
+    .top-contact-phone{
+        @extend %contact-phone;
         padding-left: 0;
         align-self: flex-end;
     }
@@ -36,11 +36,13 @@ header.header-cntb{
     }
     &.asistencia-card{
         background-image: url(../../img/home/jpeg/asistencia.jpg);
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     &.equipo-card{
         background-image: url(../../img/home/jpeg/equipo-mask.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: center;
     }
 
@@ -187,9 +189,10 @@ section.equipo{
         }
 
         .equipo-slogan{
-            @extend %serif-title;
+            font-family: $secondary-regular;
+            font-size: $huge-title-desktop;
+            line-height: $huge-title-lh-desktop;
             color: $white;
-            font-weight: 500;
         }
 
         .equipo-paragraph{
@@ -209,18 +212,116 @@ section.equipo{
     }
 }
 
-.contacto-title{
-    @extend %serif-title;
-    color: $darkblue;
-}
+section.contacto{
+    padding-top: $sp-70;
 
-.contacto-card{
-    background-color: $lightbrown;
+    .contacto-slogan{
+        padding-top: 160px;
+        @extend %serif-title;
+        color: $darkblue;
+    }
+    
+    .contacto-paraguas{
+        width: 275px;
+    }
 
-    .card-foot{
-        background-color: $lightpeach;
+    .contacto-text{
+        font-family: $primary-bold;
+        font-size: $small-desktop;
+        line-height: $regular-lh-desktop;
+        color: $darkblue;
+        span{
+            font-family: $primary-light;
+        }
+    }
+
+    .contacto-card{
+        position: relative;
+        height: 250px;
+        background-color: $pale;
+        padding-left: 20px;
+        max-width: 48%;
+        margin:{
+            left: 5px;
+            right: 5px;
+        }
+
+        .hq-header{
+
+            p{
+                font-family: $secondary-bold;
+                &.hq-no{
+                    padding-top: 30px;
+                    margin-bottom: 0;
+                    margin-block-end: 0;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: $lightpeach;
+                }
+                &.hq-name{
+                    font-size: 20px;
+                    line-height: 36px;
+                    color: $darkblue;
+                }
+            }
+        }
+        
+        .hq-contact-info{
+
+            .hq-address{
+                font-family: $primary-light;
+                font-size: $paragraph-desktop;
+                line-height: $small-lh-desktop;
+                color: $darkblue;
+                margin-bottom: 0;
+                margin-block-end: 0;
+    
+            }
+    
+            .hq-phone{
+                @extend %contact-phone;
+            }
+
+            .card-foot{
+                position: absolute;
+                left: 0px;
+                bottom: 0;
+                width: 100%;
+                padding: 10px;
+                background-color: $lightpeach;
+
+                .view-gmaps{
+                    font-family: $primary-medium;
+                    font-size: 13px;
+                    color: $darkblue;
+                }
+            }
+        }
+    
+    }
+
+    .email-footer{
+        height: 150px;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: $darkblue;
+
+        .send-us-mail{
+            font-family: $primary-light;
+            font-size: $small-desktop;
+            line-height: $regular-lh-desktop;
+            color: $lightbrown;
+        }
+
+        .email-address{
+            font-family: $primary-medium;
+            font-size: $small-desktop;
+            color: $lighterblue
+        }
     }
 }
+
+
 
 
 

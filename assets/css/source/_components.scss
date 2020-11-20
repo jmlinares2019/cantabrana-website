@@ -1,4 +1,4 @@
-%contact-tlf{
+%contact-phone{
     font-family: $primary-bold;
     font-size: $paragraph-desktop;
     color: $darkblue;
@@ -16,6 +16,7 @@
     line-height: $huge-title-lh-desktop;
     color: $darkblue;
     font-weight: $bold;
+    letter-spacing: -2px; // is it normal?
 }
 
 %cntb-button{
