@@ -1,0 +1,27 @@
+%contact-tlf{
+    font-family: $primary-bold;
+    font-size: $paragraph-desktop;
+    color: $darkblue;
+}
+
+%main-title{
+    font-family: $primary-bold;
+    font-size: $big-title-desktop;
+    line-height: $big-title-lh-desktop;
+}
+
+%serif-title{
+    font-family: $secondary-bold;
+    font-size: $huge-title-desktop;
+    line-height: $huge-title-lh-desktop;
+    color: $darkblue;
+    font-weight: $bold;
+}
+
+%cntb-button{
+    font-family: $primary-black;
+    font-size: $paragraph-desktop;
+    padding: 7px 30px;
+    border: 2px solid $darkblue;
+    color: $darkblue;
+}
