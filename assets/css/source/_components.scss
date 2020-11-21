@@ -19,6 +19,13 @@
     letter-spacing: -2px; // is it normal?
 }
 
+%carousel-img-title{
+    @extend %serif-title;
+    font-size: 41px;
+    line-height: 46px;
+    padding-top: 35px;
+}
+
 %cntb-button{
     font-family: $primary-black;
     font-size: $paragraph-desktop;
