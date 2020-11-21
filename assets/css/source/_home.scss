@@ -71,26 +71,62 @@ header.header-cntb{
     bottom: 20px;
 }
 
-/*------- Home slider ------- */
+/*------- Home carousel ------- */
 
-section.slider{
+section.carrusel{
     padding-top: $sp-100;
     margin-bottom: $sp-50;
 
-    .slider-img{
-        height: 372px;
-        background-image: url(../../img/home/jpeg/Pinguinas_rugby_burgos.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+    .carousel-item{
+        background-color: $white;
+
+        .carousel-content{
+            width: 375px;
+            margin: auto;
+            &.carousel-img{
+                position: relative;
+                
+                .slide-img-title{
+                    position: absolute;
+                    top: 0;
+                    @extend %carousel-img-title;
+                }
+            }
+            &.carousel-text{
+                padding-top: 30px;
+                color: $darkblue;
+        
+                .carousel-item-headline{
+                    font-family: $primary-bold;
+                    font-size: $regular-desktop;
+                }
+            
+                .slide-paragraph{
+                    margin-bottom: 20px;
+                    font-family: $primary-light;
+                    font-size: $paragraph-desktop;
+                    line-height: $regular-lh-desktop;
+                }
+        
+                .carousel-button{
+                    @extend %cntb-button;
+                }
+            
+            }
+        }
+        
     }
-    
-    .slider-item-title{
-        @extend %serif-title;
+
+    .carousel-ctrl-arrow{
+        fill: $lightgrey;
+        &.prev{
+            transform: rotate(180deg);
+        }
     }
+
 }
 
-/*----- End Home slider ----- */
+/*----- End Home carousel ----- */
 
 section.index-seguros{
     padding:{
