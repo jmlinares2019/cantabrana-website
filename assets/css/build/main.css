@@ -1,0 +1,456 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*----- For visualization purposes only ---- */
+div, a {
+  border: 1px solid red;
+}
+
+/*----------------------------------------
+
+@font-face {
+    font-family: Canela;
+    src: local(Canela-Bold),
+      url(../../fonts/Canela/Canela-Bold/Canela-Bold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
+@font-face {
+  font-family: Canela;
+  src: local(Canela-Regular),
+    url(../../fonts/Canela/Canela-Regular/Canela-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url(../../fonts/GT-America/GT-America-Expanded-Light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: GT America Medium;
+  src: url(../../fonts/GT-America/GT-America-Standard-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: GTAmerica;
+  src: local(GTAmerica-Bold),
+    url(../../fonts/GT-America/GT-America-Standard-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: GTAmerica;
+  src: local(GTAmerica-Black),
+    url(../../fonts/GT-America/GT-America-Standard-Black.woff2) format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: GTAmerica;
+  src: local(GTAmerica-ExpandedLight),
+    url(../../fonts/GT-America/GT-America-Expanded-Light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: expanded;
+}
+
+@font-face {
+  font-family: GTAmerica;
+  src: local(GTAmerica-ExpandedBlack),
+    url(../../fonts/GT-America/GT-America-Expanded-Black.woff2) format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: expanded;
+}
+
+*/
+.break {
+  display: block;
+}
+
+header.header-cntb .top-contact-phone, section.contacto .contacto-card .hq-contact-info .hq-phone {
+  font-family: "GT America Bold", sans-serif;
+  font-size: 13px;
+  color: #003b61;
+}
+
+.home-card .home-card-title, section.seguros-reminder .seguros-reminder-text .seguros-reminder-title {
+  font-family: "GT America Bold", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+section.slider .slider-item-title, section.index-seguros .seguros-title, section.contacto .contacto-slogan {
+  font-family: "Canela-Bold", serif;
+  font-size: 55px;
+  line-height: 61px;
+  color: #003b61;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+section.index-seguros .ver-seguros-button, section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, section.equipo .equipo-text .equipo-button {
+  font-family: "GT America Black", sans-serif;
+  font-size: 13px;
+  padding: 7px 30px;
+  border: 2px solid #003b61;
+  color: #003b61;
+}
+
+section.protegemos-img {
+  padding-top: 150px;
+  padding-bottom: 180px;
+}
+
+section.protegemos-img img {
+  width: 375px;
+}
+
+.footer-menu {
+  border-top: 1px solid #fed198;
+  padding-top: 20px;
+}
+
+.footer-menu ul,
+.footer-legal ul {
+  padding-left: 0;
+}
+
+.footer-menu ul li,
+.footer-legal ul li {
+  list-style: none;
+}
+
+.footer-menu a, .footer-menu p,
+.footer-legal a,
+.footer-legal p {
+  font-family: "GT America Light", sans-serif;
+  font-size: 10px;
+  color: #003b61;
+  border: none;
+}
+
+.footer-menu a.legal, .footer-menu p.legal,
+.footer-legal a.legal,
+.footer-legal p.legal {
+  font-family: "GT America Medium", sans-serif;
+}
+
+.footer-menu a.legal.link, .footer-menu p.legal.link,
+.footer-legal a.legal.link,
+.footer-legal p.legal.link {
+  text-decoration: underline;
+}
+
+header.header-cntb {
+  height: 200px;
+}
+
+header.header-cntb .home-brand img {
+  width: 150px;
+}
+
+header.header-cntb .top-contact-phone {
+  padding-left: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+header.header-cntb .top-sm-icon {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+.home-title {
+  font-family: "GT America Light", sans-serif;
+  font-size: 17px;
+  color: #003b61;
+}
+
+.home-card {
+  position: relative;
+  height: 415px;
+}
+
+.home-card.seguros-card {
+  background-image: url(../../img/home/ico/png/fondo_seguros_home-w-gradient.png);
+  background-color: #25d4c6;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home-card.asistencia-card {
+  background-image: url(../../img/home/jpeg/asistencia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-card.equipo-card {
+  background-image: url(../../img/home/jpeg/equipo-mask.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-card .home-card-title {
+  color: #ffffff;
+}
+
+.home-card .home-card-paragraph {
+  font-family: "GT America Medium", sans-serif;
+  line-height: 17px;
+}
+
+.home-card .home-card-paragraph:not(.seguros) {
+  color: #ffffff;
+}
+
+.home-card .home-card-name {
+  font-family: "GT America Black", sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.home-card-text {
+  position: absolute;
+  bottom: 20px;
+}
+
+/*------- Home slider ------- */
+section.slider {
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+section.slider .slider-img {
+  height: 372px;
+  background-image: url(../../img/home/jpeg/Pinguinas_rugby_burgos.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/*----- End Home slider ----- */
+section.index-seguros {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-color: #fbe3c6;
+}
+
+section.index-seguros .seguros-title {
+  padding-bottom: 50px;
+}
+
+section.index-seguros .seguros-tab {
+  font-family: 'GT America Expanded Ultra Light', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+section.index-seguros .seguros-tab span {
+  font-weight: bolder;
+}
+
+section.index-seguros .slider-item-price {
+  margin-bottom: 80px;
+}
+
+section.index-seguros .slider-item-price span {
+  font-family: "GT America Light", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+section.seguros-reminder {
+  padding-bottom: 70px;
+}
+
+section.seguros-reminder .seguros-reminder-text {
+  padding-top: 225px;
+}
+
+section.seguros-reminder .seguros-reminder-text .seguros-reminder-title {
+  color: #003b61;
+}
+
+section.seguros-reminder .seguros-reminder-text .seguros-reminder-paragraph {
+  font-family: "GT America Light", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  padding-bottom: 50px;
+}
+
+section.seguros-reminder img {
+  width: 375px;
+  height: 610px;
+}
+
+section.equipo {
+  padding-bottom: 60px;
+  background-color: #003b61;
+}
+
+section.equipo .equipo-img {
+  height: 450px;
+  overflow: hidden;
+}
+
+section.equipo .equipo-img img {
+  -o-object-position: 0 -125px;
+     object-position: 0 -125px;
+}
+
+section.equipo .equipo-text {
+  background-color: #003b61;
+  color: #ffffff;
+  text-align: center;
+}
+
+section.equipo .equipo-text .equipo-brand {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: "GT America Light", sans-serif;
+  font-size: 15px;
+  color: #ccfeff;
+}
+
+section.equipo .equipo-text .equipo-slogan {
+  font-family: "Canela-Regular", serif;
+  font-size: 55px;
+  line-height: 61px;
+  color: #ffffff;
+}
+
+section.equipo .equipo-text .equipo-paragraph {
+  padding-bottom: 50px;
+  font-family: "GT America Light", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+section.equipo .equipo-text .equipo-button {
+  border-color: #fed198;
+  color: #fed198;
+}
+
+section.contacto {
+  padding-top: 70px;
+}
+
+section.contacto .contacto-slogan {
+  padding-top: 160px;
+  color: #003b61;
+}
+
+section.contacto .contacto-paraguas {
+  width: 275px;
+}
+
+section.contacto .contacto-text {
+  font-family: "GT America Bold", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: #003b61;
+}
+
+section.contacto .contacto-text span {
+  font-family: "GT America Light", sans-serif;
+}
+
+section.contacto .contacto-card {
+  position: relative;
+  height: 250px;
+  background-color: #fee8cb;
+  padding-left: 20px;
+  max-width: 48%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+section.contacto .contacto-card .hq-header p {
+  font-family: "Canela-Bold", serif;
+}
+
+section.contacto .contacto-card .hq-header p.hq-no {
+  padding-top: 30px;
+  margin-bottom: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fed198;
+}
+
+section.contacto .contacto-card .hq-header p.hq-name {
+  font-size: 20px;
+  line-height: 36px;
+  color: #003b61;
+}
+
+section.contacto .contacto-card .hq-contact-info .hq-address {
+  font-family: "GT America Light", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  color: #003b61;
+  margin-bottom: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+section.contacto .contacto-card .hq-contact-info .card-foot {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #fed198;
+}
+
+section.contacto .contacto-card .hq-contact-info .card-foot .view-gmaps {
+  font-family: "GT America Medium", sans-serif;
+  font-size: 13px;
+  color: #003b61;
+}
+
+section.contacto .email-footer {
+  height: 150px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #003b61;
+}
+
+section.contacto .email-footer .send-us-mail {
+  font-family: "GT America Light", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: #fbe3c6;
+}
+
+section.contacto .email-footer .email-address {
+  font-family: "GT America Medium", sans-serif;
+  font-size: 15px;
+  color: #ccfeff;
+}
+/*# sourceMappingURL=main.css.map */

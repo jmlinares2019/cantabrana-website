@@ -1,0 +1,43 @@
+section.protegemos-img{
+    padding:{
+        top: 150px;
+        bottom: 180px;
+    }
+
+    img{
+        width: 375px;
+    }
+}
+
+.footer-menu{
+    border-top: 1px solid $lightpeach;
+    padding-top: 20px;
+}
+
+.footer-menu,
+.footer-legal{
+
+    ul{
+        padding-left: 0;
+
+        li{
+            list-style: none;
+
+            
+        }
+    }
+
+    a,p{
+        font-family: $primary-light;
+        font-size: 10px;
+        color: $darkblue;
+        border: none;
+        &.legal{
+            font-family: $primary-medium;
+            &.link{
+                text-decoration: underline;
+            }
+            
+        }
+    }
+}

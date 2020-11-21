@@ -9,32 +9,368 @@
   <meta name="author" content="Seguros Cantabrana">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
   
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   
   <!-- Local CSS -->    
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/build/main.css">
   
   <!--Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   
-  <!-- Fonts  -->
+  <!-- Fonts    -->
   <link href="//db.onlinewebfonts.com/c/76cad44852ba93f820a16d446f80c5e2?family=GT+America+Light" rel="stylesheet" type="text/css"/>
   <link href="//db.onlinewebfonts.com/c/bb1ecf827e7c7df1eecc6cd8567a0d73?family=GT+America+Medium" rel="stylesheet" type="text/css"/>
-   <link href="//db.onlinewebfonts.com/c/0d30d9b619fc0894461b13fd4eaee3df?family=GT+America+Bold" rel="stylesheet" type="text/css"/>
+  <link href="//db.onlinewebfonts.com/c/0d30d9b619fc0894461b13fd4eaee3df?family=GT+America+Bold" rel="stylesheet" type="text/css"/>
   <link href="//db.onlinewebfonts.com/c/c0258d0a88bb573793e04c989f6e88dc?family=GT+America+Black" rel="stylesheet" type="text/css"/>
   <link href="//db.onlinewebfonts.com/c/3def92f7b2ad644bd382798ecc8ca4c7?family=Canela" rel="stylesheet" type="text/css"/>
-  <link href="//db.onlinewebfonts.com/c/3def92f7b2ad644bd382798ecc8ca4c7?family=Canela" rel="stylesheet" type="text/css"/>
+  <link href="//db.onlinewebfonts.com/c/4a24899e94d8236f671c1090cd9e068c?family=Canela" rel="stylesheet" type="text/css"/>
+  <link href="//db.onlinewebfonts.com/c/3ac3a8ff95fa504fd32a78dcd993f7ec?family=GT+America+Expanded+Ultra+Light" rel="stylesheet" type="text/css"/>
+
+
 
 </head>
 
 <body>
 
-<h1>Hola</h1>
- 
+<!-- sticky-bottom navbar -->
+    <div class="navbar">
+        <div class="row">
+            <div class="col col-4">
+                <a href="" class="stretched-link">Seguros</a>
+            </div>
+            <div class="col col-4">
+                <a href="" class="stretched-link brand">Cantabrana</a>
+            </div>
+            <div class="col col-4">
+                <a href="" class="stretched-link">Contacto</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="" class="stretched-link">Si lo prefieres, <span>llámanos</span></a>
+            </div>  
+        </div>
+    </div>
+<!-- End sticky-bottom navbar -->
+    
+    <div class="container">
+        <header class="header-cntb row justify-content-between brand">
+            <div class="col col-6">
+                <h1 class="home-brand "><span class="d-none">Cantabrana</span>
+                    <a href="#" class="stretched-link">
+                        <img src="/assets/img/logo-cantabrana.png" alt="logo-Cantabrana"> 
+                    </a></h1>
+                <h2 class="home-title">Tu gestor de seguros de siempre en Burgos</h2>
+            </div>
+            <div class="col col-4 top-contact">
+                <div class="row justify-content-center">
+                   <div class="col col-6 top-contact-phone">
+                       <a href="#" class="stretched-link">947 255 789 / 615 204 093</a>
+                   </div>
+                    <div class="col col-1 top-sm-icon">
+                        <svg width="18" height="18" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" class="">
+                            <g><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm5.425781 405.050781c-.003906 0 .003907 0 0 0h-.0625c-25.644531-.011719-50.84375-6.441406-73.222656-18.644531l-81.222656 21.300781 21.738281-79.375c-13.410156-23.226562-20.464844-49.578125-20.453125-76.574219.035156-84.453124 68.769531-153.160156 153.222656-153.160156 40.984375.015625 79.457031 15.96875 108.382813 44.917969 28.929687 28.953125 44.851562 67.4375 44.835937 108.363281-.035156 84.457032-68.777343 153.171875-153.21875 153.171875zm0 0" fill="#0b4269" data-original="#000000" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m261.476562 124.46875c-70.246093 0-127.375 57.105469-127.40625 127.300781-.007812 24.054688 6.726563 47.480469 19.472657 67.75l3.027343 4.816407-12.867187 46.980468 48.199219-12.640625 4.652344 2.757813c19.550781 11.601562 41.964843 17.738281 64.816406 17.746094h.050781c70.191406 0 127.320313-57.109376 127.351563-127.308594.011718-34.019532-13.222657-66.003906-37.265626-90.066406-24.042968-24.0625-56.019531-37.324219-90.03125-37.335938zm74.90625 182.035156c-3.191406 8.9375-18.484374 17.097656-25.839843 18.199219-6.597657.984375-14.941407 1.394531-24.113281-1.515625-5.5625-1.765625-12.691407-4.121094-21.828126-8.0625-38.402343-16.578125-63.484374-55.234375-65.398437-57.789062-1.914063-2.554688-15.632813-20.753907-15.632813-39.59375 0-18.835938 9.890626-28.097657 13.398438-31.925782 3.511719-3.832031 7.660156-4.789062 10.210938-4.789062 2.550781 0 5.105468.023437 7.335937.132812 2.351563.117188 5.507813-.894531 8.613281 6.570313 3.191406 7.664062 10.847656 26.5 11.804688 28.414062.957031 1.917969 1.59375 4.152344.320312 6.707031-1.277344 2.554688-5.519531 8.066407-9.570312 13.089844-1.699219 2.105469-3.914063 3.980469-1.679688 7.8125 2.230469 3.828125 9.917969 16.363282 21.296875 26.511719 14.625 13.039063 26.960938 17.078125 30.789063 18.996094 3.824218 1.914062 6.058594 1.59375 8.292968-.957031 2.230469-2.554688 9.570313-11.175782 12.121094-15.007813 2.550782-3.832031 5.105469-3.191406 8.613282-1.914063 3.511718 1.273438 22.332031 10.535157 26.160156 12.449219 3.828125 1.917969 6.378906 2.875 7.335937 4.472657.960938 1.597656.960938 9.257812-2.230469 18.199218zm0 0" fill="#0b4269" data-original="#000000" class=""/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="col col-1 top-sm-icon">
+                        <svg width="18" height="18" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" class="">
+                            <g><path xmlns="http://www.w3.org/2000/svg" d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0" fill="#0b4269" data-original="#000000" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0" fill="#0b4269" data-original="#000000" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0" fill="#0b4269" data-original="#000000" class=""/></g>
+                        </svg>
+                    </div>
+                    <div class="col col-1 top-sm-icon">
+                        <svg width="18" height="18" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" class="">
+                            <g><path xmlns="http://www.w3.org/2000/svg" d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z" fill="#0b4269" data-original="#000000" class=""/></g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="row home-cards">
+            <div class="col-6 home-card seguros-card">
+                <div class="row h-100">
+                    <div class="col">
+                        <p class="home-card-title">Selecciona el tipo de seguro</p>
+                        <div class="home-card-text">
+                            <p class="home-card-paragraph seguros">Te ayudamos a encontrar el seguro que mejor se adapte a ti. ¡Comencemos!</p>
+                            <h3 class="home-card-name">Seguros</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <svg width="48px" height="48px" viewBox="0 0 48 48">
+                            <path fill="none" d="M0 0h48v48H0z"/>
+                            <path fill="#fff" d="M21 1L3 9v12c0 11.1 7.68 21.48 18 24 10.32-2.52 18-12.9 18-24V9zm-4 32l-8-8 2.82-2.82L17 27.34l13.18-13.18L33 17z" transform="translate(3 1)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-3 home-card asistencia-card">
+                <div class="row">
+                    <div class="col home-card-icon">
+                        <svg width="45.354" height="39.169" viewBox="0 0 45.354 39.169">
+                            <path fill="#f9fdbf" d="M1 41.169h45.354L23.677 2zm24.738-6.185h-4.123v-4.123h4.123zm0-8.246h-4.123v-8.246h4.123z" transform="translate(-1 -2)"/>
+                        </svg>
+                    </div>
+                    <div class="col col-6 home-card-text">
+                        <p class="home-card-paragraph">Los teléfonos que necesitas</p>
+                        <h3 class="home-card-name">Asistencia</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-3 home-card equipo-card">
+                <div class="col home-card-icon">
+                    <img src="assets/img/home/ico/png/equipo-icon.png">
+                </div>
+                <div class="col col-7 home-card-text">
+                    <p class="home-card-paragraph">Somos Personas de carne y hueso</p>
+                    <h3 class="home-card-name">Cantabrana</h3>
+                </div>
+            </div>
+        </section>
+        <section class="row slider">
+            <div class="col col-6 slider-img">
+                <h2 class="slider-item-title">Apoyamos a las Pingüinas Rugby Burgos</h2>
+            </div>
+            <div class="col col-6 slider-text">
+               <h3>Apoyamos a nuestras guerreras siempre, y sobre todo cuando más lo necesitan.</h3>
+               <p>Somos patrocinadores del equipo Pingüinas Rugby Burgos. Queremos devolver de alguna manera todo el apoyo que nos han dado nuestros clientes de Burgos, reinvirtiendo ese apoyo en el equipo femenino de rugby, para que puedan alcanzar sus sueños y metas. El rugby es un deporte caracterizado por sus valores que todos jugadores y equipos comparten.</p>
+               <a class="cntb-button">+ info</a>
+            </div>
+            <div class="col d-flex slider-controls">
+                <div class="placeholder-number">1</div>
+                <div class="placeholder-number">2</div>
+                <div class="placeholder-number">3</div>     
+            </div>
+        </section>
+        <section class="row justify-content-center index-seguros">
+           <div class="col col-12">
+               <p class="text-center">Los seguros destacados</p>
+               <h2 class="text-center seguros-title">¿Qué tipo de seguro buscas?</h2>
+               <div class="col col-4 m-auto tabset">
+                    <div class="row">
+                        <div class="col text-center seguros-tab">Seguros <span>Particulares</span></div>
+                        <div class="col text-center seguros-tab">Seguros <span>Pymes</span></div>
+                        <div class="col text-center seguros-tab">Seguros <span>Especialistas</span></div>
+                    </div>
+               </div>
+               <div class="row seguros-slider">
+                   <div class="col slider-item">
+                       <svg width="104.268" height="58.588" fill="#0b4269" viewBox="0 0 104.268 58.588">
+                            <g>
+                                <path d="M70.161 8.807a15.237 15.237 0 0 0-4.461 2.162l.259 1.4S51.542 2.55 37.861 17.1a16.934 16.934 0 0 1-17.1-6S20.657 8.17 3.68 8.645l1.275 1.308c-2.421.259-1.729 2.421 2.431 2.421 0 0 8.807 9.953 15.442 9.315l9.572 4.722c1.653 2.68 4.215 5.49 4.323 8.807-1.016.13-2.042.378-3.318.638a17.063 17.063 0 1 0-.638 12.633l4.085 3.242s29.977.13 31.641-.767c-2.161-6.127-2.55-11.736 2.81-15.95a17.193 17.193 0 1 0 15.565-10.807c1.145-.767 2.042-1.275 2.042-1.275l-1.394-1.243s3.826-.9 2.939-2.81S80.5 5.911 80.5 5.911A4.755 4.755 0 0 0 78.871 0L77.3 3.447C73.09.638 69.74.389 66.077 3.955a4.409 4.409 0 0 0 1.016 3.058M87.257 29.34a11.887 11.887 0 1 1-11.887 12 11.887 11.887 0 0 1 11.887-12zm-58.442 14.3A11.779 11.779 0 0 1 17.21 53.2a11.93 11.93 0 1 1 0-23.861 12.071 12.071 0 0 1 11.1 7.651m9.445 6.127a5.144 5.144 0 0 0 1.4 2.55l-5.49.259a15.053 15.053 0 0 0 .508-2.55z" class="cls-1" transform="translate(-.198)"/>
+                                <circle id="Elipse_1" cx="3.609" cy="3.609" r="3.609" class="cls-1" transform="translate(13.445 37.942)"/>
+                                <circle id="Elipse_2" cx="3.609" cy="3.609" r="3.609" class="cls-1" transform="translate(83.677 37.942)"/>
+                            </g>
+                        </svg>
+                       <span>Motocicleta</span>
+                   </div>
+               </div>    
+               <div class="text-center slider-item-price">
+                   <span>Desde 90€*</span>
+               </div>
+               <div class="text-center">
+                   <a class="ver-seguros-button" href="#">Ver todos</a>
+               </div>
+           </div>
+
+        </section>
+        <section class="row justify-content-center seguros-reminder">
+            <div class="col col-5 seguros-reminder-text">
+                <h2 class="seguros-reminder-title">Aseguramos todo y sobre todo tu tranquilidad, para que te sientas libre.</h2>
+                <p class="seguros-reminder-paragraph">Porque nosotros ¡sí! que estamos cuando hace falta, porque somos corredores de seguros, porque somos Cantabrana de Burgos.</p>
+                <a class="seguros-reminder-button">Seguros</a>
+            </div>
+            <div class="col col-5">
+                <img src="assets/img/home/jpeg/chica_columpio.jpg" alt="chica-columpio">
+            </div>
+        </section>
+        <section class="row flex-column equipo">
+            <div class="col col-12">
+                <div class="row">
+                    <div class="col col-12 equipo-img">
+                        <img src="assets/img/home/jpeg/equipo@3x.jpg" alt="equipo-cantabrana">
+                    </div>
+                    <div class="col col-6 m-auto equipo-text">
+                        <h2 class="equipo-brand">Cantabrana</h2>
+                        <h3 class="equipo-slogan">Un equipo humano con nombres y apellidos</h3>
+                        <p class="equipo-paragraph">Somos corredores de seguros, nos dedicamos exclusivamente al sector de seguros, lo que nos permite ofrecer el producto y las coberturas más adecuadas para cada asegurado.</p>
+                        <div class="text-center">
+                            <a href="#" class="equipo-button">Conócenos +</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row contacto">
+            <div class="col col-8 m-auto">
+                <div class="row promo-contacto">
+                    <div class="col col-6">
+                        <p class="contacto-slogan">Nosotros sí que estamos a su lado</p>
+                    </div>
+                    <div class="col col-6">
+                        <div class="col col-12">
+                            <img class="contacto-paraguas" src="assets/img/home/jpeg/paraguas@3x.jpg" alt="paraguas-cantabrana">
+                        </div>
+                        <div class="col col-12">
+                            <p class="contacto-text">Nuestra casa, es su casa.<span class="break">Disponemos de varias oficinas donde poder atenderle siempre</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between info-contacto">
+                    <div class="col col-6 contacto-card">
+                        <div class="hq-header">
+                            <p class="hq-no">Oficina 1</p>
+                            <p class="hq-name">Centro</p>
+                        </div>
+                        <div class="hq-contact-info">
+                            <p class="hq-address">C/Alvar García 2. 09004 Burgos</p>
+                            <p class="hq-phone">947 257 550 / 685 169 612</p>
+                            <div class="text-right card-foot">
+                                <a class="view-gmaps" href="#">Ver en Google Maps</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col col-6 contacto-card">
+                        <div class="hq-header">
+                            <p class="hq-no">Oficina 2</p>
+                            <p class="hq-name">Gamonal</span>
+                        </div>
+                        <div class="hq-contact-info">
+                            <p class="hq-address">C/Vitoria 157. 09007 Burgos</p>
+                            <p class="hq-phone">947 255 789 / 615 204 093</p>
+                            <div class="text-right card-foot">
+                                <a class="view-gmaps" href="#">Ver en Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col email-footer">
+                        <div class="row">
+                            <div class="col col-12">
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+                                        <p class="send-us-mail">Si lo prefiere puede escribirnos un correo electrónico a:</p>
+                                    </div>
+                                    <div class="col-3 text-right">
+                                        <svg width="90.531" height="47.124" viewBox="0 0 90.531 47.124">
+                                            <defs>
+                                                <style>
+                                                    .cls-2{fill:#003b61}.cls-3,.cls-5{fill:none}.cls-3{stroke:#fed198}.cls-4{stroke:none}
+                                                </style>
+                                            </defs>
+                                            <g id="Grupo_470" transform="translate(-247 -4357.876)">
+                                                <path id="Trazado_70" fill="#ccfeff" d="M228.272 114.935c-9.365 2.421-18.038 1.505-28.728-2.182-8.621-2.976-15.888-2.917-23.1 2.949-.036-.059 2.634 2.613 2.589 2.592 11.052-8.988 22.462.813 34.271 2.031A40.284 40.284 0 0 0 228.273 119v3.27c-9.365 2.423-18.038 1.506-28.728-2.18-8.621-2.976-15.888-2.917-23.1 2.949a31.178 31.178 0 0 1 2.589 2.592c11.052-8.989 22.462.813 34.271 2.031a40.3 40.3 0 0 0 14.966-1.325v3.27c-9.365 2.423-18.038 1.505-28.728-2.18-8.621-2.976-15.888-2.918-23.1 2.949a20.415 20.415 0 0 0 2.589 2.592c11.052-8.989 22.462.813 34.271 2.031a40.324 40.324 0 0 0 14.966-1.326v5.078h26.078V103.5h-26.08zm3.462 2.992c.956-.328 1.906-.674 2.856-1.055v3.311c-.963.388-1.909.7-2.856 1.019zm0 7.335c.956-.329 1.906-.676 2.856-1.056v3.312c-.963.387-1.909.7-2.856 1.017zm0 7.337c.956-.329 1.906-.676 2.856-1.056v1.605h13.448V109.1H234.59v3.754c-.963.387-1.909.7-2.856 1.018v-6.908h19.156v28.324h-19.156V132.6z" transform="translate(83.179 4254.375)"/>
+                                                <g id="Grupo_73" transform="translate(277.008 4157.762)">
+                                                    <g id="Grupo_11" transform="translate(44.133 218.778)">
+                                                        <path id="Trazado_11" d="M-13.05-13.133h-3.031v-3.03a.019.019 0 0 1 .019-.019h.755a.019.019 0 0 1 .019.019v2.218a.019.019 0 0 0 .019.019h2.218a.019.019 0 0 1 .019.019v.755a.019.019 0 0 1-.019.019" class="cls-2" transform="translate(16.081 16.183)"/>
+                                                    </g>
+                                                    <g id="Grupo_12" transform="translate(44.314 214.681)">
+                                                        <path id="Trazado_12" d="M-28.284-29.848a.129.129 0 0 1-.182 0l-6.348-6.352a.129.129 0 0 1 0-.182l.363-.363a.129.129 0 0 1 .182 0l6.349 6.349a.129.129 0 0 1 0 .182z" class="cls-2" transform="translate(34.852 36.78)"/>
+                                                    </g>
+                                                    <g id="Grupo_13" transform="translate(45.324 213.667)">
+                                                        <path id="Trazado_13" d="M-28.284-29.848a.129.129 0 0 1-.182 0l-6.348-6.352a.129.129 0 0 1 0-.182l.363-.363a.129.129 0 0 1 .182 0l6.349 6.349a.129.129 0 0 1 0 .182z" class="cls-2" transform="translate(34.852 36.78)"/>
+                                                    </g>
+                                                    <g id="Grupo_14" transform="translate(43.304 215.687)">
+                                                        <path id="Trazado_14" d="M-28.284-29.848a.129.129 0 0 1-.182 0l-6.348-6.352a.129.129 0 0 1 0-.182l.363-.363a.129.129 0 0 1 .182 0l6.349 6.349a.129.129 0 0 1 0 .182z" class="cls-2" transform="translate(34.852 36.78)"/>
+                                                    </g>
+                                                    <g id="Grupo_15" transform="translate(48.408 214.503)">
+                                                        <path id="Trazado_15" d="M-.083 0h3.031v3.031a.019.019 0 0 1-.019.019h-.756a.019.019 0 0 1-.019-.019V.813a.019.019 0 0 0-.019-.019H-.083A.019.019 0 0 1-.1.774V.019A.019.019 0 0 1-.083 0" class="cls-2" transform="translate(.102)"/>
+                                                    </g>
+                                                </g>
+                                                <g id="Grupo_74" transform="translate(5 71)">
+                                                    <g id="Elipse_4" class="cls-3" transform="translate(242 4294)">
+                                                        <circle cx="20" cy="20" r="20" class="cls-4"/>
+                                                        <circle cx="20" cy="20" r="19.5" class="cls-5"/>
+                                                    </g>
+                                                    <g id="Elipse_5" class="cls-3" transform="translate(249 4301)">
+                                                        <circle cx="13" cy="13" r="13" class="cls-4"/>
+                                                        <circle cx="13" cy="13" r="12.5" class="cls-5"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col">
+                                <a href="mailto:cantabrana@cantabranaseguros" class="email-address">cantabrana@cantabranaseguros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row protegemos-img">
+            <div class="col text-center">
+                <img src="assets/img/common/protegemos@3x.png" alt="protegemos-lo-suyo">
+            </div>
+        </section>
+        <footer>
+            <div class="row footer-menu">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Coche</a></li>
+                                    <li><a href="#">Moto</a></li>
+                                    <li><a href="#">Ciclomotor</a></li>
+                                    <li><a href="#">Furgoneta</a></li>
+                                    <li><a href="#">Viajes</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Hogar</a></li>
+                                    <li><a href="#">Vida</a></li>
+                                    <li><a href="#">Accidentes</a></li>
+                                    <li><a href="#">Salud</a></li>
+                                    <li><a href="#">Comunidades</a></li>
+                                    <li><a href="#">Decesos</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Ciberseguro</a></li>
+                                    <li><a href="#">Seguro maquinaria</a></li>
+                                    <li><a href="#">Seguro mercancías</a></li>
+                                    <li><a href="#">agroseguro</a></li>
+                                    <li><a href="#">Equipos electrónicos</a></li>
+                                    <li><a href="#">Decenal</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-legal">
+               <div class="col">
+                    <nav>
+                        <ul>
+                            <li><a class="legal link" href="#">Aviso legal</a></li>
+                            <li><a class="legal link" href="#">Condiciones legales</a></li>
+                        </ul>
+                    </nav>
+               </div>
+               <div class="col">
+                   <p class="legal">©Cantabrana Correduría de Seguros S.L. DGSFP J-3517 Contratada póliza de responsabilidad civil profesional según ley vigente. Contacto: 947 22 80 62 – 947 51 00 00</p>
+               </div>
+            </div>
+        </footer>
+
+    </div>
+    
+    
  
 <!-- Local JS -->
   <script src="js/scripts.js"></script>
