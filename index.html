@@ -58,7 +58,7 @@
 <!-- End sticky-bottom navbar -->
     
     <div class="container">
-        <header class="header-cntb row justify-content-between brand">
+        <header class="row justify-content-between header-cntb brand">
             <div class="col col-6">
                 <h1 class="home-brand "><span class="d-none">Cantabrana</span>
                     <a href="#" class="stretched-link">
@@ -90,44 +90,48 @@
                 </div>
             </div>
         </header>
-        <section class="row home-cards">
+        <section class="row justify-content-between home-cards">
             <div class="col-6 home-card seguros-card">
                 <div class="row h-100">
                     <div class="col">
-                        <p class="home-card-title">Selecciona el tipo de seguro</p>
+                        <p class="home-card-title">Selecciona <span class="d-block">el tipo de seguro</span></p>
                         <div class="home-card-text">
-                            <p class="home-card-paragraph seguros">Te ayudamos a encontrar el seguro que mejor se adapte a ti. ¡Comencemos!</p>
+                            <p class="home-card-paragraph seguros">Te ayudamos a encontrar<span class="d-block">el seguro que mejor se adapte a ti.</span> ¡Comencemos!</p>
                             <h3 class="home-card-name">Seguros</h3>
                         </div>
                     </div>
-                    <div class="col">
-                        <svg width="48px" height="48px" viewBox="0 0 48 48">
-                            <path fill="none" d="M0 0h48v48H0z"/>
-                            <path fill="#fff" d="M21 1L3 9v12c0 11.1 7.68 21.48 18 24 10.32-2.52 18-12.9 18-24V9zm-4 32l-8-8 2.82-2.82L17 27.34l13.18-13.18L33 17z" transform="translate(3 1)"/>
-                        </svg>
-                    </div>
+                    <svg class="home-card-icon shield" width="75px" viewBox="0 0 48 48">
+                        <path fill="none" d="M0 0h48v48H0z"/>
+                        <path fill="#fff" d="M21 1L3 9v12c0 11.1 7.68 21.48 18 24 10.32-2.52 18-12.9 18-24V9zm-4 32l-8-8 2.82-2.82L17 27.34l13.18-13.18L33 17z" transform="translate(3 1)"/>
+                    </svg>
                 </div>
             </div>
-            <div class="col col-3 home-card asistencia-card">
-                <div class="row">
-                    <div class="col home-card-icon">
-                        <svg width="45.354" height="39.169" viewBox="0 0 45.354 39.169">
-                            <path fill="#f9fdbf" d="M1 41.169h45.354L23.677 2zm24.738-6.185h-4.123v-4.123h4.123zm0-8.246h-4.123v-8.246h4.123z" transform="translate(-1 -2)"/>
-                        </svg>
+            <div class="col-6">
+                <div class="row justify-content-between">
+                    <div class="col col-6 home-card asistencia-card">
+                        <div class="row">
+                            <div class="col home-card-icon danger">
+                                <svg width="75px" viewBox="0 0 45.354 39.169">
+                                    <path fill="#f9fdbf" d="M1 41.169h45.354L23.677 2zm24.738-6.185h-4.123v-4.123h4.123zm0-8.246h-4.123v-8.246h4.123z" transform="translate(-1 -2)"/>
+                                </svg>
+                            </div>
+                            <div class="col col-6 home-card-text">
+                                <p class="home-card-paragraph">Los teléfonos que necesitas</p>
+                                <h3 class="home-card-name">Asistencia</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col col-6 home-card-text">
-                        <p class="home-card-paragraph">Los teléfonos que necesitas</p>
-                        <h3 class="home-card-name">Asistencia</h3>
+                    <div class="col col-6 home-card equipo-card">
+                        <div class="row">
+                        <div class="col home-card-icon iconx">
+                            <img src="assets/img/home/ico/png/equipo-icon.png">
+                            </div>
+                            <div class="col col-7 home-card-text">
+                                <p class="home-card-paragraph">Somos personas de carne y hueso</p>
+                                <h3 class="home-card-name">Cantabrana</h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col col-3 home-card equipo-card">
-                <div class="col home-card-icon">
-                    <img src="assets/img/home/ico/png/equipo-icon.png">
-                </div>
-                <div class="col col-7 home-card-text">
-                    <p class="home-card-paragraph">Somos Personas de carne y hueso</p>
-                    <h3 class="home-card-name">Cantabrana</h3>
                 </div>
             </div>
         </section>
@@ -336,7 +340,7 @@
                 <a class="seguros-reminder-button" href="#">Seguros</a>
             </div>
             <div class="col col-5">
-                <img src="assets/img/home/jpeg/chica_columpio.jpg" alt="chica-columpio">
+                <img src="assets/img/home/jpeg/chica_columpio@2x.jpg" alt="chica-columpio">
             </div>
         </section>
         <section class="row flex-column equipo">

@@ -27,6 +27,7 @@ header.header-cntb{
 
 .home-card{
     position: relative;
+    max-width: 49%;
     height: 415px;
     &.seguros-card{
         background-image: url(../../img/home/ico/png/fondo_seguros_home-w-gradient.png);
@@ -47,6 +48,7 @@ header.header-cntb{
     }
 
     .home-card-title{
+        padding: 30px 0 0 30px;
         @extend %main-title;
         color: $white;
     }
@@ -54,8 +56,9 @@ header.header-cntb{
     .home-card-paragraph{
         font-family: $primary-medium;
         line-height: $regular-lh-desktop;
-        &:not(.seguros){
-            color: $white;
+        color: $white;
+        &.seguros{
+            color: $darkblue;
         }
     }
 
@@ -63,13 +66,38 @@ header.header-cntb{
         font-family: $primary-black;
         font-size: 21px;
         color: $white;
+        &::after{
+            content:'';
+            display: inline;
+            width: 1px;
+            padding-left: 10px;
+            border-right: 4px solid $white;
+        }
+    }
+
+    .home-card-icon{
+        position: absolute;
+        text-align: center;
+        top: 30px;
+        &.shield{
+            right: 30px;
+        }
+        
+        &.iconx{
+            
+            img{
+                width: 75px;
+            }
+        }
+    }
+
+    .home-card-text{
+        position: absolute;
+        bottom: 20px;
     }
 }
 
-.home-card-text{
-    position: absolute;
-    bottom: 20px;
-}
+
 
 /*------- Home carousel ------- */
 
@@ -247,10 +275,12 @@ section.equipo{
     background-color: $darkblue;
 
     .equipo-img{
+        padding-left: 0;
         height: 450px;
         overflow: hidden;
     
         img{
+            width: 102%; // ? fix!
             object-position: 0 -125px;
         }
     }
@@ -300,6 +330,19 @@ section.equipo{
 
 section.contacto{
     padding-top: $sp-70;
+
+    .promo-contacto{
+        &::after{
+            content: '';
+            position: absolute;
+            top: 100px;
+            display: block;
+            width: 100%;
+            height: 250px;
+            border: 2px solid $darkblue;
+            z-index: -1;
+        }
+    }
 
     .contacto-slogan{
         padding-top: 160px;
