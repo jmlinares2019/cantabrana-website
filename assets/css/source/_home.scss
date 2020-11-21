@@ -135,23 +135,69 @@ section.index-seguros{
     }
     background-color: $lightbrown;
 
+    p{
+        font-family: $primary-light;
+        font-size: $tiny-desktop;
+    }
+
     .seguros-title{
         @extend %serif-title;
         padding-bottom: $sp-50;
     }
 
-    .seguros-tab{
+    .nav-link{
         font-family: 'GT America Expanded Ultra Light', sans-serif;
         font-size: 10px;
         text-transform: uppercase;
-        span{
-            font-weight: bolder; // only when tab is selected!
+        text-align: center;
+        &.active{
+            background-color: inherit;
+            border-color: transparent;
+            border-bottom: 8px solid $darkblue;
+            span{
+                font-weight: bolder;
+            }
+        }
+        &:hover{
+            border-color: transparent;
+            border-bottom: 8px solid $darkblue;
         }
 
     }
 
-    .slider-item-price{
+    .tab-content{
+        padding-top: $sp-60;
+
+        .seguros-item{
+            position: relative;
+            flex: 0 0 auto;
+            max-width: 175px;
+            //width: 175px;
+            height: 175px;
+            border: 8px solid $white;
+            &:hover{
+                background-color: $white;
+                box-shadow: 5px 5px 40px 5px #d5c195;
+            }
+            // active state!!
+    
+            svg{
+                width: 85px; 
+            }
+    
+            .vehicle-class{
+                position: absolute;
+                bottom: 5px;
+                font-family: $primary-bold;
+                font-size: $small-desktop;
+                color: $darkblue;
+            }
+        } 
+    }
+
+    .seguros-item-price{
         margin-bottom: $sp-80;
+        padding-top: 30px;
 
         span{
             font-family: $primary-light;
@@ -243,6 +289,10 @@ section.equipo{
             @extend %cntb-button;
             border-color: $lightpeach;
             color: $lightpeach;
+            &:hover{
+                background-color: $white;
+                color: $darkblue;
+            }
 
         }
     }

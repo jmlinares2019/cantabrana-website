@@ -49,6 +49,11 @@ section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button
   color: #003b61;
 }
 
+section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button:hover, section.index-seguros .ver-seguros-button:hover, section.seguros-reminder .seguros-reminder-text .seguros-reminder-button:hover, section.equipo .equipo-text .equipo-button:hover {
+  background-color: #003b61;
+  color: #ffffff;
+}
+
 section.protegemos-img {
   padding-top: 150px;
   padding-bottom: 180px;
@@ -225,25 +230,75 @@ section.index-seguros {
   background-color: #fbe3c6;
 }
 
+section.index-seguros p {
+  font-family: "GT America Light", sans-serif;
+  font-size: 10px;
+}
+
 section.index-seguros .seguros-title {
   padding-bottom: 50px;
 }
 
-section.index-seguros .seguros-tab {
+section.index-seguros .nav-link {
   font-family: 'GT America Expanded Ultra Light', sans-serif;
   font-size: 10px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-section.index-seguros .seguros-tab span {
+section.index-seguros .nav-link.active {
+  background-color: inherit;
+  border-color: transparent;
+  border-bottom: 8px solid #003b61;
+}
+
+section.index-seguros .nav-link.active span {
   font-weight: bolder;
 }
 
-section.index-seguros .slider-item-price {
-  margin-bottom: 80px;
+section.index-seguros .nav-link:hover {
+  border-color: transparent;
+  border-bottom: 8px solid #003b61;
 }
 
-section.index-seguros .slider-item-price span {
+section.index-seguros .tab-content {
+  padding-top: 60px;
+}
+
+section.index-seguros .tab-content .seguros-item {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-width: 175px;
+  height: 175px;
+  border: 8px solid #ffffff;
+}
+
+section.index-seguros .tab-content .seguros-item:hover {
+  background-color: #ffffff;
+  -webkit-box-shadow: 5px 5px 40px 5px #d5c195;
+          box-shadow: 5px 5px 40px 5px #d5c195;
+}
+
+section.index-seguros .tab-content .seguros-item svg {
+  width: 85px;
+}
+
+section.index-seguros .tab-content .seguros-item .vehicle-class {
+  position: absolute;
+  bottom: 5px;
+  font-family: "GT America Bold", sans-serif;
+  font-size: 15px;
+  color: #003b61;
+}
+
+section.index-seguros .seguros-item-price {
+  margin-bottom: 80px;
+  padding-top: 30px;
+}
+
+section.index-seguros .seguros-item-price span {
   font-family: "GT America Light", sans-serif;
   font-size: 17px;
   line-height: 17px;
@@ -319,6 +374,11 @@ section.equipo .equipo-text .equipo-paragraph {
 section.equipo .equipo-text .equipo-button {
   border-color: #fed198;
   color: #fed198;
+}
+
+section.equipo .equipo-text .equipo-button:hover {
+  background-color: #ffffff;
+  color: #003b61;
 }
 
 section.contacto {

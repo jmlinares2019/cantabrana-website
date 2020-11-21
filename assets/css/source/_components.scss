@@ -32,4 +32,8 @@
     padding: 7px 30px;
     border: 2px solid $darkblue;
     color: $darkblue;
+    &:hover{
+        background-color: $darkblue;
+        color: $white;
+    }
 }
