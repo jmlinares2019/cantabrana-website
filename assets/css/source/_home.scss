@@ -1,28 +1,5 @@
-header.header-cntb{
-    height: 200px;
-
-    .home-brand img{
-        width: 150px;
-    }
-
-    .top-contact-phone{
-        @extend %contact-phone;
-        padding-left: 0;
-        align-self: flex-end;
-    }
-
-    .top-sm-icon{
-        padding:{
-            left: 0;
-            right: 5px;
-        }
-    }
-}
-
-.home-title{
-    font-family: $primary-light;
-    font-size: $regular-desktop;
-    color: $darkblue;
+section.home-cards{
+    padding-top: 200px;
 }
 
 .home-card{
@@ -96,8 +73,6 @@ header.header-cntb{
         bottom: 20px;
     }
 }
-
-
 
 /*------- Home carousel ------- */
 
@@ -179,60 +154,7 @@ section.index-seguros{
         font-size: $tiny-desktop;
     }
 
-    .seguros-title{
-        @extend %serif-title;
-        padding-bottom: $sp-50;
-    }
-
-    .nav-link{
-        font-family: 'GT America Expanded Ultra Light', sans-serif;
-        font-size: 10px;
-        text-transform: uppercase;
-        text-align: center;
-        &.active{
-            background-color: inherit;
-            border-color: transparent;
-            border-bottom: 8px solid $darkblue;
-            span{
-                font-weight: bolder;
-            }
-        }
-        &:hover{
-            border-color: transparent;
-            border-bottom: 8px solid $darkblue;
-        }
-
-    }
-
-    .tab-content{
-        padding-top: $sp-60;
-
-        .seguros-item{
-            position: relative;
-            flex: 0 0 auto;
-            max-width: 175px;
-            //width: 175px;
-            height: 175px;
-            border: 8px solid $white;
-            &:hover{
-                background-color: $white;
-                box-shadow: 5px 5px 40px 5px #d5c195;
-            }
-            // active state!!
-    
-            svg{
-                width: 85px; 
-            }
-    
-            .vehicle-class{
-                position: absolute;
-                bottom: 5px;
-                font-family: $primary-bold;
-                font-size: $small-desktop;
-                color: $darkblue;
-            }
-        } 
-    }
+    // More styles at partial '_seguros.scss' (shared with '/seguros.html')
 
     .seguros-item-price{
         margin-bottom: $sp-80;
