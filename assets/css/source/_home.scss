@@ -145,8 +145,19 @@ section.carrusel{
         
     }
 
-    .carousel-ctrl-arrow{
+    .carousel-ctrl{
         fill: $lightgrey;
+        &.prev{
+            left: -6%;
+        }
+        &.next{
+            right: -6%;
+        }
+
+
+    }
+    .carousel-ctrl-arrow{
+        // fill: $lightgrey;
         &.prev{
             transform: rotate(180deg);
         }
@@ -332,36 +343,46 @@ section.contacto{
     padding-top: $sp-70;
 
     .promo-contacto{
+        padding-bottom: 40px;
         &::after{
             content: '';
             position: absolute;
             top: 100px;
             display: block;
             width: 100%;
-            height: 250px;
+            height: 285px;
             border: 2px solid $darkblue;
             z-index: -1;
         }
-    }
 
-    .contacto-slogan{
-        padding-top: 160px;
-        @extend %serif-title;
-        color: $darkblue;
-    }
-    
-    .contacto-paraguas{
-        width: 275px;
-    }
+        .col-promo{
+            padding-left: 20px;
 
-    .contacto-text{
-        font-family: $primary-bold;
-        font-size: $small-desktop;
-        line-height: $regular-lh-desktop;
-        color: $darkblue;
-        span{
-            font-family: $primary-light;
+            .contacto-slogan{
+                padding-top: 160px;
+                @extend %serif-title;
+                color: $darkblue;
+            }
         }
+            
+        .col-paraguas{
+            padding-left: 65px;
+
+            .contacto-paraguas{
+                width: 275px;
+            }
+        
+            .contacto-text{
+                font-family: $primary-bold;
+                font-size: $small-desktop;
+                line-height: $regular-lh-desktop;
+                color: $darkblue;
+                span{
+                    font-family: $primary-light;
+                }
+            }
+        }
+    
     }
 
     .contacto-card{
@@ -370,10 +391,10 @@ section.contacto{
         background-color: $pale;
         padding-left: 20px;
         max-width: 48%;
-        margin:{
+        /* margin:{
             left: 5px;
             right: 5px;
-        }
+        } */
 
         .hq-header{
 
@@ -386,6 +407,19 @@ section.contacto{
                     font-size: 30px;
                     line-height: 36px;
                     color: $lightpeach;
+
+                    span{
+                        position: relative;
+                        &::after{
+                            content: url(../../img/home/ico/svg/location-icon.svg);
+                            display: inline;
+                            position: absolute;
+                            top: -15px;
+                            left: 10px;
+                        }
+                    }
+
+
                 }
                 &.hq-name{
                     font-size: 20px;
@@ -425,6 +459,15 @@ section.contacto{
                     color: $darkblue;
                 }
             }
+
+        }
+
+        .contacto-card-deco-arrow{
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            transform: rotate(90deg);
+            fill: $darkblue;
         }
     
     }
