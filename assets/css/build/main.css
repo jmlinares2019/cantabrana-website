@@ -14,13 +14,13 @@ header.header-cntb .top-contact-phone, section.contacto .contacto-card .hq-conta
   color: #003b61;
 }
 
-.home-card .home-card-title, section.seguros-reminder .seguros-reminder-text .seguros-reminder-title {
+section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-card .home-card-title, section.seguros-reminder .seguros-reminder-text .seguros-reminder-title {
   font-family: "GT America Bold", sans-serif;
   font-size: 32px;
   line-height: 35px;
 }
 
-section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, section.index-seguros .seguros-title, section.contacto .promo-contacto .col-promo .contacto-slogan {
+section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title {
   font-family: "Canela-Bold", serif;
   font-size: 55px;
   line-height: 61px;
@@ -35,7 +35,7 @@ section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title 
   padding-top: 35px;
 }
 
-section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button, section.index-seguros .ver-seguros-button, section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, section.equipo .equipo-text .equipo-button {
+header.header-cntb .login-btn a, section.llamanos-cta .col-10 .col-4:last-child .cta-call, section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button, section.index-seguros .ver-seguros-button, section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, section.equipo .equipo-text .equipo-button {
   font-family: "GT America Black", sans-serif;
   font-size: 13px;
   padding: 7px 30px;
@@ -43,9 +43,73 @@ section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button
   color: #003b61;
 }
 
-section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button:hover, section.index-seguros .ver-seguros-button:hover, section.seguros-reminder .seguros-reminder-text .seguros-reminder-button:hover, section.equipo .equipo-text .equipo-button:hover {
+header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .col-4:last-child .cta-call:hover, section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button:hover, section.index-seguros .ver-seguros-button:hover, section.seguros-reminder .seguros-reminder-text .seguros-reminder-button:hover, section.equipo .equipo-text .equipo-button:hover {
   background-color: #003b61;
   color: #ffffff;
+}
+
+.navbar {
+  display: none;
+}
+
+header.header-cntb {
+  padding-top: 75px;
+}
+
+header.header-cntb .home-brand img {
+  width: 150px;
+}
+
+header.header-cntb .home-title {
+  font-family: "GT America Light", sans-serif;
+  font-size: 17px;
+  color: #003b61;
+}
+
+header.header-cntb .top-contact-phone {
+  padding-left: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+header.header-cntb .top-sm-icon {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+section.llamanos-cta {
+  padding-top: 500px;
+}
+
+section.llamanos-cta .col-10 {
+  padding-top: 40px;
+  border-top: 4px solid #ffffff;
+}
+
+section.llamanos-cta .col-10 .col-4:first-child {
+  padding-top: 20px;
+  padding-right: 0;
+}
+
+section.llamanos-cta .col-10 .col-4:first-child .logo-cantabrana-cta {
+  width: 115px;
+}
+
+section.llamanos-cta .col-10 .col-4:first-child .cta-question {
+  padding-top: 20px;
+  margin-bottom: 5px;
+  color: #003b61;
+  letter-spacing: -1px;
+}
+
+section.llamanos-cta .col-10 .col-4:first-child .cta-answer {
+  font-family: "GT America Light", sans-serif;
+  font-size: 17px;
+  color: #003b61;
+}
+
+section.llamanos-cta .col-10 .col-4:last-child {
+  padding-top: 85px;
 }
 
 section.protegemos-img {
@@ -93,29 +157,8 @@ section.protegemos-img img {
   text-decoration: underline;
 }
 
-header.header-cntb {
-  height: 200px;
-}
-
-header.header-cntb .home-brand img {
-  width: 150px;
-}
-
-header.header-cntb .top-contact-phone {
-  padding-left: 0;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-header.header-cntb .top-sm-icon {
-  padding-left: 0;
-  padding-right: 5px;
-}
-
-.home-title {
-  font-family: "GT America Light", sans-serif;
-  font-size: 17px;
-  color: #003b61;
+section.home-cards {
+  padding-top: 200px;
 }
 
 .home-card {
@@ -260,64 +303,6 @@ section.index-seguros {
 section.index-seguros p {
   font-family: "GT America Light", sans-serif;
   font-size: 10px;
-}
-
-section.index-seguros .seguros-title {
-  padding-bottom: 50px;
-}
-
-section.index-seguros .nav-link {
-  font-family: 'GT America Expanded Ultra Light', sans-serif;
-  font-size: 10px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-section.index-seguros .nav-link.active {
-  background-color: inherit;
-  border-color: transparent;
-  border-bottom: 8px solid #003b61;
-}
-
-section.index-seguros .nav-link.active span {
-  font-weight: bolder;
-}
-
-section.index-seguros .nav-link:hover {
-  border-color: transparent;
-  border-bottom: 8px solid #003b61;
-}
-
-section.index-seguros .tab-content {
-  padding-top: 60px;
-}
-
-section.index-seguros .tab-content .seguros-item {
-  position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  max-width: 175px;
-  height: 175px;
-  border: 8px solid #ffffff;
-}
-
-section.index-seguros .tab-content .seguros-item:hover {
-  background-color: #ffffff;
-  -webkit-box-shadow: 5px 5px 40px 5px #d5c195;
-          box-shadow: 5px 5px 40px 5px #d5c195;
-}
-
-section.index-seguros .tab-content .seguros-item svg {
-  width: 85px;
-}
-
-section.index-seguros .tab-content .seguros-item .vehicle-class {
-  position: absolute;
-  bottom: 5px;
-  font-family: "GT America Bold", sans-serif;
-  font-size: 15px;
-  color: #003b61;
 }
 
 section.index-seguros .seguros-item-price {
@@ -553,5 +538,135 @@ section.contacto .email-footer .email-address {
   font-family: "GT America Medium", sans-serif;
   font-size: 15px;
   color: #ccfeff;
+}
+
+section.seguros-banner {
+  padding-bottom: 100px;
+}
+
+section.seguros-banner .banner-text {
+  padding-top: 280px;
+  padding-right: 0;
+}
+
+section.seguros-banner .banner-text h2 {
+  font-family: "GT America Black", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #003b61;
+}
+
+section.seguros-banner .banner-text p {
+  padding-top: 25px;
+  font-family: "GT America Light", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #003b61;
+}
+
+section.seguros-banner .banner-img img {
+  margin-top: -30px;
+  mix-blend-mode: multiply;
+}
+
+section.index-seguros.page-seguros .seguros-item {
+  margin-bottom: 25px;
+}
+
+.seguros-title {
+  padding-bottom: 50px;
+}
+
+.nav-link {
+  font-family: 'GT America Expanded Ultra Light', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav-link.active {
+  background-color: inherit !important;
+  border-color: transparent !important;
+  border-bottom: 8px solid #003b61 !important;
+}
+
+.nav-link.active span {
+  font-weight: bolder;
+}
+
+.nav-link:hover {
+  border-color: transparent !important;
+  border-bottom: 8px solid #003b61 !important;
+}
+
+.tab-content {
+  padding-top: 60px;
+}
+
+.tab-content .seguros-item {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-width: 175px;
+  height: 175px;
+  border: 8px solid #ffffff;
+}
+
+.tab-content .seguros-item:hover {
+  background-color: #ffffff;
+  -webkit-box-shadow: 5px 5px 40px 5px #d5c195;
+          box-shadow: 5px 5px 40px 5px #d5c195;
+}
+
+.tab-content .seguros-item svg {
+  width: 85px;
+}
+
+.tab-content .seguros-item .vehicle-class {
+  position: absolute;
+  bottom: 5px;
+  font-family: "GT America Bold", sans-serif;
+  font-size: 15px;
+  color: #003b61;
+}
+
+.tab-content #nav-contact .seguros-item {
+  border-color: #003b61;
+}
+
+.tab-content #nav-contact .seguros-item svg {
+  fill: #003b61;
+}
+
+.tab-content #nav-contact .seguros-item:hover {
+  background-color: #003b61;
+  -webkit-box-shadow: 5px 5px 40px 5px inherit;
+          box-shadow: 5px 5px 40px 5px inherit;
+}
+
+.tab-content #nav-contact .seguros-item:hover svg {
+  fill: #ffffff;
+}
+
+.tab-content #nav-contact .seguros-item:hover span {
+  color: #ffffff;
+}
+
+.tab-content .seguros-category {
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.tab-content .seguros-category.agricola {
+  background-color: #003b61;
+}
+
+.tab-content .seguros-category span {
+  font-family: "GT America Bold", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

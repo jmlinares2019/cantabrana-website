@@ -1,0 +1,138 @@
+section.seguros-banner{
+    padding-bottom: 100px;
+
+    .banner-text{
+        padding:{
+            top: 280px;
+            right: 0;
+        }
+
+        h2{
+            font-family: $primary-black;
+            font-size: 40px;
+            line-height: $big-title-lh-desktop + 5px;
+            letter-spacing: -1px;
+            color: $darkblue;
+        }
+
+        p{
+            padding-top: 25px;
+            font-family: $primary-light;
+            font-size: $regular-desktop;
+            line-height: $regular-lh-desktop;
+            color: $darkblue;
+        }
+    }
+
+    .banner-img{
+    
+        img{
+            margin-top: -30px;
+            mix-blend-mode: multiply;
+        }
+    }
+
+}
+
+section.index-seguros.page-seguros{
+
+    .seguros-item{
+        margin-bottom: 25px;
+    }
+
+}
+
+// The following styles are shared with a Home section
+
+.seguros-title{
+    @extend %serif-title;
+    padding-bottom: $sp-50;
+}
+
+.nav-link{
+    font-family: 'GT America Expanded Ultra Light', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    &.active{
+        background-color: inherit !important;
+        border-color: transparent !important;
+        border-bottom: 8px solid $darkblue !important;
+        span{
+            font-weight: bolder;
+        }
+    }
+    &:hover{
+        border-color: transparent !important;
+        border-bottom: 8px solid $darkblue !important;
+    }
+
+}
+
+.tab-content{
+    padding-top: $sp-60;
+
+    .seguros-item{
+        position: relative;
+        flex: 0 0 auto;
+        max-width: 175px;
+        height: 175px;
+        border: 8px solid $white;
+        &:hover{
+            background-color: $white;
+            box-shadow: 5px 5px 40px 5px #d5c195;
+        }
+        // active state!!
+
+        svg{
+            width: 85px; 
+        }
+
+        .vehicle-class{
+            position: absolute;
+            bottom: 5px;
+            font-family: $primary-bold;
+            font-size: $small-desktop;
+            color: $darkblue;
+        }
+
+    }
+
+    #nav-contact{
+        
+        .seguros-item{
+            border-color: $darkblue;
+
+            svg{
+                fill: $darkblue;
+            }
+            &:hover{
+                background-color: $darkblue;
+                box-shadow: 5px 5px 40px 5px inherit;
+
+                svg{
+                    fill: $white;
+                }
+
+                span{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .seguros-category{
+        color: $white;
+        border-color: transparent;
+        &.agricola{
+            background-color: $darkblue;
+        }
+
+        span{
+            font-family: $primary-bold;
+            font-size: $small-desktop;
+            line-height: $regular-lh-desktop;;
+            color: $white;
+        }
+    }
+}
