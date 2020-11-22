@@ -1,3 +1,47 @@
+section.llamanos-cta{
+    padding-top: 500px;
+
+    .col-10{
+        padding-top: 40px;
+        border-top: 4px solid $white;
+
+        .col-4:first-child{
+            padding:{
+                top: 20px;
+                right: 0;
+            }
+
+            .logo-cantabrana-cta{
+                width: 115px;
+            }
+        
+            .cta-question{
+                padding-top: 20px;
+                margin-bottom: 5px;
+                @extend %main-title;
+                color: $darkblue;
+                letter-spacing: -1px;
+            }
+
+            .cta-answer{
+                font-family: $primary-light;
+                font-size: $regular-desktop;
+                color: $darkblue;
+            }
+        }
+
+        .col-4:last-child{
+            padding-top: 85px;
+
+            .cta-call{
+                @extend %cntb-button;
+            }
+        }
+ 
+    }
+    
+}
+
 section.protegemos-img{
     padding:{
         top: 150px;
