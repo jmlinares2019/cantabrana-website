@@ -10,6 +10,15 @@
     line-height: $big-title-lh-desktop;
 }
 
+// son iguales!!!
+
+%seguros-page-title{
+    font-family: $primary-bold;
+    font-size: $big-title-desktop;
+    line-height: $big-title-lh-desktop;
+    color: $darkblue;
+}
+
 %serif-title{
     font-family: $secondary-bold;
     font-size: $huge-title-desktop;
@@ -19,12 +28,7 @@
     letter-spacing: -2px; // is it normal?
 }
 
-%seguros-page-title{
-    font-family: $primary-bold;
-    font-size: $big-title-desktop;
-    line-height: $big-title-lh-desktop;
-    color: $darkblue;
-}
+
 
 %seguros-page-paragraph{
     font-family: $primary-light;
@@ -52,7 +56,7 @@
     }
 }
 
-%seguros-detail-top-banner{
+%top-img-banner{
     height: 345px;
     background-repeat: no-repeat;
     background-size: cover;
