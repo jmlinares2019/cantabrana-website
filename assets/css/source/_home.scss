@@ -15,7 +15,7 @@
             background-size: contain;
         }
         &.asistencia-card{
-            background-image: url(../../img/home/jpeg/asistencia.jpg);
+            background-image: url(../../img/home/jpeg/asistencia@2x.jpg);
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -134,8 +134,7 @@
 
         }
         .carousel-ctrl-arrow{
-            // fill: $lightgrey;
-            &.prev{
+            &.next{
                 transform: rotate(180deg);
             }
         }
@@ -393,8 +392,6 @@
                 position: absolute;
                 top: 15px;
                 right: 20px;
-                transform: rotate(90deg);
-                fill: $darkblue;
             }
         
         }
