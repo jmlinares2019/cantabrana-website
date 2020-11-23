@@ -1,418 +1,425 @@
-section.home-cards{
-    padding-top: 200px;
-}
+.home-page{
 
-.home-card{
-    position: relative;
-    max-width: 49%;
-    height: 415px;
-    &.seguros-card{
-        background-image: url(../../img/home/ico/png/fondo_seguros_home-w-gradient.png);
-        background-color: #25d4c6;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    &.asistencia-card{
-        background-image: url(../../img/home/jpeg/asistencia.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    &.equipo-card{
-        background-image: url(../../img/home/jpeg/equipo-mask.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    section.home-cards{
+        padding-top: 200px;
     }
 
-    .home-card-title{
-        padding: 30px 0 0 30px;
-        @extend %main-title;
-        color: $white;
-    }
-
-    .home-card-paragraph{
-        font-family: $primary-medium;
-        line-height: $regular-lh-desktop;
-        color: $white;
-        &.seguros{
-            color: $darkblue;
+    .home-card{
+        position: relative;
+        max-width: 49%;
+        height: 415px;
+        &.seguros-card{
+            background-image: url(../../img/home/ico/png/fondo_seguros_home-w-gradient.png);
+            background-color: #25d4c6;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
-    }
-
-    .home-card-name{
-        font-family: $primary-black;
-        font-size: 21px;
-        color: $white;
-        &::after{
-            content:'';
-            display: inline;
-            width: 1px;
-            padding-left: 10px;
-            border-right: 4px solid $white;
+        &.asistencia-card{
+            background-image: url(../../img/home/jpeg/asistencia.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
-    }
-
-    .home-card-icon{
-        position: absolute;
-        text-align: center;
-        top: 30px;
-        &.shield{
-            right: 30px;
-        }
-        
-        &.iconx{
-            
-            img{
-                width: 75px;
-            }
-        }
-    }
-
-    .home-card-text{
-        position: absolute;
-        bottom: 20px;
-    }
-}
-
-/*------- Home carousel ------- */
-
-section.carrusel{
-    padding-top: $sp-100;
-    margin-bottom: $sp-50;
-
-    .carousel-item{
-        background-color: $white;
-
-        .carousel-content{
-            width: 375px;
-            margin: auto;
-            &.carousel-img{
-                position: relative;
-                
-                .slide-img-title{
-                    position: absolute;
-                    top: 0;
-                    @extend %carousel-img-title;
-                }
-            }
-            &.carousel-text{
-                padding-top: 30px;
-                color: $darkblue;
-        
-                .carousel-item-headline{
-                    font-family: $primary-bold;
-                    font-size: $regular-desktop;
-                }
-            
-                .slide-paragraph{
-                    margin-bottom: 20px;
-                    font-family: $primary-light;
-                    font-size: $paragraph-desktop;
-                    line-height: $regular-lh-desktop;
-                }
-        
-                .carousel-button{
-                    @extend %cntb-button;
-                }
-            
-            }
-        }
-        
-    }
-
-    .carousel-ctrl{
-        fill: $lightgrey;
-        &.prev{
-            left: -6%;
-        }
-        &.next{
-            right: -6%;
+        &.equipo-card{
+            background-image: url(../../img/home/jpeg/equipo-mask.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
-
-    }
-    .carousel-ctrl-arrow{
-        // fill: $lightgrey;
-        &.prev{
-            transform: rotate(180deg);
-        }
-    }
-
-}
-
-/*----- End Home carousel ----- */
-
-section.index-seguros{
-    padding:{
-        top: $sp-50;
-        bottom: $sp-60;
-    }
-    background-color: $lightbrown;
-
-    p{
-        font-family: $primary-light;
-        font-size: $tiny-desktop;
-    }
-
-    // More styles at partial '_seguros.scss' (shared with '/seguros.html')
-
-    .seguros-item-price{
-        margin-bottom: $sp-80;
-        padding-top: 30px;
-
-        span{
-            font-family: $primary-light;
-            font-size: $regular-desktop;
-            line-height: $regular-lh-desktop;
-        }
-    } 
-    
-    .ver-seguros-button{
-        @extend %cntb-button;
-    }
-}
-
-section.seguros-reminder{
-    padding-bottom: $sp-70;
-
-    .seguros-reminder-text{
-        padding-top: 225px;
-        
-
-        .seguros-reminder-title{
+        .home-card-title{
+            padding: 30px 0 0 30px;
             @extend %main-title;
-            color: $darkblue;
-        }
-    
-        .seguros-reminder-paragraph{
-            font-family: $primary-light;
-            font-size: $small-desktop;
-            line-height: $regular-lh-desktop;
-            padding-bottom: $sp-50;
-        }
-    
-        .seguros-reminder-button{
-            @extend %cntb-button;
-        }
-
-    }
-
-    img{
-        width: 375px;
-        height: 610px;
-    }
-}
-
-section.equipo{
-    padding-bottom: $sp-60;
-    background-color: $darkblue;
-
-    .equipo-img{
-        padding-left: 0;
-        height: 450px;
-        overflow: hidden;
-    
-        img{
-            width: 102%; // ? fix!
-            object-position: 0 -125px;
-        }
-    }
-    
-    .equipo-text{
-        background-color: $darkblue;
-        color: $white;
-        text-align: center;
-
-        .equipo-brand{
-            padding:{
-                top: $sp-50;
-                bottom: $sp-20;
-           }
-           font-family: $primary-light;
-           font-size: $small-desktop;
-           color: $lighterblue;
-        }
-
-        .equipo-slogan{
-            font-family: $secondary-regular;
-            font-size: $huge-title-desktop;
-            line-height: $huge-title-lh-desktop;
             color: $white;
         }
 
-        .equipo-paragraph{
-            padding-bottom: $sp-50;
-            font-family: $primary-light;
-            font-size: $small-desktop;
+        .home-card-paragraph{
+            font-family: $primary-medium;
             line-height: $regular-lh-desktop;
-
-        }
-
-        .equipo-button{
-            @extend %cntb-button;
-            border-color: $lightpeach;
-            color: $lightpeach;
-            &:hover{
-                background-color: $white;
+            color: $white;
+            &.seguros{
                 color: $darkblue;
             }
+        }
 
+        .home-card-name{
+            font-family: $primary-black;
+            font-size: 21px;
+            color: $white;
+            &::after{
+                content:'';
+                display: inline;
+                width: 1px;
+                padding-left: 10px;
+                border-right: 4px solid $white;
+            }
+        }
+
+        .home-card-icon{
+            position: absolute;
+            text-align: center;
+            top: 30px;
+            &.shield{
+                right: 30px;
+            }
+            
+            &.iconx{
+                
+                img{
+                    width: 75px;
+                }
+            }
+        }
+
+        .home-card-text{
+            position: absolute;
+            bottom: 20px;
         }
     }
-}
 
-section.contacto{
-    padding-top: $sp-70;
+    /*------- Home carousel ------- */
 
-    .promo-contacto{
-        padding-bottom: 40px;
-        &::after{
-            content: '';
-            position: absolute;
-            top: 100px;
-            display: block;
-            width: 100%;
-            height: 285px;
-            border: 2px solid $darkblue;
-            z-index: -1;
+    section.carrusel{
+        padding-top: $sp-100;
+        margin-bottom: $sp-50;
+
+        .carousel-item{
+            background-color: $white;
+
+            .carousel-content{
+                width: 375px;
+                margin: auto;
+                &.carousel-img{
+                    position: relative;
+                    
+                    .slide-img-title{
+                        position: absolute;
+                        top: 0;
+                        @extend %carousel-img-title;
+                    }
+                }
+                &.carousel-text{
+                    padding-top: 30px;
+                    color: $darkblue;
+            
+                    .carousel-item-headline{
+                        font-family: $primary-bold;
+                        font-size: $regular-desktop;
+                    }
+                
+                    .slide-paragraph{
+                        margin-bottom: 20px;
+                        font-family: $primary-light;
+                        font-size: $paragraph-desktop;
+                        line-height: $regular-lh-desktop;
+                    }
+            
+                    .carousel-button{
+                        @extend %cntb-button;
+                    }
+                
+                }
+            }
+            
         }
 
-        .col-promo{
-            padding-left: 20px;
+        .carousel-ctrl{
+            fill: $lightgrey;
+            &.prev{
+                left: -6%;
+            }
+            &.next{
+                right: -6%;
+            }
 
-            .contacto-slogan{
-                padding-top: 160px;
-                @extend %serif-title;
+
+        }
+        .carousel-ctrl-arrow{
+            // fill: $lightgrey;
+            &.prev{
+                transform: rotate(180deg);
+            }
+        }
+
+    }
+
+    /*----- End Home carousel ----- */
+
+    .container-bg{
+        background-color: $lightbrown;
+    }
+    
+    section.index-seguros{
+        padding:{
+            top: $sp-50;
+            bottom: $sp-60;
+        }
+
+        p{
+            font-family: $primary-light;
+            font-size: $tiny-desktop;
+        }
+
+        // More styles at partial '_seguros.scss' (shared with '/seguros.html')
+
+        .seguros-item-price{
+            margin-bottom: $sp-80;
+            padding-top: 30px;
+
+            span{
+                font-family: $primary-light;
+                font-size: $regular-desktop;
+                line-height: $regular-lh-desktop;
+            }
+        } 
+        
+        .ver-seguros-button{
+            @extend %cntb-button;
+        }
+    }
+
+    section.seguros-reminder{
+        padding-bottom: $sp-70;
+
+        .seguros-reminder-text{
+            padding-top: 225px;
+            
+
+            .seguros-reminder-title{
+                @extend %main-title;
                 color: $darkblue;
             }
-        }
-            
-        .col-paraguas{
-            padding-left: 65px;
-
-            .contacto-paraguas{
-                width: 275px;
-            }
         
-            .contacto-text{
-                font-family: $primary-bold;
+            .seguros-reminder-paragraph{
+                font-family: $primary-light;
                 font-size: $small-desktop;
                 line-height: $regular-lh-desktop;
-                color: $darkblue;
-                span{
-                    font-family: $primary-light;
-                }
+                padding-bottom: $sp-50;
             }
+        
+            .seguros-reminder-button{
+                @extend %cntb-button;
+            }
+
         }
-    
+
+        img{
+            width: 375px;
+            height: 610px;
+        }
     }
 
-    .contacto-card{
-        position: relative;
-        height: 250px;
-        background-color: $pale;
-        padding-left: 20px;
-        max-width: 48%;
-        /* margin:{
-            left: 5px;
-            right: 5px;
-        } */
+    section.equipo{
+        padding-bottom: $sp-60;
+        background-color: $darkblue;
 
-        .hq-header{
-
-            p{
-                font-family: $secondary-bold;
-                &.hq-no{
-                    padding-top: 30px;
-                    margin-bottom: 0;
-                    margin-block-end: 0;
-                    font-size: 30px;
-                    line-height: 36px;
-                    color: $lightpeach;
-
-                    span{
-                        position: relative;
-                        &::after{
-                            content: url(../../img/home/ico/svg/location-icon.svg);
-                            display: inline;
-                            position: absolute;
-                            top: -15px;
-                            left: 10px;
-                        }
-                    }
-
-
-                }
-                &.hq-name{
-                    font-size: 20px;
-                    line-height: 36px;
-                    color: $darkblue;
-                }
+        .equipo-img{
+            padding-left: 0;
+            height: 450px;
+            overflow: hidden;
+        
+            img{
+                width: 102%; // ? fix!
+                object-position: 0 -125px;
             }
         }
         
-        .hq-contact-info{
+        .equipo-text{
+            background-color: $darkblue;
+            color: $white;
+            text-align: center;
 
-            .hq-address{
+            .equipo-brand{
+                padding:{
+                    top: $sp-50;
+                    bottom: $sp-20;
+            }
+            font-family: $primary-light;
+            font-size: $small-desktop;
+            color: $lighterblue;
+            }
+
+            .equipo-slogan{
+                font-family: $secondary-regular;
+                font-size: $huge-title-desktop;
+                line-height: $huge-title-lh-desktop;
+                color: $white;
+            }
+
+            .equipo-paragraph{
+                padding-bottom: $sp-50;
                 font-family: $primary-light;
-                font-size: $paragraph-desktop;
-                line-height: $small-lh-desktop;
-                color: $darkblue;
-                margin-bottom: 0;
-                margin-block-end: 0;
-    
-            }
-    
-            .hq-phone{
-                @extend %contact-phone;
+                font-size: $small-desktop;
+                line-height: $regular-lh-desktop;
+
             }
 
-            .card-foot{
+            .equipo-button{
+                @extend %cntb-button;
+                border-color: $lightpeach;
+                color: $lightpeach;
+                &:hover{
+                    background-color: $white;
+                    color: $darkblue;
+                }
+
+            }
+        }
+    }
+
+    section.contacto{
+        padding-top: $sp-70;
+
+        .promo-contacto{
+            padding-bottom: 40px;
+            &::after{
+                content: '';
                 position: absolute;
-                left: 0px;
-                bottom: 0;
+                top: 100px;
+                display: block;
                 width: 100%;
-                padding: 10px;
-                background-color: $lightpeach;
+                height: 285px;
+                border: 2px solid $darkblue;
+                z-index: -1;
+            }
 
-                .view-gmaps{
-                    font-family: $primary-medium;
-                    font-size: 13px;
+            .col-promo{
+                padding-left: 20px;
+
+                .contacto-slogan{
+                    padding-top: 160px;
+                    @extend %serif-title;
                     color: $darkblue;
                 }
             }
+                
+            .col-paraguas{
+                padding-left: 65px;
 
+                .contacto-paraguas{
+                    width: 275px;
+                }
+            
+                .contacto-text{
+                    font-family: $primary-bold;
+                    font-size: $small-desktop;
+                    line-height: $regular-lh-desktop;
+                    color: $darkblue;
+                    span{
+                        font-family: $primary-light;
+                    }
+                }
+            }
+        
         }
 
-        .contacto-card-deco-arrow{
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            transform: rotate(90deg);
-            fill: $darkblue;
+        .contacto-card{
+            position: relative;
+            height: 250px;
+            background-color: $pale;
+            padding-left: 20px;
+            max-width: 48%;
+            /* margin:{
+                left: 5px;
+                right: 5px;
+            } */
+
+            .hq-header{
+
+                p{
+                    font-family: $secondary-bold;
+                    &.hq-no{
+                        padding-top: 30px;
+                        margin-bottom: 0;
+                        margin-block-end: 0;
+                        font-size: 30px;
+                        line-height: 36px;
+                        color: $lightpeach;
+
+                        span{
+                            position: relative;
+                            &::after{
+                                content: url(../../img/home/ico/svg/location-icon.svg);
+                                display: inline;
+                                position: absolute;
+                                top: -15px;
+                                left: 10px;
+                            }
+                        }
+
+
+                    }
+                    &.hq-name{
+                        font-size: 20px;
+                        line-height: 36px;
+                        color: $darkblue;
+                    }
+                }
+            }
+            
+            .hq-contact-info{
+
+                .hq-address{
+                    font-family: $primary-light;
+                    font-size: $paragraph-desktop;
+                    line-height: $small-lh-desktop;
+                    color: $darkblue;
+                    margin-bottom: 0;
+                    margin-block-end: 0;
+        
+                }
+        
+                .hq-phone{
+                    @extend %contact-phone;
+                }
+
+                .card-foot{
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 10px;
+                    background-color: $lightpeach;
+
+                    .view-gmaps{
+                        font-family: $primary-medium;
+                        font-size: 13px;
+                        color: $darkblue;
+                    }
+                }
+
+            }
+
+            .contacto-card-deco-arrow{
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                transform: rotate(90deg);
+                fill: $darkblue;
+            }
+        
         }
-    
+
+        .email-footer{
+            height: 150px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: $darkblue;
+
+            .send-us-mail{
+                font-family: $primary-light;
+                font-size: $small-desktop;
+                line-height: $regular-lh-desktop;
+                color: $lightbrown;
+            }
+
+            .email-address{
+                font-family: $primary-medium;
+                font-size: $small-desktop;
+                color: $lighterblue
+            }
+        }
     }
 
-    .email-footer{
-        height: 150px;
-        margin-top: 20px;
-        padding: 20px;
-        background-color: $darkblue;
-
-        .send-us-mail{
-            font-family: $primary-light;
-            font-size: $small-desktop;
-            line-height: $regular-lh-desktop;
-            color: $lightbrown;
-        }
-
-        .email-address{
-            font-family: $primary-medium;
-            font-size: $small-desktop;
-            color: $lighterblue
-        }
-    }
 }
 
 
