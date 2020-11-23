@@ -19,6 +19,20 @@
     letter-spacing: -2px; // is it normal?
 }
 
+%seguros-page-title{
+    font-family: $primary-bold;
+    font-size: $big-title-desktop;
+    line-height: $big-title-lh-desktop;
+    color: $darkblue;
+}
+
+%seguros-page-paragraph{
+    font-family: $primary-light;
+    font-size: 20px;
+    line-height: 22px;
+    color: $darkblue;
+}
+
 %carousel-img-title{
     @extend %serif-title;
     font-size: 41px;
@@ -37,3 +51,25 @@
         color: $white;
     }
 }
+
+%seguros-detail-top-banner{
+    height: 345px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .banner-title{
+        height: 100%;
+
+        .banner-title-text{
+            padding-bottom: 40px;
+            font-family: $primary-black;
+            font-size: 40px;
+            color: $white;
+            
+            span{
+                font-family: $primary-light;
+            }
+        }
+    }
+}
+
