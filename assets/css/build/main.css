@@ -215,7 +215,7 @@ section.protegemos-img img {
 }
 
 .home-page .home-card.asistencia-card {
-  background-image: url(../../img/home/jpeg/asistencia.jpg);
+  background-image: url(../../img/home/jpeg/asistencia@2x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -327,7 +327,7 @@ section.protegemos-img img {
   right: -6%;
 }
 
-.home-page section.carrusel .carousel-ctrl-arrow.prev {
+.home-page section.carrusel .carousel-ctrl-arrow.next {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -556,9 +556,6 @@ section.protegemos-img img {
   position: absolute;
   top: 15px;
   right: 20px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  fill: #003b61;
 }
 
 .home-page section.contacto .email-footer {
