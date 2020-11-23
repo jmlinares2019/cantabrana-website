@@ -20,7 +20,14 @@ section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-page .home-
   line-height: 35px;
 }
 
-.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas-title {
+.seguros-detail-page .container-bg section.presentation .presentation-text h2, .equipo-page .container-bg section.presentation .presentation-text h2 {
+  font-family: "GT America Bold", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  color: #003b61;
+}
+
+.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas-title, .equipo-page .container-bg section.keywords p {
   font-family: "Canela-Bold", serif;
   font-size: 55px;
   line-height: 61px;
@@ -29,14 +36,7 @@ section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-page .home-
   letter-spacing: -2px;
 }
 
-.seguros-detail-page .container-bg section.presentation .presentation-text h2 {
-  font-family: "GT America Bold", sans-serif;
-  font-size: 32px;
-  line-height: 35px;
-  color: #003b61;
-}
-
-.seguros-detail-page .container-bg section.presentation .presentation-text .seguros-page-paragraph, .seguros-detail-page .container-bg section.reasons .reason-text, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas h3, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas p {
+.seguros-detail-page .container-bg section.presentation .presentation-text .seguros-page-paragraph, .seguros-detail-page .container-bg section.reasons .reason-text, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas h3, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas p, .equipo-page .container-bg section.featured h3, .equipo-page .container-bg section.featured p {
   font-family: "GT America Light", sans-serif;
   font-size: 20px;
   line-height: 22px;
@@ -62,24 +62,24 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .col-4:last-
   color: #ffffff;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner {
+.seguros-detail-page .seguros-detail-top-banner.top-banner, .equipo-page .top-banner {
   height: 345px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title, .equipo-page .top-banner .banner-title {
   height: 100%;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text {
   padding-bottom: 40px;
   font-family: "GT America Black", sans-serif;
   font-size: 40px;
   color: #ffffff;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text span {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text span, .equipo-page .top-banner .banner-title .banner-title-text span {
   font-family: "GT America Light", sans-serif;
 }
 
@@ -836,5 +836,165 @@ section.protegemos-img img {
 
 .seguros-detail-page .container-bg section.llamanos-cta svg .st0 {
   fill: #ecf0f3;
+}
+
+.equipo-page {
+  /*   section, div{
+        border: 1px solid orange;
+    } */
+}
+
+.equipo-page .top-banner {
+  color: #003b61;
+}
+
+.equipo-page .top-banner.top-banner {
+  background-image: url(/assets/img/equipo/banner-top-equipo@3x.jpg);
+}
+
+.equipo-page .top-banner.top-banner .banner-title-text {
+  color: #fed198;
+}
+
+.equipo-page .container-bg {
+  background-color: #ecf0f3;
+}
+
+.equipo-page .container-bg section.presentation {
+  padding-top: 70px;
+}
+
+.equipo-page .container-bg section.presentation .presentation-text h2 span {
+  font-family: "GT America Light", sans-serif;
+}
+
+.equipo-page .container-bg section.presentation .equipo-presentation-paragraph {
+  padding-top: 25px;
+  font-family: "GT America Light", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: #003b61;
+}
+
+.equipo-page .container-bg section.presentation .equipo-presentation-paragraph span {
+  padding-top: 20px;
+  font-family: "GT America Bold", sans-serif;
+}
+
+.equipo-page .container-bg section.presentation .presentation-highlight {
+  margin-top: 25px;
+  padding: 60px 2.5em;
+  font-family: "GT America Light", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: #003b61;
+  background-color: #fed198;
+}
+
+.equipo-page .container-bg section.presentation .presentation-highlight span {
+  font-family: "GT America Bold", sans-serif;
+}
+
+.equipo-page .container-bg section.presentation .equipo-presentation-slogan {
+  font-family: "GT America Bold", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: #003b61;
+}
+
+.equipo-page .container-bg section.keywords {
+  padding-top: 85px;
+}
+
+.equipo-page .container-bg section.keywords p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Canela-Regular", serif;
+  font-size: 32px;
+  line-height: 35px;
+  border-top: 4px solid #ffffff;
+}
+
+.equipo-page .container-bg section.keywords p:last-child {
+  border-bottom: 4px solid #ffffff;
+}
+
+.equipo-page .container-bg section.keywords p:hover {
+  cursor: default;
+  -webkit-animation-name: scale-up;
+          animation-name: scale-up;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes scale-up {
+  from {
+    font-size: current;
+  }
+  to {
+    font-size: 60px;
+  }
+}
+
+@keyframes scale-up {
+  from {
+    font-size: current;
+  }
+  to {
+    font-size: 60px;
+  }
+}
+
+.equipo-page .container-bg section.featured {
+  padding-top: 150px;
+}
+
+.equipo-page .container-bg section.featured .featured-img {
+  mix-blend-mode: multiply;
+}
+
+.equipo-page .container-bg section.featured .featured-img.justicia {
+  padding-top: 115px;
+  padding-bottom: 50px;
+}
+
+.equipo-page .container-bg section.featured .featured-img.ayuda {
+  padding-bottom: 130px;
+}
+
+.equipo-page .container-bg section.featured h3.our-asset, .equipo-page .container-bg section.featured p.our-asset {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  line-height: 15px;
+  margin-bottom: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  border-top: 2px solid #beced6;
+}
+
+.equipo-page .container-bg section.featured h3.our-asset:last-child, .equipo-page .container-bg section.featured p.our-asset:last-child {
+  border-bottom: 2px solid #beced6;
+}
+
+.equipo-page .container-bg section.featured h3.decorated::before, .equipo-page .container-bg section.featured p.decorated::before {
+  content: '';
+  display: block;
+  width: 175px;
+  height: 1px;
+  padding-bottom: 25px;
+  border-top: 8px solid #003b61;
+}
+
+.equipo-page .container-bg section.featured h3 {
+  font-family: "GT America Bold", sans-serif;
+}
+
+.equipo-page .container-bg section.featured .pt-5 {
+  padding-top: 320px !important;
 }
 /*# sourceMappingURL=main.css.map */
