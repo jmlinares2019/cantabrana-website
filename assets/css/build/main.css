@@ -20,7 +20,7 @@ section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-page .home-
   line-height: 35px;
 }
 
-.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .index-seguros-page .container-bg .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas-title {
+.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas-title {
   font-family: "Canela-Bold", serif;
   font-size: 55px;
   line-height: 61px;
@@ -619,37 +619,41 @@ section.protegemos-img img {
   margin-bottom: 25px;
 }
 
-.index-seguros-page .container-bg .seguros-title {
+.index-seguros-page .container-bg section.llamanos-cta {
+  padding-top: 500px;
+}
+
+.seguros-title {
   padding-bottom: 50px;
 }
 
-.index-seguros-page .container-bg .nav-link {
+.nav-link {
   font-family: 'GT America Expanded Ultra Light', sans-serif;
   font-size: 10px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.index-seguros-page .container-bg .nav-link.active {
+.nav-link.active {
   background-color: inherit !important;
   border-color: transparent !important;
   border-bottom: 8px solid #003b61 !important;
 }
 
-.index-seguros-page .container-bg .nav-link.active span {
+.nav-link.active span {
   font-weight: bolder;
 }
 
-.index-seguros-page .container-bg .nav-link:hover {
+.nav-link:hover {
   border-color: transparent !important;
   border-bottom: 8px solid #003b61 !important;
 }
 
-.index-seguros-page .container-bg .tab-content {
+.tab-content {
   padding-top: 60px;
 }
 
-.index-seguros-page .container-bg .tab-content .seguros-item {
+.tab-content .seguros-item {
   position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -659,17 +663,17 @@ section.protegemos-img img {
   border: 8px solid #ffffff;
 }
 
-.index-seguros-page .container-bg .tab-content .seguros-item:hover {
+.tab-content .seguros-item:hover {
   background-color: #ffffff;
   -webkit-box-shadow: 5px 5px 40px 5px #d5c195;
           box-shadow: 5px 5px 40px 5px #d5c195;
 }
 
-.index-seguros-page .container-bg .tab-content .seguros-item svg {
+.tab-content .seguros-item svg {
   width: 85px;
 }
 
-.index-seguros-page .container-bg .tab-content .seguros-item .vehicle-class {
+.tab-content .seguros-item .vehicle-class {
   position: absolute;
   bottom: 5px;
   font-family: "GT America Bold", sans-serif;
@@ -677,46 +681,42 @@ section.protegemos-img img {
   color: #003b61;
 }
 
-.index-seguros-page .container-bg .tab-content #nav-contact .seguros-item {
+.tab-content #nav-contact .seguros-item {
   border-color: #003b61;
 }
 
-.index-seguros-page .container-bg .tab-content #nav-contact .seguros-item svg {
+.tab-content #nav-contact .seguros-item svg {
   fill: #003b61;
 }
 
-.index-seguros-page .container-bg .tab-content #nav-contact .seguros-item:hover {
+.tab-content #nav-contact .seguros-item:hover {
   background-color: #003b61;
   -webkit-box-shadow: 5px 5px 40px 5px inherit;
           box-shadow: 5px 5px 40px 5px inherit;
 }
 
-.index-seguros-page .container-bg .tab-content #nav-contact .seguros-item:hover svg {
+.tab-content #nav-contact .seguros-item:hover svg {
   fill: #ffffff;
 }
 
-.index-seguros-page .container-bg .tab-content #nav-contact .seguros-item:hover span {
+.tab-content #nav-contact .seguros-item:hover span {
   color: #ffffff;
 }
 
-.index-seguros-page .container-bg .tab-content .seguros-category {
+.tab-content .seguros-category {
   color: #ffffff;
   border-color: transparent;
 }
 
-.index-seguros-page .container-bg .tab-content .seguros-category.agricola {
+.tab-content .seguros-category.agricola {
   background-color: #003b61;
 }
 
-.index-seguros-page .container-bg .tab-content .seguros-category span {
+.tab-content .seguros-category span {
   font-family: "GT America Bold", sans-serif;
   font-size: 15px;
   line-height: 17px;
   color: #ffffff;
-}
-
-.index-seguros-page .container-bg section.llamanos-cta {
-  padding-top: 500px;
 }
 
 .seguros-detail-page .seguros-detail-top-banner {
