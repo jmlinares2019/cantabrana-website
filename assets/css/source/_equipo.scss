@@ -1,0 +1,164 @@
+.equipo-page{
+
+  /*   section, div{
+        border: 1px solid orange;
+    } */
+
+    .top-banner{
+        color: $darkblue;
+        &.top-banner{
+            @extend %top-img-banner;
+            background-image: url(/assets/img/equipo/banner-top-equipo@3x.jpg);
+
+            .banner-title-text{
+                color: $lightpeach;
+            }
+        }
+
+    }
+
+    .container-bg{
+        background-color: $pale-grey;
+
+        section.presentation{
+            padding-top: 70px;
+
+            .presentation-text{
+                
+                h2{
+                    @extend %seguros-page-title;
+
+                    span{
+                        font-family: $primary-light;
+                    }
+                }
+                
+            }
+
+            .equipo-presentation-paragraph{
+                padding-top: 25px;
+                font-family: $primary-light;
+                font-size: $small-desktop;
+                line-height: $regular-lh-desktop;
+                color: $darkblue;
+
+                span{
+                    padding-top: 20px;
+                    font-family: $primary-bold;
+                }
+            }
+    
+            .presentation-highlight{
+                margin-top: 25px;
+                padding: 60px 2.5em;
+                font-family: $primary-light;
+                font-size: $small-desktop;
+                line-height: $regular-lh-desktop;
+                color: $darkblue;
+                background-color: $lightpeach;
+
+                span{
+                    font-family: $primary-bold;
+                }
+            }
+
+            .equipo-presentation-slogan{
+                font-family: $primary-bold;
+                font-size: $small-desktop;
+                line-height: $regular-lh-desktop;
+                color: $darkblue;
+            }
+        }
+
+        section.keywords{
+            padding-top: 85px;
+
+            p{
+                padding:{
+                    top: 15px;
+                    bottom: 15px;
+                }
+                @extend %serif-title; // truco. Cambiar!
+                font-family: $secondary-regular; // no funciona!!
+                font-size: $big-title-desktop;
+                line-height: $big-title-lh-desktop;
+                border-top: 4px solid $white;
+                &:last-child{
+                    border-bottom: 4px solid $white;
+                }
+                &:hover{
+                    cursor: default;  
+                    animation-name: scale-up;
+                    animation-duration: .5s;
+                    animation-fill-mode: forwards;
+                    animation-direction: alternate;
+                }
+                    @keyframes scale-up{
+                        from{
+                            font-size: current;
+                        }
+                        to{
+                            font-size: 60px;
+                        }
+                    } 
+            }
+        }
+
+        section.featured{
+            padding-top: 150px;
+
+            .featured-img{
+                mix-blend-mode: multiply;
+                &.justicia{
+                    padding:{
+                            top: 115px;
+                            bottom: 50px;
+                        }
+                }
+                &.ayuda{
+                    padding-bottom: 130px;
+                }
+
+            }
+           
+
+            h3,p{
+                @extend %seguros-page-paragraph;
+                &.our-asset{
+                    padding:{
+                        top: 5px;
+                        bottom: 5px;
+                    }
+                    font-size: $small-desktop;
+                    line-height: $small-lh-desktop;
+                    margin-bottom: 0;
+                    margin-block-end: 0;;
+                    border-top: 2px solid $lightgrey;
+                    &:last-child{
+                        border-bottom: 2px solid $lightgrey;
+                    }
+                }
+                &.decorated::before{
+                    content: '';
+                    display: block;
+                    width: 175px;
+                    height: 1px;
+                    padding-bottom: 25px;
+                    border-top: 8px solid $darkblue;
+                }
+            }
+
+            h3{
+                font-family: $primary-bold;
+            }
+
+            .pt-5{
+                padding-top: 320px !important;
+            }
+
+        }
+
+
+    }
+
+}
