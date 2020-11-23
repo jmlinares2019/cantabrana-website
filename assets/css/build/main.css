@@ -20,7 +20,7 @@ section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-card .home-
   line-height: 35px;
 }
 
-section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page section.section-ventajas .col-9 .ventajas-title {
+section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas-title {
   font-family: "Canela-Bold", serif;
   font-size: 55px;
   line-height: 61px;
@@ -29,14 +29,14 @@ section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title,
   letter-spacing: -2px;
 }
 
-.seguros-detail-page section.presentation .presentation-text h2 {
+.seguros-detail-page .container-bg section.presentation .presentation-text h2 {
   font-family: "GT America Bold", sans-serif;
   font-size: 32px;
   line-height: 35px;
   color: #003b61;
 }
 
-.seguros-detail-page section.presentation .presentation-text .seguros-page-paragraph, .seguros-detail-page section.reasons .reason-text, .seguros-detail-page section.section-ventajas .col-9 .ventajas h3, .seguros-detail-page section.section-ventajas .col-9 .ventajas p {
+.seguros-detail-page .container-bg section.presentation .presentation-text .seguros-page-paragraph, .seguros-detail-page .container-bg section.reasons .reason-text, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas h3, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas p {
   font-family: "GT America Light", sans-serif;
   font-size: 20px;
   line-height: 22px;
@@ -62,25 +62,24 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .col-4:last-
   color: #ffffff;
 }
 
-.seguros-detail-page.top-banner {
+.seguros-detail-page .seguros-detail-top-banner.top-banner {
   height: 345px;
-  margin-bottom: 70px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.seguros-detail-page.top-banner .banner-title {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title {
   height: 100%;
 }
 
-.seguros-detail-page.top-banner .banner-title .banner-title-text {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text {
   padding-bottom: 40px;
   font-family: "GT America Black", sans-serif;
   font-size: 40px;
   color: #ffffff;
 }
 
-.seguros-detail-page.top-banner .banner-title .banner-title-text span {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text span {
   font-family: "GT America Light", sans-serif;
 }
 
@@ -706,61 +705,66 @@ section.index-seguros.page-seguros .seguros-item {
   padding-top: 500px;
 }
 
-/* section, div{
-    border: 1px solid blueviolet;
-} */
-.seguros-detail-page {
+.seguros-detail-page .seguros-detail-top-banner {
   color: #003b61;
 }
 
-.seguros-detail-page.top-banner.automovil {
+.seguros-detail-page .seguros-detail-top-banner.top-banner.automovil {
   background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner@3x.jpg);
 }
 
-.seguros-detail-page section.presentation .presentation-text .seguros-page-paragraph {
+.seguros-detail-page .container-bg {
+  background-color: #ecf0f3;
+}
+
+.seguros-detail-page .container-bg section.presentation {
+  padding-top: 70px;
+}
+
+.seguros-detail-page .container-bg section.presentation .presentation-text .seguros-page-paragraph {
   padding-top: 25px;
   width: 70%;
 }
 
-.seguros-detail-page section.presentation .presentation-img {
+.seguros-detail-page .container-bg section.presentation .presentation-img {
   margin-top: -35px;
   mix-blend-mode: multiply;
 }
 
-.seguros-detail-page section.reasons {
+.seguros-detail-page .container-bg section.reasons {
   padding-top: 100px;
 }
 
-.seguros-detail-page section.reasons .reason-text {
+.seguros-detail-page .container-bg section.reasons .reason-text {
   padding-top: 65px;
 }
 
-.seguros-detail-page section.cta-presupuesto {
+.seguros-detail-page .container-bg section.cta-presupuesto {
   padding-top: 90px;
 }
 
-.seguros-detail-page section.cta-presupuesto .col {
+.seguros-detail-page .container-bg section.cta-presupuesto .col {
   background-color: #003b61;
   padding: 10px;
 }
 
-.seguros-detail-page section.cta-presupuesto .col a {
+.seguros-detail-page .container-bg section.cta-presupuesto .col a {
   font-family: 'GT America Expanded Black', sans-serif;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #fed198;
 }
 
-.seguros-detail-page section.section-ventajas {
+.seguros-detail-page .container-bg section.section-ventajas {
   padding-top: 130px;
 }
 
-.seguros-detail-page section.section-ventajas .col-9 {
+.seguros-detail-page .container-bg section.section-ventajas .col-9 {
   position: relative;
   background-color: #ccfeff;
 }
 
-.seguros-detail-page section.section-ventajas .col-9::before {
+.seguros-detail-page .container-bg section.section-ventajas .col-9::before {
   content: '';
   position: absolute;
   display: inline;
@@ -772,7 +776,7 @@ section.index-seguros.page-seguros .seguros-item {
   background-color: #ffffff;
 }
 
-.seguros-detail-page section.section-ventajas .col-9::after {
+.seguros-detail-page .container-bg section.section-ventajas .col-9::after {
   content: '';
   position: absolute;
   display: inline;
@@ -784,39 +788,43 @@ section.index-seguros.page-seguros .seguros-item {
   background-color: #ffffff;
 }
 
-.seguros-detail-page section.section-ventajas .col-9 .ventajas-title {
+.seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas-title {
   padding-top: 70px;
 }
 
-.seguros-detail-page section.section-ventajas .col-9 .ventajas {
+.seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas {
   padding-top: 75px;
 }
 
-.seguros-detail-page section.section-ventajas .col-9 .ventajas .col-6 {
+.seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas .col-6 {
+  padding-left: 4em;
+  padding-right: 4em;
   min-height: 350px;
 }
 
-.seguros-detail-page section.section-ventajas .col-9 .ventajas h3 {
+.seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas h3 {
+  padding-top: 10px;
   font-family: "GT America Bold", sans-serif;
   margin-bottom: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.seguros-detail-page section.promo-img-banner {
+.seguros-detail-page .container-bg section.promo-img-banner {
   padding-top: 220px;
 }
 
-.seguros-detail-page section.promo-img-banner .col {
+.seguros-detail-page .container-bg section.promo-img-banner .col {
   padding-left: 0;
   padding-right: 0;
 }
 
-.seguros-detail-page section.llamanos-cta {
+.seguros-detail-page .container-bg section.llamanos-cta {
   padding-top: 220px;
+  padding-bottom: 220px;
 }
 
-.seguros-detail-page section.llamanos-cta svg .st0 {
+.seguros-detail-page .container-bg section.llamanos-cta svg .st0 {
   fill: #ecf0f3;
 }
 /*# sourceMappingURL=main.css.map */
