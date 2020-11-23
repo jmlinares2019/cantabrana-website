@@ -3,7 +3,7 @@
     .seguros-detail-top-banner{
         color: $darkblue;
         &.top-banner{
-            @extend %seguros-detail-top-banner;
+            @extend %top-img-banner;
             &.automovil{
                 background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner@3x.jpg);
             }
