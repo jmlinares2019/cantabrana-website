@@ -28,8 +28,6 @@
     letter-spacing: -2px; // is it normal?
 }
 
-
-
 %seguros-page-paragraph{
     font-family: $primary-light;
     font-size: 20px;
@@ -60,6 +58,7 @@
     height: 345px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     
     .banner-title{
         height: 100%;
