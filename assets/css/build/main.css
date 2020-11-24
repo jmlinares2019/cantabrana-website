@@ -20,7 +20,7 @@ section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-page .home-
   line-height: 35px;
 }
 
-.seguros-detail-page .container-bg section.presentation .presentation-text h2, .equipo-page .container-bg section.presentation .presentation-text h2 {
+.seguros-detail-page .container-bg section.presentation .presentation-text h2, .equipo-page .container-bg section.presentation .presentation-text h2, .index-asistencia-page .container-bg section.selection-grid .selection-grid-text h2, .index-asistencia-page .container-bg section.selection-grid .selection-grid-text p {
   font-family: "GT America Bold", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -62,24 +62,25 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .col-4:last-
   color: #ffffff;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner, .equipo-page .top-banner {
+.seguros-detail-page .seguros-detail-top-banner.top-banner, .equipo-page .top-banner, .index-asistencia-page .asistencia-top-banner.top-banner {
   height: 345px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title, .equipo-page .top-banner .banner-title {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title, .equipo-page .top-banner .banner-title, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title {
   height: 100%;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text {
   padding-bottom: 40px;
   font-family: "GT America Black", sans-serif;
   font-size: 40px;
   color: #ffffff;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text span, .equipo-page .top-banner .banner-title .banner-title-text span {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text span, .equipo-page .top-banner .banner-title .banner-title-text span, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text span {
   font-family: "GT America Light", sans-serif;
 }
 
@@ -996,5 +997,81 @@ section.protegemos-img img {
 
 .equipo-page .container-bg section.featured .pt-5 {
   padding-top: 320px !important;
+}
+
+.index-asistencia-page .asistencia-top-banner {
+  color: #003b61;
+}
+
+.index-asistencia-page .asistencia-top-banner.top-banner {
+  background-image: url(/assets/img/index_asistencia/png/Asistencia_top-banner.png);
+}
+
+.index-asistencia-page .asistencia-top-banner.top-banner img {
+  position: absolute;
+  left: 45%;
+  top: 35%;
+}
+
+.index-asistencia-page .container-bg {
+  background-color: #ecf0f3;
+}
+
+.index-asistencia-page .container-bg section.selection-grid {
+  padding-top: 70px;
+}
+
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-text h2, .index-asistencia-page .container-bg section.selection-grid .selection-grid-text p {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-text p {
+  font-family: "GT America Light", sans-serif;
+  padding-bottom: 20px;
+}
+
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-content {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 40px;
+  border-bottom: 4px solid #ffffff;
+}
+
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-content .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 14.5%;
+  max-height: 115px;
+  padding: 30px 60px;
+  margin: 20px 10px 0;
+  background-color: #ffffff;
+}
+
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item:hover {
+  border: 4px solid #003b61;
+  -webkit-box-shadow: #fed198;
+          box-shadow: #fed198;
+}
+
+.index-asistencia-page .container-bg section.llamanos-cta {
+  padding-top: 220px;
+}
+
+.index-asistencia-page .container-bg section.llamanos-cta svg .st0 {
+  fill: #ecf0f3;
 }
 /*# sourceMappingURL=main.css.map */
