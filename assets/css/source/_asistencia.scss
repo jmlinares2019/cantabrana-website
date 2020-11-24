@@ -1,0 +1,79 @@
+.index-asistencia-page{
+
+    .asistencia-top-banner{
+        color: $darkblue;
+        &.top-banner{
+            @extend %top-img-banner;
+            background-image: url(/assets/img/index_asistencia/png/Asistencia_top-banner.png);
+
+            img{
+                position: absolute;
+                left: 45%;
+                top: 35%;
+            }
+            
+        }
+
+    }
+
+    .container-bg{
+        background-color: $pale-grey;
+
+        section.selection-grid{
+            padding-top: 70px;
+
+            .selection-grid-text{
+                
+                h2,p{
+                    @extend %seguros-page-title;
+                    margin-block-end: 0;
+                }
+
+                p{
+                    font-family: $primary-light;
+                    padding-bottom: 20px;
+                }
+                
+            }
+
+            .selection-grid-content{
+                padding:{
+                    left: 0;
+                    right: 0;
+                    bottom: 40px;
+                }
+                border-bottom: 4px solid $white;
+
+                .row{
+                    justify-content: space-between;
+                }
+
+                .company-item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 14.5%;
+                    max-height: 115px;
+                    padding: 30px 60px;
+                    margin: 20px 10px 0;
+                    background-color: $white;
+                    &:hover{
+                        border: 4px solid $darkblue;
+                        // background-color: $lightpeach;
+                        box-shadow: $lightpeach;
+                    }
+                }
+            }
+    
+        }
+    
+        section.llamanos-cta{
+            padding-top: 220px;
+    
+            svg .st0{
+                fill: $pale-grey;
+            }
+        }
+    }
+
+}
