@@ -62,7 +62,7 @@
                 svg{
                     position: absolute;
                     left: 25%;
-                    fill: $white;
+                    fill: $lightbrown;
                 }
             }
             
@@ -70,6 +70,11 @@
 
         section.hqs{
             padding-top: 20px;
+
+            .col-8{
+                padding-top: 20px;
+                border-top: 8px solid $lightbrown;
+            }
             
             .hq-timetables{
                 

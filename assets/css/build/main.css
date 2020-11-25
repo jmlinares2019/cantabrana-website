@@ -85,7 +85,7 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .col-4:last-
 }
 
 .navbar {
-  display: none;
+  background-color: crimson;
 }
 
 header.header-cntb {
@@ -1056,11 +1056,16 @@ section.protegemos-img img {
 .contact-page .bg-container section.social-icons .top-sm-icon svg {
   position: absolute;
   left: 25%;
-  fill: #ffffff;
+  fill: #fbe3c6;
 }
 
 .contact-page .bg-container section.hqs {
   padding-top: 20px;
+}
+
+.contact-page .bg-container section.hqs .col-8 {
+  padding-top: 20px;
+  border-top: 8px solid #fbe3c6;
 }
 
 .contact-page .bg-container section.hqs .hq-timetables h2 {
