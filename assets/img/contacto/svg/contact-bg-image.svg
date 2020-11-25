@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="bg-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 397.6 397.6" style="enable-background:new 0 0 397.6 397.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Unión_2);}
+	.st1{fill:#0B4269;}
+</style>
+<filter  filterUnits="userSpaceOnUse" height="397.625" id="Unión_2" width="397.625" x="0" y="0">
+	<feOffset  dy="15"></feOffset>
+	<feGaussianBlur  result="blur" stdDeviation="10"></feGaussianBlur>
+	<feFlood  flood-color="#060316" flood-opacity=".149"></feFlood>
+	<feComposite  in2="blur" operator="in"></feComposite>
+	<feComposite  in="SourceGraphic" operator="over"></feComposite>
+</filter>
+<g id="Grupo_198" transform="translate(-761.375 -289)">
+	<g transform="translate(761.38 289)" class="st0">
+		<path id="Unión_2-2_1_" class="st1" d="M269.9,351.2L31.4,112.8c-1.9-1.9-1.9-4.9,0-6.8l13.6-13.6c1.9-1.9,4.9-1.9,6.8,0
+			l238.5,238.5c1.9,1.9,1.9,4.9,0,6.8l-13.6,13.6c-0.9,0.9-2.1,1.4-3.4,1.4C272,352.6,270.8,352.1,269.9,351.2L269.9,351.2z
+			 M61.1,321.5V207.7c0-0.4,0.3-0.7,0.7-0.7h28.4c0.4,0,0.7,0.3,0.7,0.7c0,0,0,0,0,0V291c0,0.4,0.3,0.7,0.7,0.7h0H175
+			c0.4,0,0.7,0.3,0.7,0.7v28.4c0,0.4-0.3,0.7-0.7,0.7H61.1z M307.8,313.4L69.3,75c-1.9-1.9-1.9-4.9,0-6.8L83,54.5
+			c1.9-1.9,4.9-1.9,6.8,0l238.5,238.5c1.9,1.9,1.9,4.9,0,6.8l-13.6,13.6c-0.9,0.9-2.1,1.4-3.4,1.4
+			C309.9,314.8,308.7,314.3,307.8,313.4L307.8,313.4z M345.7,275.3L107.3,36.9c-1.9-1.9-1.9-4.9,0-6.8l13.6-13.6
+			c1.9-1.9,4.9-1.9,6.8,0l238.5,238.5c1.9,1.9,1.9,4.9,0,6.8l-13.7,13.6c-0.9,0.9-2.1,1.4-3.4,1.4
+			C347.9,276.8,346.6,276.2,345.7,275.3L345.7,275.3z M307.1,160.9c-0.4,0-0.7-0.3-0.7-0.7c0,0,0,0,0,0V76.9c0-0.4-0.3-0.7-0.7-0.7
+			h-83.3c-0.4,0-0.7-0.3-0.7-0.7c0,0,0,0,0,0V47.1c0-0.4,0.3-0.7,0.7-0.7h113.8v113.8c0,0.4-0.3,0.7-0.7,0.7L307.1,160.9z"/>
+	</g>
+</g>
+</svg>

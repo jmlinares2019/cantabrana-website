@@ -1,0 +1,188 @@
+.contact-page{
+
+    color: $white !important;
+
+    .bg-container{
+        background-color: $darkblue;
+
+        .header-cntb{
+            
+            .col-6{
+                opacity: .4;
+
+                h2.home-title{
+                    color: $white;
+                }
+            }
+
+        }
+
+        .contact-data{
+            
+            padding-top: 70px;
+            font-size: 22px;
+
+            .bg-img{
+                padding:{
+                    left: 0;
+                    right: 0;
+                }
+                height: 375px;
+                background-image: url(/assets/img/contacto/svg/contact-bg-image.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: center;
+    
+
+                p{
+                    padding-top: 20px;
+                    font-family: $primary-medium;
+                }
+    
+                a{
+                    font-family: $primary-light;
+                    color: $lighterblue;
+                }
+    
+                img{
+                    width: 365px;
+                }
+            }
+            
+
+            
+        }
+
+        section.social-icons{
+            padding-top: 60px;
+
+            .top-sm-icon{
+                position: relative;
+
+                svg{
+                    position: absolute;
+                    left: 25%;
+                    fill: $white;
+                }
+            }
+            
+        }
+
+        section.hqs{
+            padding-top: 20px;
+            
+            .hq-timetables{
+                
+                h2{
+                    font-family: $primary-bold;
+                    font-size: $regular-desktop;
+                    line-height: $regular-lh-desktop;
+
+                }
+
+                p{
+                    font-family: $primary-light;
+                    font-size: $tiny-desktop;
+                    line-height: $tiny-lh-desktop;
+                }
+            }
+
+        }
+
+        .contact-cards{
+            padding:{
+                top: 30px;
+                bottom: 30px;
+            }
+        }
+    }
+
+}
+
+// shared styles with section at index.html (home)
+
+.contacto-card{
+    position: relative;
+    height: 250px;
+    background-color: $pale;
+    padding-left: 20px;
+    max-width: 48%;
+    /* margin:{
+        left: 5px;
+        right: 5px;
+    } */
+
+    .hq-header{
+
+        p{
+            font-family: $secondary-bold;
+            &.hq-no{
+                padding-top: 30px;
+                margin-bottom: 0;
+                margin-block-end: 0;
+                font-size: 30px;
+                line-height: 36px;
+                color: $lightpeach;
+
+                span{
+                    position: relative;
+                    &::after{
+                        content: url(../../img/home/ico/svg/location-icon.svg);
+                        display: inline;
+                        position: absolute;
+                        top: -15px;
+                        left: 10px;
+                    }
+                }
+
+
+            }
+            &.hq-name{
+                font-size: 20px;
+                line-height: 36px;
+                color: $darkblue;
+            }
+        }
+    }
+    
+    .hq-contact-info{
+
+        .hq-address{
+            font-family: $primary-light;
+            font-size: $paragraph-desktop;
+            line-height: $small-lh-desktop;
+            color: $darkblue;
+            margin-bottom: 0;
+            margin-block-end: 0;
+
+        }
+
+        .hq-phone{
+            @extend %contact-phone;
+        }
+
+        .card-foot{
+            position: absolute;
+            left: 0px;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: $lightpeach;
+
+            .view-gmaps{
+                font-family: $primary-medium;
+                font-size: 13px;
+                color: $darkblue;
+            }
+        }
+
+    }
+
+    .contacto-card-deco-arrow{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+}
+

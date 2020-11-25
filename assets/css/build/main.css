@@ -8,7 +8,7 @@ a:hover {
   color: inherit;
 }
 
-header.header-cntb .top-contact-phone, .home-page section.contacto .contacto-card .hq-contact-info .hq-phone {
+header.header-cntb .top-contact-phone, .contacto-card .hq-contact-info .hq-phone {
   font-family: "GT America Bold", sans-serif;
   font-size: 13px;
   color: #003b61;
@@ -482,81 +482,6 @@ section.protegemos-img img {
 
 .home-page section.contacto .promo-contacto .col-paraguas .contacto-text span {
   font-family: "GT America Light", sans-serif;
-}
-
-.home-page section.contacto .contacto-card {
-  position: relative;
-  height: 250px;
-  background-color: #fee8cb;
-  padding-left: 20px;
-  max-width: 48%;
-  /* margin:{
-                left: 5px;
-                right: 5px;
-            } */
-}
-
-.home-page section.contacto .contacto-card .hq-header p {
-  font-family: "Canela-Bold", serif;
-}
-
-.home-page section.contacto .contacto-card .hq-header p.hq-no {
-  padding-top: 30px;
-  margin-bottom: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  font-size: 30px;
-  line-height: 36px;
-  color: #fed198;
-}
-
-.home-page section.contacto .contacto-card .hq-header p.hq-no span {
-  position: relative;
-}
-
-.home-page section.contacto .contacto-card .hq-header p.hq-no span::after {
-  content: url(../../img/home/ico/svg/location-icon.svg);
-  display: inline;
-  position: absolute;
-  top: -15px;
-  left: 10px;
-}
-
-.home-page section.contacto .contacto-card .hq-header p.hq-name {
-  font-size: 20px;
-  line-height: 36px;
-  color: #003b61;
-}
-
-.home-page section.contacto .contacto-card .hq-contact-info .hq-address {
-  font-family: "GT America Light", sans-serif;
-  font-size: 13px;
-  line-height: 15px;
-  color: #003b61;
-  margin-bottom: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-}
-
-.home-page section.contacto .contacto-card .hq-contact-info .card-foot {
-  position: absolute;
-  left: 0px;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #fed198;
-}
-
-.home-page section.contacto .contacto-card .hq-contact-info .card-foot .view-gmaps {
-  font-family: "GT America Medium", sans-serif;
-  font-size: 13px;
-  color: #003b61;
-}
-
-.home-page section.contacto .contacto-card .contacto-card-deco-arrow {
-  position: absolute;
-  top: 15px;
-  right: 20px;
 }
 
 .home-page section.contacto .email-footer {
@@ -1073,5 +998,160 @@ section.protegemos-img img {
 
 .index-asistencia-page .container-bg section.llamanos-cta svg .st0 {
   fill: #ecf0f3;
+}
+
+.contact-page {
+  color: #ffffff !important;
+}
+
+.contact-page .bg-container {
+  background-color: #003b61;
+}
+
+.contact-page .bg-container .header-cntb .col-6 {
+  opacity: .4;
+}
+
+.contact-page .bg-container .header-cntb .col-6 h2.home-title {
+  color: #ffffff;
+}
+
+.contact-page .bg-container .contact-data {
+  padding-top: 70px;
+  font-size: 22px;
+}
+
+.contact-page .bg-container .contact-data .bg-img {
+  padding-left: 0;
+  padding-right: 0;
+  height: 375px;
+  background-image: url(/assets/img/contacto/svg/contact-bg-image.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.contact-page .bg-container .contact-data .bg-img p {
+  padding-top: 20px;
+  font-family: "GT America Medium", sans-serif;
+}
+
+.contact-page .bg-container .contact-data .bg-img a {
+  font-family: "GT America Light", sans-serif;
+  color: #ccfeff;
+}
+
+.contact-page .bg-container .contact-data .bg-img img {
+  width: 365px;
+}
+
+.contact-page .bg-container section.social-icons {
+  padding-top: 60px;
+}
+
+.contact-page .bg-container section.social-icons .top-sm-icon {
+  position: relative;
+}
+
+.contact-page .bg-container section.social-icons .top-sm-icon svg {
+  position: absolute;
+  left: 25%;
+  fill: #ffffff;
+}
+
+.contact-page .bg-container section.hqs {
+  padding-top: 20px;
+}
+
+.contact-page .bg-container section.hqs .hq-timetables h2 {
+  font-family: "GT America Bold", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.contact-page .bg-container section.hqs .hq-timetables p {
+  font-family: "GT America Light", sans-serif;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.contact-page .bg-container .contact-cards {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contacto-card {
+  position: relative;
+  height: 250px;
+  background-color: #fee8cb;
+  padding-left: 20px;
+  max-width: 48%;
+  /* margin:{
+        left: 5px;
+        right: 5px;
+    } */
+}
+
+.contacto-card .hq-header p {
+  font-family: "Canela-Bold", serif;
+}
+
+.contacto-card .hq-header p.hq-no {
+  padding-top: 30px;
+  margin-bottom: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fed198;
+}
+
+.contacto-card .hq-header p.hq-no span {
+  position: relative;
+}
+
+.contacto-card .hq-header p.hq-no span::after {
+  content: url(../../img/home/ico/svg/location-icon.svg);
+  display: inline;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+}
+
+.contacto-card .hq-header p.hq-name {
+  font-size: 20px;
+  line-height: 36px;
+  color: #003b61;
+}
+
+.contacto-card .hq-contact-info .hq-address {
+  font-family: "GT America Light", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  color: #003b61;
+  margin-bottom: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.contacto-card .hq-contact-info .card-foot {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #fed198;
+}
+
+.contacto-card .hq-contact-info .card-foot .view-gmaps {
+  font-family: "GT America Medium", sans-serif;
+  font-size: 13px;
+  color: #003b61;
+}
+
+.contacto-card .contacto-card-deco-arrow {
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
