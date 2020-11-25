@@ -1002,9 +1002,6 @@ section.protegemos-img img {
 
 .contact-page {
   color: #ffffff !important;
-  /*     section, div, main{
-        border: 1px solid crimson;
-    } */
 }
 
 .contact-page .bg-container {
@@ -1050,11 +1047,20 @@ section.protegemos-img img {
 
 .contact-page .bg-container section.social-icons {
   padding-top: 60px;
-  padding-bottom: 20px;
 }
 
-.contact-page .bg-container section.social-icons svg {
+.contact-page .bg-container section.social-icons .top-sm-icon {
+  position: relative;
+}
+
+.contact-page .bg-container section.social-icons .top-sm-icon svg {
+  position: absolute;
+  left: 25%;
   fill: #ffffff;
+}
+
+.contact-page .bg-container section.hqs {
+  padding-top: 20px;
 }
 
 .contact-page .bg-container section.hqs .hq-timetables h2 {
