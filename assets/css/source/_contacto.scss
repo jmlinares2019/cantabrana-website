@@ -2,10 +2,6 @@
 
     color: $white !important;
 
-/*     section, div, main{
-        border: 1px solid crimson;
-    } */
-
     .bg-container{
         background-color: $darkblue;
 
@@ -58,17 +54,22 @@
         }
 
         section.social-icons{
-            padding:{
-                top: 60px;
-                bottom: 20px;
-            }
+            padding-top: 60px;
 
-            svg{
-                fill: $white;
+            .top-sm-icon{
+                position: relative;
+
+                svg{
+                    position: absolute;
+                    left: 25%;
+                    fill: $white;
+                }
             }
+            
         }
 
         section.hqs{
+            padding-top: 20px;
             
             .hq-timetables{
                 
