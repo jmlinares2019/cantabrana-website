@@ -1,12 +1,19 @@
 .home-page{
 
+    section, div{
+        border: 1px solid salmon;
+    }
+
     section.home-cards{
-        padding-top: 200px;
+        padding-top: 70px;
+
+      /*   @include for-phone-only{
+            padding-top: 35px;
+        } */
     }
 
     .home-card{
         position: relative;
-        max-width: 49%;
         height: 415px;
         &.seguros-card{
             background-image: url(../../img/home/ico/png/fondo_seguros_home-w-gradient.png);
@@ -18,26 +25,51 @@
             background-image: url(../../img/home/jpeg/asistencia@2x.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
+
+            @include phone-landscape-to-tablet-portrait{
+                max-width: 48%;
+            }
         }
         &.equipo-card{
             background-image: url(../../img/home/jpeg/equipo-mask.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+
+            @include phone-landscape-to-tablet-portrait{
+                max-width: 48%;
+            }
+        }
+
+        @include for-tablet-portrait-up{
+            max-width: 49%;
         }
 
         .home-card-title{
             padding: 30px 0 0 30px;
             @extend %main-title;
             color: $white;
+
+            @include from-iPad-portrait-to-landscape{
+                padding-left: 0;
+                font-size: $big-title-tablet;
+                line-height: $big-title-lh-tablet;
+            }
         }
 
         .home-card-paragraph{
             font-family: $primary-medium;
+            font-size: $small-desktop;
             line-height: $regular-lh-desktop;
             color: $white;
             &.seguros{
                 color: $darkblue;
+            }
+
+            @include from-iPad-portrait-to-landscape{
+                font-size: $paragraph-desktop;
+                line-height: $small-lh-desktop;
             }
         }
 
@@ -86,10 +118,15 @@
             background-color: $white;
 
             .carousel-content{
-                width: 375px;
                 margin: auto;
                 &.carousel-img{
                     position: relative;
+
+                    .carousel-img{
+                        @include till-tablet-portrait{
+                            width: 100%;
+                        } 
+                    }
                     
                     .slide-img-title{
                         position: absolute;
@@ -104,6 +141,10 @@
                     .carousel-item-headline{
                         font-family: $primary-bold;
                         font-size: $regular-desktop;
+                        
+                        @include from-iPad-portrait-to-landscape{
+                            font-size: $regular-tablet;
+                        }
                     }
                 
                     .slide-paragraph{
@@ -117,6 +158,10 @@
                         @extend %cntb-button;
                     }
                 
+                }
+
+                @include for-tablet-landscape-up{
+                    width: 375px;
                 }
             }
             
@@ -218,7 +263,11 @@
         
             img{
                 width: 102%; // ? fix!
-                object-position: 0 -125px;
+
+                @include for-tablet-landscape-up{
+                    object-position: 0 -125px;
+                }
+                
             }
         }
         
@@ -231,16 +280,16 @@
                 padding:{
                     top: $sp-50;
                     bottom: $sp-20;
-            }
+                }
             font-family: $primary-light;
             font-size: $small-desktop;
             color: $lighterblue;
             }
 
             .equipo-slogan{
+                @extend %serif-title;
                 font-family: $secondary-regular;
-                font-size: $huge-title-desktop;
-                line-height: $huge-title-lh-desktop;
+                font-weight: 500;
                 color: $white;
             }
 
@@ -292,7 +341,11 @@
             }
                 
             .col-paraguas{
-                padding-left: 65px;
+
+                @include for-desktop-up{
+                    padding-left: 65px;
+                }
+                
 
                 .contacto-paraguas{
                     width: 275px;
