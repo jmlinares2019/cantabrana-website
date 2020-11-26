@@ -129,7 +129,7 @@
                 line-height: 36px;
                 color: $lightpeach;
 
-                span{
+                span:not(.d-none){
                     position: relative;
                     &::after{
                         content: url(../../img/home/ico/svg/location-icon.svg);
