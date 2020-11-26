@@ -9,6 +9,12 @@
     @media (min-width: 768px) { @content; }
   }
 
+  // From phone landscape to tablet portrait
+
+  @mixin phone-landscape-to-tablet-landscape{
+    @media (min-width: 576px) and (max-width: 991.98px){ @content; }
+  }
+
   // Devices / widths between phone and tablet portrait (included)
   @mixin phone-landscape-to-tablet-portrait {
     @media (min-width: 576px) and (max-width: 767.98px){ @content; }

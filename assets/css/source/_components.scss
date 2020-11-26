@@ -36,6 +36,11 @@
         font-size: $huge-title-tablet;
         line-height: $huge-title-lh-tablet;
     }
+
+    @include phone-landscape-to-tablet-portrait{
+        font-size: $huge-title-mobile;
+        line-height: $huge-title-lh-mobile;
+    }
 }
 
 %seguros-page-paragraph{
