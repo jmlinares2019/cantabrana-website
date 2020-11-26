@@ -514,13 +514,9 @@ section.protegemos-img img {
 
 .home-page section.equipo .equipo-img img {
   width: 102%;
-}
-
-@media (min-width: 992px) {
-  .home-page section.equipo .equipo-img img {
-    -o-object-position: 0 -125px;
-       object-position: 0 -125px;
-  }
+  /* @include for-tablet-landscape-up{
+                    object-position: 0 -125px;
+                } */
 }
 
 .home-page section.equipo .equipo-text {
