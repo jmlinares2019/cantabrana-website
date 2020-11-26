@@ -10,10 +10,8 @@ a:hover {
 
 /* $paragraph-tablet: 13px-.2rem;
 $tiny-tablet: 10px-.2rem; */
-/* $regular-mobile: 17px; */
 /* $paragraph-mobile: 13px; */
 /* $tiny-lh-tablet: 13px; */
-/* $regular-lh-tablet: 13px;*/
 header.header-cntb .top-contact .top-contact-phone, .contacto-card .hq-contact-info .hq-phone {
   font-family: "GT America Bold", sans-serif;
   font-size: 13px;
@@ -65,8 +63,8 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
 
 @media (max-width: 767.98px) {
   .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas-title, .equipo-page .container-bg section.keywords p {
-    font-size: 40px;
-    line-height: 42px;
+    font-size: 34px;
+    line-height: 36px;
   }
 }
 
@@ -133,7 +131,6 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .ct
 
 .navbar {
   display: none;
-  background-color: crimson;
 }
 
 header.header-cntb {
@@ -327,14 +324,18 @@ section.protegemos-img img {
 
 .home-page section.home-cards {
   padding-top: 70px;
-  /*   @include for-phone-only{
-            padding-top: 35px;
-        } */
+}
+
+@media (max-width: 575.98px) {
+  .home-page section.home-cards {
+    margin: 0;
+    padding-top: 35px;
+  }
 }
 
 .home-page .home-card {
   position: relative;
-  height: 415px;
+  height: 250px;
 }
 
 .home-page .home-card.seguros-card {
@@ -344,29 +345,35 @@ section.protegemos-img img {
   background-size: contain;
 }
 
-.home-page .home-card.asistencia-card {
-  background-image: url(../../img/home/jpeg/asistencia@2x.jpg);
+@media (max-width: 575.98px) {
+  .home-page .home-card.seguros-card {
+    background-size: cover;
+  }
+}
+
+.home-page .home-card.asistencia-card, .home-page .home-card.equipo-card {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .home-page .home-card.asistencia-card {
+@media (max-width: 767.98px) {
+  .home-page .home-card.asistencia-card, .home-page .home-card.equipo-card {
     max-width: 48%;
   }
 }
 
-.home-page .home-card.equipo-card {
-  background-image: url(../../img/home/jpeg/equipo-mask.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.home-page .home-card.asistencia-card {
+  background-image: url(../../img/home/jpeg/asistencia@2x.jpg);
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .home-page .home-card.equipo-card {
-    max-width: 48%;
+.home-page .home-card.equipo-card {
+  background-image: url(../../img/home/jpeg/equipo-mask.jpg);
+}
+
+@media (min-width: 576px) {
+  .home-page .home-card {
+    height: 415px;
   }
 }
 
@@ -381,9 +388,14 @@ section.protegemos-img img {
   color: #ffffff;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .home-page .home-card .home-card-title {
     padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home-page .home-card .home-card-title {
     font-size: 26px;
     line-height: 28px;
   }
@@ -404,6 +416,13 @@ section.protegemos-img img {
   .home-page .home-card .home-card-paragraph {
     font-size: 13px;
     line-height: 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home-page .home-card .home-card-paragraph {
+    font-size: 10px;
+    line-height: 13px;
   }
 }
 
@@ -431,8 +450,18 @@ section.protegemos-img img {
   right: 30px;
 }
 
-.home-page .home-card .home-card-icon.iconx img {
-  width: 75px;
+.home-page .home-card .home-card-icon:not(.shield) {
+  left: 35%;
+}
+
+.home-page .home-card .home-card-icon.iconx {
+  width: 45px;
+}
+
+@media (min-width: 576px) {
+  .home-page .home-card .home-card-icon {
+    width: 75px !important;
+  }
 }
 
 .home-page .home-card .home-card-text {
@@ -548,6 +577,13 @@ section.protegemos-img img {
   padding-top: 50px;
 }
 
+@media (max-width: 575.98px) {
+  .home-page section.seguros-reminder .seguros-reminder-text {
+    margin-right: auto;
+    padding-left: 40px;
+  }
+}
+
 @media (min-width: 768px) {
   .home-page section.seguros-reminder .seguros-reminder-text {
     padding-top: 225px;
@@ -566,7 +602,13 @@ section.protegemos-img img {
 }
 
 .home-page section.seguros-reminder img {
-  width: 100%;
+  width: 235px;
+}
+
+@media (min-width: 576px) {
+  .home-page section.seguros-reminder img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -587,7 +629,7 @@ section.protegemos-img img {
 }
 
 .home-page section.equipo .equipo-img img {
-  width: 102%;
+  width: 105%;
   /* @include for-tablet-landscape-up{
                     object-position: 0 -125px;
                 } */
@@ -620,6 +662,13 @@ section.protegemos-img img {
   line-height: 17px;
 }
 
+@media (max-width: 575.98px) {
+  .home-page section.equipo .equipo-text .equipo-paragraph {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
 .home-page section.equipo .equipo-text .equipo-button {
   border-color: #fed198;
   color: #fed198;
@@ -641,12 +690,19 @@ section.protegemos-img img {
 .home-page section.contacto .promo-contacto::after {
   content: '';
   position: absolute;
-  top: 100px;
+  top: 0;
   display: block;
   width: 100%;
-  height: 285px;
+  height: 335px;
   border: 2px solid #003b61;
   z-index: -1;
+}
+
+@media (min-width: 576px) {
+  .home-page section.contacto .promo-contacto::after {
+    top: 100px;
+    height: 285px;
+  }
 }
 
 .home-page section.contacto .promo-contacto .col-promo {
@@ -654,8 +710,25 @@ section.protegemos-img img {
 }
 
 .home-page section.contacto .promo-contacto .col-promo .contacto-slogan {
-  padding-top: 160px;
   color: #003b61;
+}
+
+@media (min-width: 576px) {
+  .home-page section.contacto .promo-contacto .col-promo .contacto-slogan {
+    padding-top: 160px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home-page section.contacto .promo-contacto .col-promo .contacto-slogan::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 1px;
+    padding-bottom: 20px;
+    border-bottom: 8px solid #003b61;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -665,18 +738,31 @@ section.protegemos-img img {
 }
 
 .home-page section.contacto .promo-contacto .col-paraguas .contacto-paraguas {
-  width: 275px;
+  width: 130px;
 }
 
-.home-page section.contacto .promo-contacto .col-paraguas .contacto-text {
+@media (min-width: 576px) {
+  .home-page section.contacto .promo-contacto .col-paraguas .contacto-paraguas {
+    width: 275px;
+  }
+}
+
+.home-page section.contacto .promo-contacto .contacto-text {
   font-family: "GT America Bold", sans-serif;
   font-size: 15px;
   line-height: 17px;
   color: #003b61;
 }
 
-.home-page section.contacto .promo-contacto .col-paraguas .contacto-text span {
+.home-page section.contacto .promo-contacto .contacto-text span {
   font-family: "GT America Light", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .home-page section.contacto .promo-contacto .contacto-text {
+    font-size: 10px;
+    line-height: 13px;
+  }
 }
 
 .home-page section.contacto .email-footer {
@@ -693,14 +779,23 @@ section.protegemos-img img {
   color: #fbe3c6;
 }
 
+@media (max-width: 575.98px) {
+  .home-page section.contacto .email-footer .send-us-mail {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
 .home-page section.contacto .email-footer .email-address {
   font-family: "GT America Medium", sans-serif;
   font-size: 15px;
   color: #ccfeff;
 }
 
-.index-seguros-page section, .index-seguros-page div, .index-seguros-page img {
-  border: 1px solid violet;
+.index-seguros-page {
+  /*     section, div, img{
+        border: 1px solid violet;
+    } */
 }
 
 .index-seguros-page .container-bg {
@@ -1332,11 +1427,11 @@ section.protegemos-img img {
   color: #fed198;
 }
 
-.contacto-card .hq-header p.hq-no span {
+.contacto-card .hq-header p.hq-no span:not(.d-none) {
   position: relative;
 }
 
-.contacto-card .hq-header p.hq-no span::after {
+.contacto-card .hq-header p.hq-no span:not(.d-none)::after {
   content: url(../../img/home/ico/svg/location-icon.svg);
   display: inline;
   position: absolute;
