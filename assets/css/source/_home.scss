@@ -274,9 +274,9 @@
             img{
                 width: 102%; // ? fix!
 
-                @include for-tablet-landscape-up{
+                /* @include for-tablet-landscape-up{
                     object-position: 0 -125px;
-                }
+                } */
                 
             }
         }
