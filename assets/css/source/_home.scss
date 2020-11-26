@@ -7,39 +7,44 @@
     section.home-cards{
         padding-top: 70px;
 
-      /*   @include for-phone-only{
+        @include for-phone-only{
+            margin: 0;
             padding-top: 35px;
-        } */
+        }
     }
 
     .home-card{
         position: relative;
-        height: 415px;
+        height: 250px;
         &.seguros-card{
             background-image: url(../../img/home/ico/png/fondo_seguros_home-w-gradient.png);
             background-color: #25d4c6;
             background-repeat: no-repeat;
             background-size: contain;
+
+            @include for-phone-only{
+                background-size: cover;
+            }
+        }
+        &.asistencia-card,
+        &.equipo-card{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @include for-tablet-portrait-down{
+                max-width: 48%;
+            }
         }
         &.asistencia-card{
             background-image: url(../../img/home/jpeg/asistencia@2x.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-
-            @include phone-landscape-to-tablet-portrait{
-                max-width: 48%;
-            }
         }
         &.equipo-card{
             background-image: url(../../img/home/jpeg/equipo-mask.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
+        }
 
-            @include phone-landscape-to-tablet-portrait{
-                max-width: 48%;
-            }
+        @include for-phone-landscape-up{
+            height: 415px;
         }
 
         @include for-tablet-portrait-up{
@@ -51,8 +56,11 @@
             @extend %main-title;
             color: $white;
 
-            @include from-iPad-portrait-to-landscape{
+            @include from-tablet-landscape-down{
                 padding-left: 0;
+            }
+
+            @include from-iPad-portrait-to-landscape{
                 font-size: $big-title-tablet;
                 line-height: $big-title-lh-tablet;
             }
@@ -68,8 +76,13 @@
             }
 
             @include from-iPad-portrait-to-landscape{
-                font-size: $paragraph-desktop;
-                line-height: $small-lh-desktop;
+                font-size: $regular-tablet;
+                line-height: $regular-lh-tablet;
+            }
+
+            @include for-phone-only{
+                font-size: $small-mobile;
+                line-height: $small-lh-mobile;
             }
         }
 
@@ -93,13 +106,19 @@
             &.shield{
                 right: 30px;
             }
+            &:not(.shield){
+                left: 35%;
+            }
             
             &.iconx{
-                
-                img{
-                    width: 75px;
-                }
+                width: 45px;   
             }
+
+            @include for-phone-landscape-up{
+                width: 75px !important;
+
+            }
+            
         }
 
         .home-card-text{
@@ -228,12 +247,15 @@
         .seguros-reminder-text{
             padding-top: 50px;
 
+            @include for-phone-only{
+                margin-right: auto;
+                padding-left: 40px;
+            }
+
             @include for-tablet-portrait-up{
                 padding-top: 225px;
             }
             
-            
-
             .seguros-reminder-title{
                 @extend %main-title;
                 color: $darkblue;
@@ -253,7 +275,12 @@
         }
 
         img{
-            width: 100%;
+            width: 235px;
+
+            @include for-phone-landscape-up{
+                width: 100%;
+            }
+            
 
             @include for-tablet-portrait-up{
                 width: 375px;
@@ -272,7 +299,7 @@
             overflow: hidden;
         
             img{
-                width: 102%; // ? fix!
+                width: 105%; // ? fix!
 
                 /* @include for-tablet-landscape-up{
                     object-position: 0 -125px;
@@ -309,6 +336,11 @@
                 font-size: $small-desktop;
                 line-height: $regular-lh-desktop;
 
+                @include for-phone-only{
+                    font-size: $small-mobile;
+                    line-height: $small-lh-mobile;
+                }
+
             }
 
             .equipo-button{
@@ -332,21 +364,42 @@
             &::after{
                 content: '';
                 position: absolute;
-                top: 100px;
+                top: 0;
                 display: block;
                 width: 100%;
-                height: 285px;
+                height: 335px;
                 border: 2px solid $darkblue;
                 z-index: -1;
+
+                @include for-phone-landscape-up{
+                    top: 100px;
+                    height: 285px;
+                }
             }
 
             .col-promo{
                 padding-left: 20px;
 
                 .contacto-slogan{
-                    padding-top: 160px;
                     @extend %serif-title;
                     color: $darkblue;
+
+                    @include for-phone-landscape-up{
+                        padding-top: 160px;
+                    }
+
+                    @include for-phone-only{
+                        &::after{
+                            content: '';
+                            display: block;
+                            width: 25px;
+                            height: 1px;
+                            padding-bottom: 20px;
+                            border-bottom: 8px solid $darkblue;
+                            margin: auto;
+                        }
+                    }
+
                 }
             }
                 
@@ -356,19 +409,28 @@
                     padding-left: 65px;
                 }
                 
-
                 .contacto-paraguas{
-                    width: 275px;
-                }
-            
-                .contacto-text{
-                    font-family: $primary-bold;
-                    font-size: $small-desktop;
-                    line-height: $regular-lh-desktop;
-                    color: $darkblue;
-                    span{
-                        font-family: $primary-light;
+                    width: 130px;
+
+                    @include for-phone-landscape-up{
+                        width: 275px;
                     }
+                    
+                }
+            }
+
+            .contacto-text{
+                font-family: $primary-bold;
+                font-size: $small-desktop;
+                line-height: $regular-lh-desktop;
+                color: $darkblue;
+                span{
+                    font-family: $primary-light;
+                }
+
+                @include for-phone-only{
+                    font-size: $small-mobile;
+                    line-height: $small-lh-mobile;
                 }
             }
         
@@ -387,6 +449,11 @@
                 font-size: $small-desktop;
                 line-height: $regular-lh-desktop;
                 color: $lightbrown;
+
+                @include for-phone-only{
+                    font-size: $small-mobile;
+                    line-height: $small-lh-mobile;
+                }
             }
 
             .email-address{
