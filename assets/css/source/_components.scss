@@ -8,6 +8,11 @@
     font-family: $primary-bold;
     font-size: $big-title-desktop;
     line-height: $big-title-lh-desktop;
+
+    @include from-iPad-portrait-to-landscape{
+        font-size: $big-title-tablet;
+        line-height: $big-title-lh-tablet;                    
+    }
 }
 
 // son iguales!!!
@@ -26,6 +31,16 @@
     color: $darkblue;
     font-weight: $bold;
     letter-spacing: -2px; // is it normal?
+
+    @include from-iPad-portrait-to-landscape{
+        font-size: $huge-title-tablet;
+        line-height: $huge-title-lh-tablet;
+    }
+
+    @include phone-landscape-to-tablet-portrait{
+        font-size: $huge-title-mobile;
+        line-height: $huge-title-lh-mobile;
+    }
 }
 
 %seguros-page-paragraph{
@@ -40,6 +55,11 @@
     font-size: 41px;
     line-height: 46px;
     padding-top: 35px;
+
+    @include from-iPad-portrait-to-landscape{
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 
 %cntb-button{

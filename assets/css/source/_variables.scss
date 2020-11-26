@@ -20,6 +20,7 @@ $secondary-regular: 'Canela-Regular', serif;
 
 
 // Font sizes
+// Desktop
 $huge-title-desktop: 55px;
 $big-title-desktop: 32px;
 $regular-desktop: 17px;
@@ -27,12 +28,44 @@ $small-desktop: 15px;
 $paragraph-desktop: 13px;
 $tiny-desktop: 10px;
 
+// Tablet
+$huge-title-tablet: 46px;
+$big-title-tablet: 26px;
+$regular-tablet: 13px;
+$small-tablet: 10px;
+/* $paragraph-tablet: 13px-.2rem;
+$tiny-tablet: 10px-.2rem; */
+
+// Mobile
+$huge-title-mobile: 40px;
+$big-title-mobile: 20px;
+/* $regular-mobile: 17px;
+$small-mobile: 15px;
+$paragraph-mobile: 13px;
+$tiny-mobile: 10px; */
+
 // Line heights
+// Desktop
 $huge-title-lh-desktop: 61px;
 $big-title-lh-desktop: 35px;
 $regular-lh-desktop: 17px;
 $small-lh-desktop: 15px;
 $tiny-lh-desktop: 13px;
+
+// Tablet
+$huge-title-lh-tablet: 48px;
+$big-title-lh-tablet: 28px;
+$regular-lh-tablet: 13px;
+$small-lh-tablet: 10px;
+/* $tiny-lh-tablet: 13px; */
+
+// Mobile
+$huge-title-lh-mobile: 42px;
+/* $big-title-lh-tablet: 28px;
+$regular-lh-tablet: 13px;
+$small-lh-tablet: 10px;
+ $tiny-lh-tablet: 13px; */
+
 
 // Font weights
 $bold: 600;
