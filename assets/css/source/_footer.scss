@@ -2,11 +2,15 @@ section.llamanos-cta{
 
     padding-bottom: 190px;
 
+    @include for-tablet-portrait-down{
+        padding-top: 100px !important;
+    }
+
     .col-10{
         padding-top: 40px;
         border-top: 4px solid $white;
 
-        .col-4:first-child{
+        .cta-text{
             padding:{
                 top: 20px;
                 right: 0;
@@ -14,6 +18,7 @@ section.llamanos-cta{
 
             .logo-cantabrana-cta{
                 width: 115px;
+
             }
         
             .cta-question{
@@ -28,11 +33,26 @@ section.llamanos-cta{
                 font-family: $primary-light;
                 font-size: $regular-desktop;
                 color: $darkblue;
+
+                @include for-phone-only{
+                    font-size: $small-mobile;
+                    line-height: $small-lh-mobile;
+                }
             }
         }
 
-        .col-4:last-child{
-            padding-top: 85px;
+        svg{
+            @include for-desktop-down{
+                width: 75px;
+            }
+        }
+
+        .cta-btn{
+            padding-top: 30px;
+
+            @include for-tablet-portrait-up{
+                padding-top: 85px;
+            }
 
             .cta-call{
                 @extend %cntb-button;
@@ -50,7 +70,11 @@ section.protegemos-img{
     }
 
     img{
-        width: 375px;
+        width: 175px;
+
+        @include for-phone-landscape-up{
+            width: 375px;
+        }
     }
 }
 
@@ -74,7 +98,7 @@ section.protegemos-img{
 
     a,p{
         font-family: $primary-light;
-        font-size: 10px;
+        font-size: $tiny-desktop;
         color: $darkblue;
         border: none;
         &.legal{
@@ -84,5 +108,8 @@ section.protegemos-img{
             }
             
         }
+        &:not(.legal){
+            line-height: $tiny-lh-mobile;
+        } 
     }
 }

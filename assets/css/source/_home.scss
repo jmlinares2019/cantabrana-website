@@ -124,7 +124,7 @@
                     position: relative;
 
                     .carousel-img{
-                        @include till-tablet-portrait{
+                        @include from-tablet-landscape-down{
                             width: 100%;
                         } 
                     }

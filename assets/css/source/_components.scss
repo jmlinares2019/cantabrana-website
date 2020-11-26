@@ -9,9 +9,14 @@
     font-size: $big-title-desktop;
     line-height: $big-title-lh-desktop;
 
-    @include from-iPad-portrait-to-landscape{
+    @include phone-landscape-to-tablet-landscape{
         font-size: $big-title-tablet;
         line-height: $big-title-lh-tablet;                    
+    }
+
+    @include for-phone-only{
+        font-size: $big-title-mobile;
+        line-height: $big-title-lh-mobile;
     }
 }
 
@@ -37,7 +42,7 @@
         line-height: $huge-title-lh-tablet;
     }
 
-    @include phone-landscape-to-tablet-portrait{
+    @include for-tablet-portrait-down{
         font-size: $huge-title-mobile;
         line-height: $huge-title-lh-mobile;
     }
@@ -68,6 +73,11 @@
     padding: 7px 30px;
     border: 2px solid $darkblue;
     color: $darkblue;
+    
+    @include from-tablet-landscape-down{
+        font-size: $small-tablet;
+    }
+
     &:hover{
         background-color: $darkblue;
         color: $white;

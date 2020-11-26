@@ -10,31 +10,33 @@ a:hover {
 
 /* $paragraph-tablet: 13px-.2rem;
 $tiny-tablet: 10px-.2rem; */
-/* $regular-mobile: 17px;
-$small-mobile: 15px;
-$paragraph-mobile: 13px;
-$tiny-mobile: 10px; */
+/* $regular-mobile: 17px; */
+/* $paragraph-mobile: 13px; */
 /* $tiny-lh-tablet: 13px; */
-/* $big-title-lh-tablet: 28px;
-$regular-lh-tablet: 13px;
-$small-lh-tablet: 10px;
- $tiny-lh-tablet: 13px; */
+/* $regular-lh-tablet: 13px;*/
 header.header-cntb .top-contact .top-contact-phone, .contacto-card .hq-contact-info .hq-phone {
   font-family: "GT America Bold", sans-serif;
   font-size: 13px;
   color: #003b61;
 }
 
-section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-page .home-card .home-card-title, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-title {
+section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .home-card-title, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-title {
   font-family: "GT America Bold", sans-serif;
   font-size: 32px;
   line-height: 35px;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-page .home-card .home-card-title, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-title {
+@media (min-width: 576px) and (max-width: 991.98px) {
+  section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .home-card-title, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-title {
     font-size: 26px;
     line-height: 28px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .home-card-title, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-title {
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
@@ -61,7 +63,7 @@ section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-page .home-
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .col-9 .ventajas-title, .equipo-page .container-bg section.keywords p {
     font-size: 40px;
     line-height: 42px;
@@ -88,7 +90,7 @@ section.llamanos-cta .col-10 .col-4:first-child .cta-question, .home-page .home-
   }
 }
 
-header.header-cntb .login-btn a, section.llamanos-cta .col-10 .col-4:last-child .cta-call, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button, .home-page section.index-seguros .ver-seguros-button, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, .home-page section.equipo .equipo-text .equipo-button {
+header.header-cntb .login-btn a, section.llamanos-cta .col-10 .cta-btn .cta-call, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button, .home-page section.index-seguros .ver-seguros-button, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, .home-page section.equipo .equipo-text .equipo-button {
   font-family: "GT America Black", sans-serif;
   font-size: 13px;
   padding: 7px 30px;
@@ -96,7 +98,13 @@ header.header-cntb .login-btn a, section.llamanos-cta .col-10 .col-4:last-child 
   color: #003b61;
 }
 
-header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .col-4:last-child .cta-call:hover, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button:hover, .home-page section.index-seguros .ver-seguros-button:hover, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button:hover, .home-page section.equipo .equipo-text .equipo-button:hover {
+@media (max-width: 991.98px) {
+  header.header-cntb .login-btn a, section.llamanos-cta .col-10 .cta-btn .cta-call, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button, .home-page section.index-seguros .ver-seguros-button, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, .home-page section.equipo .equipo-text .equipo-button {
+    font-size: 10px;
+  }
+}
+
+header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .cta-call:hover, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button:hover, .home-page section.index-seguros .ver-seguros-button:hover, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button:hover, .home-page section.equipo .equipo-text .equipo-button:hover {
   background-color: #003b61;
   color: #ffffff;
 }
@@ -124,11 +132,16 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .col-4:last-
 }
 
 .navbar {
+  display: none;
   background-color: crimson;
 }
 
 header.header-cntb {
   padding-top: 75px;
+}
+
+header.header-cntb .col-5 {
+  padding-right: 0;
 }
 
 header.header-cntb .home-brand img {
@@ -141,7 +154,7 @@ header.header-cntb .home-title {
   color: #003b61;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   header.header-cntb .home-title {
     font-size: 15px;
   }
@@ -157,13 +170,43 @@ header.header-cntb .top-contact .top-contact-phone {
       align-self: flex-end;
 }
 
+@media (max-width: 1199.98px) {
+  header.header-cntb .top-contact .top-contact-phone span.break {
+    display: block;
+  }
+}
+
 header.header-cntb .top-contact .top-sm-icon {
   padding-left: 0;
   padding-right: 5px;
 }
 
+header.header-cntb .login-btn {
+  padding-top: 15px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header.header-cntb .login-btn a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header.header-cntb .login-btn a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 section.llamanos-cta {
   padding-bottom: 190px;
+}
+
+@media (max-width: 767.98px) {
+  section.llamanos-cta {
+    padding-top: 100px !important;
+  }
 }
 
 section.llamanos-cta .col-10 {
@@ -171,30 +214,49 @@ section.llamanos-cta .col-10 {
   border-top: 4px solid #ffffff;
 }
 
-section.llamanos-cta .col-10 .col-4:first-child {
+section.llamanos-cta .col-10 .cta-text {
   padding-top: 20px;
   padding-right: 0;
 }
 
-section.llamanos-cta .col-10 .col-4:first-child .logo-cantabrana-cta {
+section.llamanos-cta .col-10 .cta-text .logo-cantabrana-cta {
   width: 115px;
 }
 
-section.llamanos-cta .col-10 .col-4:first-child .cta-question {
+section.llamanos-cta .col-10 .cta-text .cta-question {
   padding-top: 20px;
   margin-bottom: 5px;
   color: #003b61;
   letter-spacing: -1px;
 }
 
-section.llamanos-cta .col-10 .col-4:first-child .cta-answer {
+section.llamanos-cta .col-10 .cta-text .cta-answer {
   font-family: "GT America Light", sans-serif;
   font-size: 17px;
   color: #003b61;
 }
 
-section.llamanos-cta .col-10 .col-4:last-child {
-  padding-top: 85px;
+@media (max-width: 575.98px) {
+  section.llamanos-cta .col-10 .cta-text .cta-answer {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  section.llamanos-cta .col-10 svg {
+    width: 75px;
+  }
+}
+
+section.llamanos-cta .col-10 .cta-btn {
+  padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+  section.llamanos-cta .col-10 .cta-btn {
+    padding-top: 85px;
+  }
 }
 
 section.protegemos-img {
@@ -203,7 +265,13 @@ section.protegemos-img {
 }
 
 section.protegemos-img img {
-  width: 375px;
+  width: 175px;
+}
+
+@media (min-width: 576px) {
+  section.protegemos-img img {
+    width: 375px;
+  }
 }
 
 .footer-menu {
@@ -240,6 +308,12 @@ section.protegemos-img img {
 .footer-legal a.legal.link,
 .footer-legal p.legal.link {
   text-decoration: underline;
+}
+
+.footer-menu a:not(.legal), .footer-menu p:not(.legal),
+.footer-legal a:not(.legal),
+.footer-legal p:not(.legal) {
+  line-height: 10px;
 }
 
 .home-page {
@@ -625,6 +699,10 @@ section.protegemos-img img {
   color: #ccfeff;
 }
 
+.index-seguros-page section, .index-seguros-page div, .index-seguros-page img {
+  border: 1px solid violet;
+}
+
 .index-seguros-page .container-bg {
   background-color: #fbe3c6;
 }
@@ -634,8 +712,16 @@ section.protegemos-img img {
 }
 
 .index-seguros-page .container-bg section.seguros-banner .banner-text {
-  padding-top: 280px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .index-seguros-page .container-bg section.seguros-banner .banner-text {
+    padding-top: 280px;
+    padding-bottom: 0;
+  }
 }
 
 .index-seguros-page .container-bg section.seguros-banner .banner-text h2 {
@@ -655,8 +741,13 @@ section.protegemos-img img {
 }
 
 .index-seguros-page .container-bg section.seguros-banner .banner-img img {
-  margin-top: -30px;
   mix-blend-mode: multiply;
+}
+
+@media (min-width: 1200px) {
+  .index-seguros-page .container-bg section.seguros-banner .banner-img img {
+    margin-top: -30px;
+  }
 }
 
 .index-seguros-page .container-bg section.llamanos-cta {
@@ -672,6 +763,13 @@ section.protegemos-img img {
   font-size: 10px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .nav-link {
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
 
 .nav-link.active {
@@ -699,9 +797,14 @@ section.protegemos-img img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  max-width: 175px;
   height: 175px;
   border: 8px solid #ffffff;
+}
+
+@media (min-width: 576px) {
+  .tab-content .seguros-item {
+    max-width: 175px;
+  }
 }
 
 .tab-content .seguros-item:hover {
