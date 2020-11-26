@@ -115,6 +115,7 @@
         margin-bottom: $sp-50;
 
         .carousel-item{
+            padding-bottom: 10px;
             background-color: $white;
 
             .carousel-content{
@@ -207,7 +208,7 @@
 
         .seguros-item-price{
             margin-bottom: $sp-80;
-            padding-top: 30px;
+            padding-top: 20px;
 
             span{
                 font-family: $primary-light;
@@ -225,7 +226,12 @@
         padding-bottom: $sp-70;
 
         .seguros-reminder-text{
-            padding-top: 225px;
+            padding-top: 50px;
+
+            @include for-tablet-portrait-up{
+                padding-top: 225px;
+            }
+            
             
 
             .seguros-reminder-title{
@@ -247,8 +253,13 @@
         }
 
         img{
-            width: 375px;
-            height: 610px;
+            width: 100%;
+
+            @include for-tablet-portrait-up{
+                width: 375px;
+                height: 610px;
+            }
+            
         }
     }
 
@@ -258,7 +269,6 @@
 
         .equipo-img{
             padding-left: 0;
-            height: 450px;
             overflow: hidden;
         
             img{
