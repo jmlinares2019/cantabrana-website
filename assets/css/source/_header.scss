@@ -2,6 +2,10 @@ header.header-cntb{
 
     padding-top: 75px;
 
+    .col-5{
+        padding-right: 0;
+    }
+
     .home-brand img{
         width: 150px;
     }
@@ -11,7 +15,7 @@ header.header-cntb{
         font-size: $regular-desktop;
         color: $darkblue;
 
-        @include from-iPad-portrait-to-landscape{
+        @include from-tablet-landscape-down{
             font-size: 15px;
         }
     }
@@ -23,6 +27,12 @@ header.header-cntb{
             @extend %contact-phone;
             padding-left: 0;
             align-self: flex-end;
+
+            span.break{
+                @include for-desktop-down{
+                    display: block;
+                }
+            }
         }
     
         .top-sm-icon{
@@ -34,9 +44,27 @@ header.header-cntb{
     
     }
 
-    .login-btn a{
-        @extend %cntb-button;
-    }
+    .login-btn{
+        padding-top: 15px;
+
+        a{
+            @extend %cntb-button;
+
+            @include phone-landscape-to-tablet-portrait{
+                padding:{
+                    left: 10px ;
+                    right: 10px;
+                }
+            }
+
+            @include for-phone-only{
+                padding:{
+                    left: 5px;
+                    right: 5px;
+                }
+            }
+        }
+    } 
 
     
 }
