@@ -1,0 +1,111 @@
+.asistencia-detail-page{
+    
+/*     section, div, p{
+        border: 1px solid blue;
+    }  */
+    
+    .asistencia-top-banner{
+        color: $darkblue;
+        &.top-banner{
+            @extend %top-img-banner;
+        }
+
+        .agency-logo{
+            width: 315px;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+        }
+
+        .banner-navs{
+            position: absolute;
+            top: 15%;
+
+            span.prev{
+                position: relative;
+                padding-left: 70px;
+                font-family: $primary-black;
+                font-size: $big-title-desktop;
+                color: $lightpeach;
+                &::before{
+                    content: url(../../img/detail_asistencia/arrow-back.svg);
+                    position: absolute;
+                    left: 0px;
+                    display: inline;
+                }
+            }
+
+            .cancel{
+                padding-top: 10px;
+                width: 30px;
+            }
+        }
+
+    }
+
+    .banner-bottom{
+        background-color: $lightpeach;
+
+        .caution-icon{
+            fill: $darkblue;
+        }
+
+        h1{
+            padding:{
+                top: 1em;
+                bottom: 1em;
+            }
+            font-family: $primary-medium;
+            font-size: $regular-desktop;
+            line-height: $regular-lh-desktop;
+            color: $darkblue;
+            text-transform: uppercase;;
+        }
+
+
+    }
+
+    .container-bg{
+        padding-top: 100px;
+        background-color: $pale-grey;
+
+        h2.agency-name{
+            margin-bottom: 15px;
+            @extend %serif-title;
+            font-size: $big-title-desktop;
+            line-height: $big-title-lh-desktop;
+        }
+
+        .assist-phone-item{
+            padding: 15px;
+            margin-top: 15px;
+            background-color: $white;
+
+            .item-name{
+                font-family: $primary-light;
+                font-size: $regular-desktop;
+                color: $darkblue;
+                
+            }
+
+            .item-phone{
+                font-family: $primary-bold;
+                font-size: 20px;
+
+
+            }
+
+        }
+        
+        section.llamanos-cta{
+            padding-top: 130px;
+    
+            svg .st0{
+                fill: $pale-grey;
+            }
+        }
+    }
+    
+}
+        
+        
