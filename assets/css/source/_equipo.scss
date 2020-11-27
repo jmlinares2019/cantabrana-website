@@ -1,15 +1,23 @@
 .equipo-page{
-
-  /*   section, div{
+/*     
+     section, div{
         border: 1px solid orange;
-    } */
-
+    }
+ */
     .top-banner{
         color: $darkblue;
         &.top-banner{
             @extend %top-img-banner;
-            background-image: url(/assets/img/equipo/banner-top-equipo@3x.jpg);
+            background-image: url(/assets/img/equipo/banner-top-equipo.jpg);
 
+            @include phone-landscape-to-tablet-landscape{
+                background-image: url(/assets/img/equipo/banner-top-equipo-tablet.jpg);
+            }
+
+            @include for-phone-only{
+                background-image: url(/assets/img/equipo/banner-top-equipo-mobile.jpg);
+                height: 235px;
+            }
             .banner-title-text{
                 color: $lightpeach;
             }
@@ -45,6 +53,11 @@
                 span{
                     padding-top: 20px;
                     font-family: $primary-bold;
+                }
+
+                @include for-phone-only{
+                    font-size: $regular-mobile;
+                    line-height: $regular-lh-mobile;
                 }
             }
     
@@ -107,53 +120,94 @@
         section.featured{
             padding-top: 150px;
 
+            .col .row:last-child{
+                padding-top: 80px;
+
+                @include from-iPad-portrait-to-landscape{
+                    padding-top: 200px;
+                }
+
+                @include for-tablet-landscape-up{
+                    padding-top: 320px;
+                }
+            }
+
             .featured-img{
                 mix-blend-mode: multiply;
                 &.justicia{
                     padding:{
-                            top: 115px;
-                            bottom: 50px;
-                        }
+                        top: 40px;
+                        bottom: 50px;
+                    }
+
+                    @include for-phone-landscape-up{
+                        padding-top: 115px;
+                    }
                 }
                 &.ayuda{
-                    padding-bottom: 130px;
+                    padding-bottom: 50px;
+
+                /*     @include for-phone-landscape-up{
+                        padding-top: 115px;
+                    } */
+                }
+
+                @include from-tablet-landscape-down{
+                    width: 100%;
                 }
 
             }
-           
 
             h3,p{
                 @extend %seguros-page-paragraph;
+
+                    @include for-tablet-portrait-down{
+                        font-size: $medium-mobile;
+                        line-height: $medium-lh-mobile;
+                    }
+
+                    @include for-phone-only{
+                        font-size: $regular-mobile;
+                        line-height: $regular-lh-mobile;
+                    }
+
                 &.our-asset{
                     padding:{
                         top: 5px;
                         bottom: 5px;
                     }
-                    font-size: $small-desktop;
-                    line-height: $small-lh-desktop;
                     margin-bottom: 0;
                     margin-block-end: 0;;
                     border-top: 2px solid $lightgrey;
                     &:last-child{
                         border-bottom: 2px solid $lightgrey;
                     }
+                    font-size: $small-desktop;
+                    line-height: $small-lh-desktop;
+
                 }
                 &.decorated::before{
                     content: '';
                     display: block;
-                    width: 175px;
+                    width: 85px;
                     height: 1px;
                     padding-bottom: 25px;
                     border-top: 8px solid $darkblue;
+
+                    @include for-phone-landscape-up{
+                        width: 175px;
+                    }
                 }
             }
 
-            h3{
+            h3.decorated{
                 font-family: $primary-bold;
             }
 
-            .pt-5{
-                padding-top: 320px !important;
+            p:not(.no-bold){
+                @include for-phone-only{
+                    font-family: $primary-bold;
+                }
             }
 
         }
