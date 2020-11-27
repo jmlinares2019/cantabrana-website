@@ -318,8 +318,14 @@ section.llamanos-cta .col-10 .cta-btn {
 }
 
 section.protegemos-img {
-  padding-top: 150px;
+  padding-top: 80px;
   padding-bottom: 180px;
+}
+
+@media (min-width: 576px) {
+  section.protegemos-img {
+    padding-top: 150px;
+  }
 }
 
 section.protegemos-img img {
@@ -1208,9 +1214,11 @@ section.protegemos-img img {
 }
 
 .equipo-page {
-  /*   section, div{
+  /*     
+     section, div{
         border: 1px solid orange;
-    } */
+    }
+ */
 }
 
 .equipo-page .top-banner {
@@ -1218,7 +1226,20 @@ section.protegemos-img img {
 }
 
 .equipo-page .top-banner.top-banner {
-  background-image: url(/assets/img/equipo/banner-top-equipo@3x.jpg);
+  background-image: url(/assets/img/equipo/banner-top-equipo.jpg);
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .equipo-page .top-banner.top-banner {
+    background-image: url(/assets/img/equipo/banner-top-equipo-tablet.jpg);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .equipo-page .top-banner.top-banner {
+    background-image: url(/assets/img/equipo/banner-top-equipo-mobile.jpg);
+    height: 235px;
+  }
 }
 
 .equipo-page .top-banner.top-banner .banner-title-text {
@@ -1248,6 +1269,13 @@ section.protegemos-img img {
 .equipo-page .container-bg section.presentation .equipo-presentation-paragraph span {
   padding-top: 20px;
   font-family: "GT America Bold", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .equipo-page .container-bg section.presentation .equipo-presentation-paragraph {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
 
 .equipo-page .container-bg section.presentation .presentation-highlight {
@@ -1322,28 +1350,73 @@ section.protegemos-img img {
   padding-top: 150px;
 }
 
+.equipo-page .container-bg section.featured .col .row:last-child {
+  padding-top: 80px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .equipo-page .container-bg section.featured .col .row:last-child {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .equipo-page .container-bg section.featured .col .row:last-child {
+    padding-top: 320px;
+  }
+}
+
 .equipo-page .container-bg section.featured .featured-img {
   mix-blend-mode: multiply;
 }
 
 .equipo-page .container-bg section.featured .featured-img.justicia {
-  padding-top: 115px;
+  padding-top: 40px;
   padding-bottom: 50px;
 }
 
+@media (min-width: 576px) {
+  .equipo-page .container-bg section.featured .featured-img.justicia {
+    padding-top: 115px;
+  }
+}
+
 .equipo-page .container-bg section.featured .featured-img.ayuda {
-  padding-bottom: 130px;
+  padding-bottom: 50px;
+  /*     @include for-phone-landscape-up{
+                        padding-top: 115px;
+                    } */
+}
+
+@media (max-width: 991.98px) {
+  .equipo-page .container-bg section.featured .featured-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .equipo-page .container-bg section.featured h3, .equipo-page .container-bg section.featured p {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .equipo-page .container-bg section.featured h3, .equipo-page .container-bg section.featured p {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
 
 .equipo-page .container-bg section.featured h3.our-asset, .equipo-page .container-bg section.featured p.our-asset {
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 15px;
-  line-height: 15px;
   margin-bottom: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
   border-top: 2px solid #beced6;
+  font-size: 15px;
+  line-height: 15px;
 }
 
 .equipo-page .container-bg section.featured h3.our-asset:last-child, .equipo-page .container-bg section.featured p.our-asset:last-child {
@@ -1353,18 +1426,26 @@ section.protegemos-img img {
 .equipo-page .container-bg section.featured h3.decorated::before, .equipo-page .container-bg section.featured p.decorated::before {
   content: '';
   display: block;
-  width: 175px;
+  width: 85px;
   height: 1px;
   padding-bottom: 25px;
   border-top: 8px solid #003b61;
 }
 
-.equipo-page .container-bg section.featured h3 {
+@media (min-width: 576px) {
+  .equipo-page .container-bg section.featured h3.decorated::before, .equipo-page .container-bg section.featured p.decorated::before {
+    width: 175px;
+  }
+}
+
+.equipo-page .container-bg section.featured h3.decorated {
   font-family: "GT America Bold", sans-serif;
 }
 
-.equipo-page .container-bg section.featured .pt-5 {
-  padding-top: 320px !important;
+@media (max-width: 575.98px) {
+  .equipo-page .container-bg section.featured p:not(.no-bold) {
+    font-family: "GT America Bold", sans-serif;
+  }
 }
 
 .index-asistencia-page .asistencia-top-banner {
