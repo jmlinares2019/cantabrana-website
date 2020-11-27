@@ -1,4 +1,8 @@
 .seguros-detail-page{
+    
+/*     section, div, p{
+        border: 1px solid blue;
+    } */
 
     .seguros-detail-top-banner{
         color: $darkblue;
@@ -6,6 +10,10 @@
             @extend %top-img-banner;
             &.automovil{
                 background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner@3x.jpg);
+
+                @include for-phone-only{
+                    background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner-mobile@2x.jpg);
+                }
             }
         }
 
@@ -17,10 +25,14 @@
         section.presentation{
             padding-top: 70px;
 
+            @include for-phone-only{
+                margin: 0;
+            }
+
             .presentation-text{
                 
                 h2{
-                    @extend %seguros-page-title;
+                    @extend %main-title;
                 }
     
                 .seguros-page-paragraph{
@@ -32,24 +44,44 @@
             }
     
             .presentation-img{
-                margin-top: -35px;
-                mix-blend-mode: multiply;;
+                mix-blend-mode: multiply;
+
+                @include for-desktop-up{
+                    margin-top: -35px;
+                }
             }
         }
     
         section.reasons{
-            padding-top: 100px;
+            
+            @include for-phone-landscape-up{
+                padding-top: 100px;
+            }
     
             .reason-text{
-                padding-top: 65px;
+                padding-top: 40px;
                 @extend %seguros-page-paragraph;
+
+                @include phone-landscape-to-tablet-landscape{
+                    font-size: $small-desktop;
+                    line-height: $regular-lh-desktop;
+                }
+
+                @include for-phone-only{
+                    font-size: $medium-mobile;
+                    line-height: $medium-lh-mobile;
+                }
+
+                @include for-tablet-landscape-up{
+                    padding-top: 65px;
+                }
             }
         }
         
         section.cta-presupuesto{
             padding-top: 90px;
     
-            .col{
+            .col-11{
                 background-color: $darkblue;
                 padding: 10px;
     
@@ -67,7 +99,7 @@
         section.section-ventajas{
             padding-top: 130px;
     
-            .col-9{
+            .ventajas-table{
                 position: relative;
                 background-color: $lighterblue;
                 &::before{
@@ -99,7 +131,10 @@
                 }
     
                 .ventajas{
-                    padding-top: 75px;
+                    padding:{
+                        top: 75px;
+                        bottom: 75px;
+                    }
                     
                     .col-6{
                         padding:{
@@ -112,6 +147,16 @@
     
                     h3,p{
                         @extend %seguros-page-paragraph;
+
+                        @include phone-landscape-to-tablet-landscape{
+                            font-size: $small-desktop;
+                            line-height: $regular-lh-desktop;
+                        }
+        
+                        @include for-phone-only{
+                            font-size: $medium-mobile;
+                            line-height: $medium-lh-mobile;
+                        }
                     }
         
                     h3{
@@ -130,10 +175,27 @@
             padding-top: 220px;
     
             .col{
+                position: relative;
                 padding:{
                     left: 0;
                     right: 0;
                 }
+
+                    .promo-img-text{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        padding: 20px;
+                        font-family: $primary-light;
+                        font-size: $big-title-mobile;
+                        line-height: $big-title-lh-mobile;
+                        color: $white;
+                        
+                        span{
+                            font-family: $primary-bold;
+                        }
+                    }
+                
     
             }
         }
