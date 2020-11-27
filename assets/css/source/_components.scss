@@ -8,6 +8,7 @@
     font-family: $primary-bold;
     font-size: $big-title-desktop;
     line-height: $big-title-lh-desktop;
+    color: $darkblue;
 
     @include phone-landscape-to-tablet-landscape{
         font-size: $big-title-tablet;
@@ -20,14 +21,14 @@
     }
 }
 
-// son iguales!!!
+/* // son iguales!!!
 
 %seguros-page-title{
     font-family: $primary-bold;
     font-size: $big-title-desktop;
     line-height: $big-title-lh-desktop;
     color: $darkblue;
-}
+} */
 
 %serif-title{
     font-family: $secondary-bold;
@@ -101,6 +102,14 @@
             
             span{
                 font-family: $primary-light;
+            }
+
+            @include phone-landscape-to-tablet-portrait{
+                font-size: $big-title-tablet;
+            }
+
+            @include for-phone-only{
+                font-size: $big-title-mobile;
             }
         }
     }
