@@ -1,4 +1,56 @@
-.navbar{
-    // display: none;
-    background-color: crimson;
+.cntb-navbar{
+    background-color: $white;
+    box-shadow: -3px 1px 20px 10px #88888861;
+
+    .container{
+        padding: 0;
+    }
+
+    .row.top{
+        padding: 15px;
+        background-color: $white;
+    }
+
+    .row.bottom{
+        padding: 15px;
+        background-color: $lightblue;
+    }
+
+    a{
+        position: relative;
+        font-family: $primary-light;
+        font-size: $small-desktop;
+        color: $darkblue;
+
+        @include for-phone-only{
+            font-size: $small-mobile;
+        }
+
+        span{
+            font-family: $primary-bold;
+
+        }
+
+        &.seguros-shield::before{
+            content: url(/assets/img/navbar/svg/check-shield-blue.svg);
+            position: absolute;
+            left: 0;
+        }
+
+        &.contacto-icon::after{
+            content: url(/assets/img/navbar/svg/whatsapp-icon.svg);
+            position: absolute;
+            right: 0;
+        }
+
+        &.phone-icon::after{
+            content: url(/assets/img/navbar/svg/call-icon.svg);
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .navbar-logo{
+        width: 100%;
+    }
 }
