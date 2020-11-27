@@ -135,8 +135,63 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .ct
   }
 }
 
-.navbar {
-  background-color: crimson;
+.cntb-navbar {
+  background-color: #ffffff;
+  -webkit-box-shadow: -3px 1px 20px 10px #88888861;
+          box-shadow: -3px 1px 20px 10px #88888861;
+}
+
+.cntb-navbar .container {
+  padding: 0;
+}
+
+.cntb-navbar .row.top {
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.cntb-navbar .row.bottom {
+  padding: 15px;
+  background-color: #22d3c5;
+}
+
+.cntb-navbar a {
+  position: relative;
+  font-family: "GT America Light", sans-serif;
+  font-size: 15px;
+  color: #003b61;
+}
+
+@media (max-width: 575.98px) {
+  .cntb-navbar a {
+    font-size: 10px;
+  }
+}
+
+.cntb-navbar a span {
+  font-family: "GT America Bold", sans-serif;
+}
+
+.cntb-navbar a.seguros-shield::before {
+  content: url(/assets/img/navbar/svg/check-shield-blue.svg);
+  position: absolute;
+  left: 0;
+}
+
+.cntb-navbar a.contacto-icon::after {
+  content: url(/assets/img/navbar/svg/whatsapp-icon.svg);
+  position: absolute;
+  right: 0;
+}
+
+.cntb-navbar a.phone-icon::after {
+  content: url(/assets/img/navbar/svg/call-icon.svg);
+  position: absolute;
+  right: 0;
+}
+
+.cntb-navbar .navbar-logo {
+  width: 100%;
 }
 
 header.header-cntb {
