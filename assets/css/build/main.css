@@ -39,15 +39,7 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
   }
 }
 
-/* // son iguales!!!
-
-%seguros-page-title{
-    font-family: $primary-bold;
-    font-size: $big-title-desktop;
-    line-height: $big-title-lh-desktop;
-    color: $darkblue;
-} */
-.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p {
+.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
   font-family: "Canela-Bold", serif;
   font-size: 55px;
   line-height: 61px;
@@ -57,14 +49,14 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p {
+  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
     font-size: 46px;
     line-height: 48px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p {
+  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
     font-size: 34px;
     line-height: 36px;
   }
@@ -109,42 +101,41 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .ct
   color: #ffffff;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner, .equipo-page .top-banner, .index-asistencia-page .asistencia-top-banner.top-banner {
+.seguros-detail-page .seguros-detail-top-banner.top-banner, .equipo-page .top-banner, .index-asistencia-page .asistencia-top-banner.top-banner, .asistencia-detail-page .asistencia-top-banner.top-banner {
   height: 345px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title, .equipo-page .top-banner .banner-title, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title, .equipo-page .top-banner .banner-title, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-title {
   height: 100%;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-title .banner-title-text {
   padding-bottom: 40px;
   font-family: "GT America Black", sans-serif;
   font-size: 40px;
   color: #ffffff;
 }
 
-.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text span, .equipo-page .top-banner .banner-title .banner-title-text span, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text span {
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text span, .equipo-page .top-banner .banner-title .banner-title-text span, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text span, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-title .banner-title-text span {
   font-family: "GT America Light", sans-serif;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text {
+  .seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-title .banner-title-text {
     font-size: 26px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text {
+  .seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-title .banner-title-text {
     font-size: 20px;
   }
 }
 
 .navbar {
-  display: none;
   background-color: crimson;
 }
 
@@ -1402,6 +1393,102 @@ section.protegemos-img img {
 }
 
 .index-asistencia-page .container-bg section.llamanos-cta svg .st0 {
+  fill: #ecf0f3;
+}
+
+.asistencia-detail-page {
+  /*     section, div, p{
+        border: 1px solid blue;
+    }  */
+}
+
+.asistencia-detail-page .asistencia-top-banner {
+  color: #003b61;
+}
+
+.asistencia-detail-page .asistencia-top-banner .agency-logo {
+  width: 315px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+
+.asistencia-detail-page .asistencia-top-banner .banner-navs {
+  position: absolute;
+  top: 15%;
+}
+
+.asistencia-detail-page .asistencia-top-banner .banner-navs span.prev {
+  position: relative;
+  padding-left: 70px;
+  font-family: "GT America Black", sans-serif;
+  font-size: 32px;
+  color: #fed198;
+}
+
+.asistencia-detail-page .asistencia-top-banner .banner-navs span.prev::before {
+  content: url(../../img/detail_asistencia/arrow-back.svg);
+  position: absolute;
+  left: 0px;
+  display: inline;
+}
+
+.asistencia-detail-page .asistencia-top-banner .banner-navs .cancel {
+  padding-top: 10px;
+  width: 30px;
+}
+
+.asistencia-detail-page .banner-bottom {
+  background-color: #fed198;
+}
+
+.asistencia-detail-page .banner-bottom .caution-icon {
+  fill: #003b61;
+}
+
+.asistencia-detail-page .banner-bottom h1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: "GT America Medium", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #003b61;
+  text-transform: uppercase;
+}
+
+.asistencia-detail-page .container-bg {
+  padding-top: 100px;
+  background-color: #ecf0f3;
+}
+
+.asistencia-detail-page .container-bg h2.agency-name {
+  margin-bottom: 15px;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.asistencia-detail-page .container-bg .assist-phone-item {
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #ffffff;
+}
+
+.asistencia-detail-page .container-bg .assist-phone-item .item-name {
+  font-family: "GT America Light", sans-serif;
+  font-size: 17px;
+  color: #003b61;
+}
+
+.asistencia-detail-page .container-bg .assist-phone-item .item-phone {
+  font-family: "GT America Bold", sans-serif;
+  font-size: 20px;
+}
+
+.asistencia-detail-page .container-bg section.llamanos-cta {
+  padding-top: 130px;
+}
+
+.asistencia-detail-page .container-bg section.llamanos-cta svg .st0 {
   fill: #ecf0f3;
 }
 

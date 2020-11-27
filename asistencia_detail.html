@@ -33,7 +33,7 @@
 
 </head>
 
-<body class="index-asistencia-page">
+<body class="asistencia-detail-page">
 
 <!-- sticky-bottom navbar -->
     <div class="navbar">
@@ -58,132 +58,77 @@
 
 <!-- Top Banner -->
 
-    <div class="top-banner-container w-100 asistencia-top-banner top-banner">
-        <div class="container banner-title">
+    <div class="top-banner-container w-100 position-relative asistencia-top-banner top-banner">
+        <div class="container position-relative banner-title">
             <section class="row banner-title">
-                <div class="col-12 d-flex align-items-end banner-title">
-                    <h1 class="banner-title-text">Asistencia |</h1>
-                    <img src="/assets/img/index_asistencia/svg/warning_sign.svg" alt="señal-precaucion">
+                <div class="col-12 d-flex align-items-end position-relative banner-title">
+                    <img class="agency-logo" src="/assets/img/detail_asistencia/logo_Liberty.svg" alt="logo-agencia">
                 </div>
             </section>
+            <section class="row w-100 justify-content-between banner-navs">
+                <div class="col">
+                    <a href="/asistencia.html" class="stretched-link">
+                        <span class="prev" alt="atrás">Asistencia</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="/index.html" class="stretched-link">
+                        <!-- <span class="close">X</span> -->
+                        <img class="cancel" src="/assets/img/detail_asistencia/close.svg" alt="cerrar">
+                    </a>
+                </div>
+                
+            </section>
         </div>
+        <section class="row banner-bottom">
+            <div class="col d-flex justify-content-center">
+                <svg class="caution-icon" width="45px" viewBox="0 0 45.354 39.169">
+                    <path d="M1 41.169h45.354L23.677 2zm24.738-6.185h-4.123v-4.123h4.123zm0-8.246h-4.123v-8.246h4.123z" transform="translate(-1 -2)"/>
+                </svg>
+                <h1>Teléfonos de asistencia</h1>
+            </div>
+        </section>
     </div>
 
     <main class="container-bg w-100">
-        <div class="container asistencia-container">
+        <div class="container asistencia-detail-container">
 
-            <section class="row selection-grid">
-                <div class="col-12 selection-grid-text">
-                    <h2>Seleccione su compañía</h2>
-                    <p>para ver sus teléfonos de asistencia</p>
-                </div>
-                <div class="col-12 selection-grid-content">
+            
+
+            <section class="row phones-table">
+                <div class="col-6 m-auto">
                     <div class="row">
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Generali.svg" alt="logo-Generali">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="/asistencia_detail.html" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Liberty.svg" alt="logo-Liberty-Seguros">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Allianz.svg" alt="logo-Allianz">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/png/logo_Arag.png" alt="logo-Arag">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Asisa.svg" alt="logo-Asisa">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Caser.svg" alt="logo-Caser">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Fiact.svg" alt="logo-Fiact">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Helvetia.svg" alt="logo-Helvetia">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Lagun_Aro.svg" alt="logo-Lagun-Aro">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Plus_Ultra.svg" alt="logo-Plus-Ultra">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_prevision_mallorquina.svg" alt="logo-Previsioón-Mallorquina">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Reale.svg" alt="logo-Reale">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Santa_Lucia.svg" alt="logo-Santa-Lucia">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Berkley.svg" alt="logo-Berkley">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/png/logo_Xenasegur.png" alt="logo-Xenasegur">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Zurich.svg" alt="logo-Zurich">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_DAS.svg" alt="logo-DAS">
-                            </a>
-                        </div>
-                        <div class="col-2 company-item">
-                            <a href="#" class="stretched-link">
-                                <img src="/assets/img/index_asistencia/svg/logo_Adeslas.svg" alt="logo-Adeslas">
-                            </a>
-                        </div>
-
+                        <h2 class="agency-name">Liberty Seguros</h2>
                     </div>
-                    
+                    <div class="row assist-phone-item">
+                        <div class="col-6 item-name">Auto</div>
+                        <div class="col-6 item-phone text-right">900 101 369</div>
+                    </div>
+                    <div class="row assist-phone-item">
+                        <div class="col-6 item-name">Protección Jurídica Hogar</div>
+                        <div class="col-6 item-phone text-right">900 243 657</div>
+                    </div>
+                    <div class="row assist-phone-item">
+                        <div class="col-6 item-name">Servicio bricolaje</div>
+                        <div class="col-6 item-phone text-right">900 243 657</div>
+                    </div>
+                    <div class="row assist-phone-item">
+                        <div class="col-6 item-name">Servicio bricolaje</div>
+                        <div class="col-6 item-phone text-right">93 485 76 12</div>
+                    </div>
                 </div>
+                
             </section>
 
             <section class="row llamanos-cta">
                 <div class="col col-10 m-auto">
                     <div class="row justify-content-between">
-                        <div class="col-4">
+                        <div class="col-8 col-md-5 col-xl-4 cta-text">
                             <img src="/assets/img/logo-cantabrana.png"  class="logo-cantabrana-cta" alt="logo-cantabrana">
                             <p class="cta-question">¿Necesitas ayuda?</p>
                             <p class="cta-answer">Tranquilo, no estás sol@.</p>
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="col-4 col-md-3 col-xl-4 m-auto text-center cta-phone-icon">
                             <svg viewBox="0 0 100 104" width="100px">
                                 <style type="text/css">
                                     .st0{fill:#FBE3C6;}
@@ -213,7 +158,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="col-4 text-right">
+                        <div class="col-12 col-md-4 text-center text-md-right cta-btn">
                             <a href="#" class="cta-call">Llama a Cantabrana</a>
                         </div>
                     </div>
@@ -226,16 +171,15 @@
 
     <div class="footer-bg-container">
         <div class="container">
-            
+        
             <section class="row protegemos-img">
                 <div class="col text-center">
                     <img src="assets/img/common/protegemos@3x.png" alt="protegemos-lo-suyo">
                 </div>
             </section>
-
             <footer>
                 <div class="row footer-menu">
-                    <div class="col-6">
+                    <div class="col-md-9 col-lg-6">
                         <div class="row">
                             <div class="col">
                                 <nav>
@@ -276,21 +220,21 @@
                     </div>
                 </div>
                 <div class="row footer-legal">
-                <div class="col">
+                   <div class="col-12 col-sm-6">
                         <nav>
                             <ul>
                                 <li><a class="legal link" href="#">Aviso legal</a></li>
                                 <li><a class="legal link" href="#">Condiciones legales</a></li>
                             </ul>
                         </nav>
-                </div>
-                <div class="col">
-                    <p class="legal">©Cantabrana Correduría de Seguros S.L. DGSFP J-3517 Contratada póliza de responsabilidad civil profesional según ley vigente. Contacto: 947 22 80 62 – 947 51 00 00</p>
-                </div>
+                   </div>
+                   <div class="col-12 col-sm-6">
+                       <p class="legal">©Cantabrana Correduría de Seguros S.L. DGSFP J-3517 Contratada póliza de responsabilidad civil profesional según ley vigente. Contacto: 947 22 80 62 – 947 51 00 00</p>
+                   </div>
                 </div>
             </footer>
+            
         </div>
-    </div>
     
 
 <!-- Local JS -->
