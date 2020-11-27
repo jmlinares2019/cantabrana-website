@@ -324,10 +324,6 @@ section.protegemos-img img {
   /*----- End Home carousel ----- */
 }
 
-.home-page section, .home-page div {
-  border: 1px solid salmon;
-}
-
 .home-page section.home-cards {
   padding-top: 70px;
 }
@@ -796,10 +792,6 @@ section.protegemos-img img {
   font-family: "GT America Medium", sans-serif;
   font-size: 15px;
   color: #ccfeff;
-}
-
-.index-seguros-page section, .index-seguros-page div, .index-seguros-page img {
-  border: 1px solid violet;
 }
 
 .index-seguros-page .container-bg {
