@@ -139,6 +139,7 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .ct
   background-color: #ffffff;
   -webkit-box-shadow: -3px 1px 20px 10px #88888861;
           box-shadow: -3px 1px 20px 10px #88888861;
+  display: none;
 }
 
 .cntb-navbar .container {
@@ -1621,10 +1622,14 @@ section.protegemos-img img {
 }
 
 .contact-page {
+  /*  section,div{
+        border: 1px solid red;
+    } */
   color: #ffffff !important;
 }
 
 .contact-page .bg-container {
+  padding-bottom: 35px;
   background-color: #003b61;
 }
 
@@ -1636,9 +1641,22 @@ section.protegemos-img img {
   color: #ffffff;
 }
 
+.contact-page .bg-container .cancel {
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 20px;
+}
+
 .contact-page .bg-container .contact-data {
-  padding-top: 70px;
+  padding-top: 25px;
   font-size: 22px;
+}
+
+@media (min-width: 576px) {
+  .contact-page .bg-container .contact-data {
+    padding-top: 70px;
+  }
 }
 
 .contact-page .bg-container .contact-data .bg-img {
@@ -1647,8 +1665,8 @@ section.protegemos-img img {
   height: 375px;
   background-image: url(/assets/img/contacto/svg/contact-bg-image.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
+  background-size: contain;
+  background-position: center;
 }
 
 .contact-page .bg-container .contact-data .bg-img p {
@@ -1662,11 +1680,25 @@ section.protegemos-img img {
 }
 
 .contact-page .bg-container .contact-data .bg-img img {
-  width: 365px;
+  width: 100%;
 }
 
-.contact-page .bg-container section.social-icons {
-  padding-top: 60px;
+@media (min-width: 768px) {
+  .contact-page .bg-container .contact-data .bg-img img {
+    width: 365px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact-page .bg-container .contact-data .bg-img .contact-email {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 576px) {
+  .contact-page .bg-container section.social-icons {
+    padding-top: 60px;
+  }
 }
 
 .contact-page .bg-container section.social-icons .top-sm-icon {
@@ -1683,7 +1715,7 @@ section.protegemos-img img {
   padding-top: 20px;
 }
 
-.contact-page .bg-container section.hqs .col-8 {
+.contact-page .bg-container section.hqs .col-md-10 {
   padding-top: 20px;
   border-top: 8px solid #fbe3c6;
 }
@@ -1711,10 +1743,6 @@ section.protegemos-img img {
   background-color: #fee8cb;
   padding-left: 20px;
   max-width: 48%;
-  /* margin:{
-        left: 5px;
-        right: 5px;
-    } */
 }
 
 .contacto-card .hq-header p {

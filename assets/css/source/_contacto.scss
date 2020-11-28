@@ -1,8 +1,13 @@
 .contact-page{
 
+   /*  section,div{
+        border: 1px solid red;
+    } */
+
     color: $white !important;
 
     .bg-container{
+        padding-bottom: 35px;
         background-color: $darkblue;
 
         .header-cntb{
@@ -17,10 +22,21 @@
 
         }
 
+        .cancel{
+            position: absolute;
+            display: block;
+            top: 20px;
+            right: 20px;
+        }
+
         .contact-data{
             
-            padding-top: 70px;
+            padding-top: 25px;
             font-size: 22px;
+
+            @include for-phone-landscape-up{
+                padding-top: 70px;
+            }
 
             .bg-img{
                 padding:{
@@ -30,8 +46,8 @@
                 height: 375px;
                 background-image: url(/assets/img/contacto/svg/contact-bg-image.svg);
                 background-repeat: no-repeat;
-                background-size: cover;
-                background-position-y: center;
+                background-size: contain;
+                background-position: center;
     
 
                 p{
@@ -45,7 +61,18 @@
                 }
     
                 img{
-                    width: 365px;
+                    width: 100%;
+
+                    @include for-tablet-portrait-up{
+                        width: 365px;
+                    }
+                }
+
+                .contact-email{
+                    
+                    @include for-phone-only{
+                        font-size: $regular-mobile;
+                    }
                 }
             }
             
@@ -54,7 +81,11 @@
         }
 
         section.social-icons{
-            padding-top: 60px;
+            
+            @include for-phone-landscape-up{
+                padding-top: 60px;
+
+            }
 
             .top-sm-icon{
                 position: relative;
@@ -71,7 +102,7 @@
         section.hqs{
             padding-top: 20px;
 
-            .col-8{
+            .col-md-10{
                 padding-top: 20px;
                 border-top: 8px solid $lightbrown;
             }
@@ -112,10 +143,6 @@
     background-color: $pale;
     padding-left: 20px;
     max-width: 48%;
-    /* margin:{
-        left: 5px;
-        right: 5px;
-    } */
 
     .hq-header{
 

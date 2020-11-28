@@ -63,10 +63,10 @@
     </div>
 <!-- End sticky-bottom navbar -->
     
-    <div class="bg-container w-100">
+    <div class="bg-container w-100 position-relative">
         <div class="container">
 
-            <header class="row justify-content-between header-cntb brand">
+            <header class="row justify-content-between header-cntb brand d-none d-sm-block">
                 <div class="col col-6">
                     <h1 class="home-brand"><span class="d-none">Cantabrana</span>
                         <a href="index.html" class="stretched-link">
@@ -74,10 +74,11 @@
                         </a></h1>
                     <h2 class="home-title">Tu gestor de seguros de siempre en Burgos</h2>
                 </div>
+                
             </header>
 
             <section class="row contact-data">
-                <div class="col-4 m-auto text-center d-flex flex-column justify-content-center bg-img">
+                <div class="col-8 col-lg-4 m-auto text-center d-flex flex-column align-items-center justify-content-center bg-img">
                     <img src="/assets/img/logo-cantabrana-negativo.png" alt="logo-Cantabrana">
                     <p class="contact-phone-number">947 25 75 50</p>
                     <a class="contact-email" href="mailto:cantabrana@cantabranaseguros.com">cantabrana@cantabranaseguros.com</a>
@@ -106,26 +107,26 @@
 
                 </div>
             </section>
-            <section class="row hqs">
-                <div class="col-8 m-auto">
+            <section class="row hqs m-0">
+                <div class="col-md-10 col-lg-8 m-auto">
                     <div class="row align-items-end hq-timetables">
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <h2>Oficinas</h2>
                             <p>Horario de lunes a jueves 09:30/14:00 y 16:00/20:00; Viernes de 08:30/15:00</p>
                         </div>
-                        <div class="col-6 summer-timetable">
+                        <div class="col-sm-6 summer-timetable">
                             <p>Horario de verano del 5 de Mayo al 15 de Septiembre: 08:30/15:00</p>
                         </div>
                     </div>
-                    <div class="row justify-content-between contact-cards">
+                    <div class="row justify-content-between info-contacto">
                         <div class="col col-6 contacto-card">
                             <div class="hq-header">
-                                <p class="hq-no">Oficina <span>1</span></p>
+                                <p class="hq-no"><span class="d-none d-sm-inline">Oficina</span> <span>1</span></p>
                                 <p class="hq-name">Centro</p>
                             </div>
                             <div class="hq-contact-info">
-                                <p class="hq-address">C/Alvar García 2. 09004 Burgos</p>
-                                <p class="hq-phone">947 257 550 / 685 169 612</p>
+                                <p class="hq-address">C/Alvar García 2. <span class="d-block d-md-inline">09004 Burgos</span></p>
+                                <p class="hq-phone">947 257 550 / <span class="d-block d-sm-inline">685 169 612</span></p>
                                 <div class="text-right card-foot">
                                     <a class="view-gmaps" href="https://goo.gl/maps/S1rVojsLVynnfhxP7" target="_blank">Ver en Google Maps</a>
                                 </div>
@@ -138,12 +139,12 @@
                         </div>
                         <div class="col col-6 contacto-card">
                             <div class="hq-header">
-                                <p class="hq-no">Oficina <span>2</span></p>
+                                <p class="hq-no"><span class="d-none d-sm-inline">Oficina</span> <span>2</span></p>
                                 <p class="hq-name">Gamonal</span>
                             </div>
                             <div class="hq-contact-info">
-                                <p class="hq-address">C/Vitoria 157. 09007 Burgos</p>
-                                <p class="hq-phone">947 255 789 / 615 204 093</p>
+                                <p class="hq-address">C/Vitoria 157. <span class="d-block d-md-inline"></span>09007 Burgos</p>
+                                <p class="hq-phone">947 255 789 / <span class="d-block d-sm-inline">615 204 093</span></p>
                                 <div class="text-right card-foot">
                                     <a class="view-gmaps" href="https://goo.gl/maps/nT2ewfhKQHjC6FjM8" target="_blank">Ver en Google Maps</a>
                                 </div>
@@ -159,6 +160,11 @@
             </section>
 
         </div>
+        <div class="col-1 d-sm-none cancel">
+            <a href="/index.html" class="strecthed-link">
+                <img src="/assets/img/contacto/svg/cancel.svg" alt="cerrar">
+            </a>
+        </div>
         
     </div>
     
@@ -170,7 +176,7 @@
         </section>
         <footer>
             <div class="row footer-menu">
-                <div class="col-6">
+                <div class="col-md-9 col-lg-6">
                     <div class="row">
                         <div class="col">
                             <nav>
@@ -211,7 +217,7 @@
                 </div>
             </div>
             <div class="row footer-legal">
-               <div class="col">
+               <div class="col-12 col-sm-6">
                     <nav>
                         <ul>
                             <li><a class="legal link" href="#">Aviso legal</a></li>
@@ -219,7 +225,7 @@
                         </ul>
                     </nav>
                </div>
-               <div class="col">
+               <div class="col-12 col-sm-6">
                    <p class="legal">©Cantabrana Correduría de Seguros S.L. DGSFP J-3517 Contratada póliza de responsabilidad civil profesional según ley vigente. Contacto: 947 22 80 62 – 947 51 00 00</p>
                </div>
             </div>
