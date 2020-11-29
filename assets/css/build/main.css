@@ -1448,12 +1448,6 @@ section.protegemos-img img {
   }
 }
 
-.index-asistencia-page {
-  /*    section, div{
-        border: 1px solid brown;
-    } */
-}
-
 .index-asistencia-page .asistencia-top-banner {
   color: #003b61;
 }
@@ -1553,21 +1547,42 @@ section.protegemos-img img {
   fill: #ecf0f3;
 }
 
-.asistencia-detail-page {
-  /*     section, div, p{
-        border: 1px solid blue;
-    }  */
-}
-
 .asistencia-detail-page .asistencia-top-banner {
   color: #003b61;
 }
 
 .asistencia-detail-page .asistencia-top-banner .agency-logo {
-  width: 315px;
+  width: 190px;
   position: absolute;
-  top: 25%;
-  left: 35%;
+  top: 45%;
+  left: 25%;
+}
+
+@media (min-width: 576px) {
+  .asistencia-detail-page .asistencia-top-banner .agency-logo {
+    width: 315px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .asistencia-detail-page .asistencia-top-banner .agency-logo {
+    top: 40%;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .asistencia-detail-page .asistencia-top-banner .agency-logo {
+    top: 35%;
+    left: 27.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .asistencia-detail-page .asistencia-top-banner .agency-logo {
+    top: 25%;
+    left: 35%;
+  }
 }
 
 .asistencia-detail-page .asistencia-top-banner .banner-navs {
@@ -1583,16 +1598,36 @@ section.protegemos-img img {
   color: #fed198;
 }
 
+@media (max-width: 575.98px) {
+  .asistencia-detail-page .asistencia-top-banner .banner-navs span.prev {
+    font-size: 20px;
+    padding-left: 50px;
+  }
+}
+
 .asistencia-detail-page .asistencia-top-banner .banner-navs span.prev::before {
   content: url(../../img/detail_asistencia/arrow-back.svg);
   position: absolute;
+  top: -10px;
   left: 0px;
   display: inline;
 }
 
+@media (min-width: 576px) {
+  .asistencia-detail-page .asistencia-top-banner .banner-navs span.prev::before {
+    top: 0;
+  }
+}
+
 .asistencia-detail-page .asistencia-top-banner .banner-navs .cancel {
-  padding-top: 10px;
-  width: 30px;
+  width: 20px;
+}
+
+@media (min-width: 576px) {
+  .asistencia-detail-page .asistencia-top-banner .banner-navs .cancel {
+    padding-top: 10px;
+    width: 30px;
+  }
 }
 
 .asistencia-detail-page .banner-bottom {
@@ -1601,16 +1636,25 @@ section.protegemos-img img {
 
 .asistencia-detail-page .banner-bottom .caution-icon {
   fill: #003b61;
+  width: 25px;
 }
 
 .asistencia-detail-page .banner-bottom h1 {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
+  padding-left: 10px;
   font-family: "GT America Medium", sans-serif;
   font-size: 17px;
   line-height: 17px;
   color: #003b61;
   text-transform: uppercase;
+}
+
+@media (max-width: 575.98px) {
+  .asistencia-detail-page .banner-bottom h1 {
+    font-size: 15px;
+    line-height: 17px;
+  }
 }
 
 .asistencia-detail-page .container-bg {
@@ -1620,8 +1664,13 @@ section.protegemos-img img {
 
 .asistencia-detail-page .container-bg h2.agency-name {
   margin-bottom: 15px;
-  font-size: 32px;
-  line-height: 35px;
+}
+
+@media (min-width: 768px) {
+  .asistencia-detail-page .container-bg h2.agency-name {
+    font-size: 32px;
+    line-height: 35px;
+  }
 }
 
 .asistencia-detail-page .container-bg .assist-phone-item {
@@ -1636,9 +1685,21 @@ section.protegemos-img img {
   color: #003b61;
 }
 
+@media (max-width: 575.98px) {
+  .asistencia-detail-page .container-bg .assist-phone-item .item-name {
+    font-size: 10px;
+  }
+}
+
 .asistencia-detail-page .container-bg .assist-phone-item .item-phone {
   font-family: "GT America Bold", sans-serif;
   font-size: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .asistencia-detail-page .container-bg .assist-phone-item .item-phone {
+    font-size: 13px;
+  }
 }
 
 .asistencia-detail-page .container-bg section.llamanos-cta {
