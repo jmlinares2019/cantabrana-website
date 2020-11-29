@@ -1,9 +1,5 @@
 .asistencia-detail-page{
     
-/*     section, div, p{
-        border: 1px solid blue;
-    }  */
-    
     .asistencia-top-banner{
         color: $darkblue;
         &.top-banner{
@@ -11,10 +7,29 @@
         }
 
         .agency-logo{
-            width: 315px;
+            width: 190px;
             position: absolute;
-            top: 25%;
-            left: 35%;
+            top: 45%;
+            left: 25%;
+
+            @include for-phone-landscape-up{
+                width: 315px;
+            }
+
+            @include phone-landscape-to-tablet-portrait{
+                top: 40%;
+                left: 20%;
+            }
+
+            @include from-iPad-portrait-to-landscape{
+                top: 35%;
+                left: 27.5%;
+            }
+
+            @include for-tablet-landscape-up{
+                top: 25%;
+                left: 35%;
+            }
         }
 
         .banner-navs{
@@ -27,17 +42,32 @@
                 font-family: $primary-black;
                 font-size: $big-title-desktop;
                 color: $lightpeach;
+                
+                @include for-phone-only{
+                    font-size: $big-title-mobile;
+                    padding-left: 50px;
+                }
+
                 &::before{
                     content: url(../../img/detail_asistencia/arrow-back.svg);
                     position: absolute;
+                    top: -10px;
                     left: 0px;
                     display: inline;
+
+                    @include for-phone-landscape-up{
+                        top: 0;
+                    }
                 }
             }
 
             .cancel{
-                padding-top: 10px;
-                width: 30px;
+                width: 20px;
+
+                @include for-phone-landscape-up{
+                    padding-top: 10px;
+                    width: 30px;
+                }
             }
         }
 
@@ -48,6 +78,10 @@
 
         .caution-icon{
             fill: $darkblue;
+
+            @include for-phone-only{
+                width: 25px;
+            }
         }
 
         h1{
@@ -59,7 +93,16 @@
             font-size: $regular-desktop;
             line-height: $regular-lh-desktop;
             color: $darkblue;
-            text-transform: uppercase;;
+            text-transform: uppercase;
+
+            @include for-phone-only{
+                padding:{
+                    bottom: .5em;
+                    left: 10px;
+                }
+                font-size: $medium-mobile;
+                line-height: $medium-lh-mobile;
+            }
         }
 
 
@@ -72,8 +115,12 @@
         h2.agency-name{
             margin-bottom: 15px;
             @extend %serif-title;
-            font-size: $big-title-desktop;
-            line-height: $big-title-lh-desktop;
+
+            @include for-tablet-portrait-up{
+                font-size: $big-title-desktop;
+                line-height: $big-title-lh-desktop;
+            }
+
         }
 
         .assist-phone-item{
@@ -85,12 +132,20 @@
                 font-family: $primary-light;
                 font-size: $regular-desktop;
                 color: $darkblue;
+
+                @include for-phone-only{
+                    font-size: $small-mobile;
+                }
                 
             }
 
             .item-phone{
                 font-family: $primary-bold;
                 font-size: 20px;
+
+                @include for-phone-only{
+                    font-size: $regular-mobile;
+                }
 
 
             }
