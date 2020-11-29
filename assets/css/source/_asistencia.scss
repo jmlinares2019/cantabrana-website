@@ -1,5 +1,9 @@
 .index-asistencia-page{
 
+ /*    section, div{
+        border: 1px solid brown;
+    } */
+
     .asistencia-top-banner{
         color: $darkblue;
         &.top-banner{
@@ -8,8 +12,20 @@
 
             img{
                 position: absolute;
-                left: 45%;
+                left: 35%;
                 top: 35%;
+
+                @include phone-landscape-to-tablet-portrait{
+                    left: 37.5%;
+                }
+
+                @include from-iPad-portrait-to-landscape{
+                    left: 40%;
+                }
+
+                @include for-tablet-landscape-up{
+                    left: 45%;
+                }
             }
             
         }
@@ -44,15 +60,11 @@
                 }
                 border-bottom: 4px solid $white;
 
-                .row{
-                    justify-content: space-between;
-                }
-
                 .company-item{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    max-width: 14.5%;
+                    
                     max-height: 115px;
                     padding: 30px 60px;
                     margin: 20px 10px 0;
@@ -61,6 +73,16 @@
                         border: 4px solid $darkblue;
                         // background-color: $lightpeach;
                         box-shadow: $lightpeach;
+
+                        
+                    }
+
+                    @include for-tablet-portrait-down{
+                        max-width: 44%; 
+                    }
+
+                    @include for-tablet-portrait-up{
+                        max-width: 14.5%;
                     }
                 }
             }
