@@ -139,7 +139,6 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .ct
   background-color: #ffffff;
   -webkit-box-shadow: -3px 1px 20px 10px #88888861;
           box-shadow: -3px 1px 20px 10px #88888861;
-  display: none;
 }
 
 .cntb-navbar .container {
@@ -1449,6 +1448,12 @@ section.protegemos-img img {
   }
 }
 
+.index-asistencia-page {
+  /*    section, div{
+        border: 1px solid brown;
+    } */
+}
+
 .index-asistencia-page .asistencia-top-banner {
   color: #003b61;
 }
@@ -1459,8 +1464,26 @@ section.protegemos-img img {
 
 .index-asistencia-page .asistencia-top-banner.top-banner img {
   position: absolute;
-  left: 45%;
+  left: 35%;
   top: 35%;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .index-asistencia-page .asistencia-top-banner.top-banner img {
+    left: 37.5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .index-asistencia-page .asistencia-top-banner.top-banner img {
+    left: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  .index-asistencia-page .asistencia-top-banner.top-banner img {
+    left: 45%;
+  }
 }
 
 .index-asistencia-page .container-bg {
@@ -1488,12 +1511,6 @@ section.protegemos-img img {
   border-bottom: 4px solid #ffffff;
 }
 
-.index-asistencia-page .container-bg section.selection-grid .selection-grid-content .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1504,7 +1521,6 @@ section.protegemos-img img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 14.5%;
   max-height: 115px;
   padding: 30px 60px;
   margin: 20px 10px 0;
@@ -1515,6 +1531,18 @@ section.protegemos-img img {
   border: 4px solid #003b61;
   -webkit-box-shadow: #fed198;
           box-shadow: #fed198;
+}
+
+@media (max-width: 767.98px) {
+  .index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item {
+    max-width: 44%;
+  }
+}
+
+@media (min-width: 768px) {
+  .index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item {
+    max-width: 14.5%;
+  }
 }
 
 .index-asistencia-page .container-bg section.llamanos-cta {
