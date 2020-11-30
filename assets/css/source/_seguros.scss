@@ -91,6 +91,14 @@
 .tab-content{
     padding-top: $sp-60;
 
+    .seguros-icons{
+
+        @include for-phone-only{
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+    }
+
     .seguros-item{
         margin-bottom: 25px;
         position: relative;
@@ -101,11 +109,11 @@
         @include for-phone-landscape-up{
             max-width: 175px;
         }
+
         &:hover{
             background-color: $white;
             box-shadow: 5px 5px 40px 5px #d5c195;
         }
-        // active state!!
 
         svg{
             width: 85px; 
