@@ -136,6 +136,7 @@
             .item-phone{
                 font-family: $primary-bold;
                 font-size: 20px;
+                color: $darkblue;
 
                 @include for-phone-only{
                     font-size: $regular-mobile;

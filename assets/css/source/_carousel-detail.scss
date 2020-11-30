@@ -1,0 +1,121 @@
+.carousel-detail-page{
+
+    .bg-container{
+        height: 1440px;
+        background-image: url(../../img/detail_carousel/Carousel-detail-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+
+        .top-navs{
+            // position: absolute;
+            top: 15%;
+
+            span.prev{
+                position: relative;
+                padding-left: 70px;
+                font-family: $primary-black;
+                font-size: $big-title-desktop;
+                color: $lightpeach;
+                
+                @include for-phone-only{
+                    font-size: $big-title-mobile;
+                    padding-left: 50px;
+                }
+
+                &::before{
+                    content: url(../../img/detail_asistencia/arrow-back.svg);
+                    position: absolute;
+                    top: -10px;
+                    left: 0px;
+                    display: inline;
+
+                    @include for-phone-landscape-up{
+                        top: 0;
+                    }
+                }
+            }
+
+            .cancel{
+                width: 20px;
+
+                @include for-phone-landscape-up{
+                    padding-top: 10px;
+                    width: 30px;
+                }
+            }
+        }
+
+        main{
+            padding-top: 40px;
+
+            .item-detail-img{
+                margin: auto;
+                position: relative;
+    
+                .featured-img{
+                    width: 100%;
+                }
+                
+                .carousel-img-title{
+                    @extend %carousel-img-title;
+
+                    @include for-tablet-portrait-down{
+                        padding-left: 20px;
+                    }
+                    
+                    @include for-tablet-portrait-up{
+                        position: absolute;
+                        top: 0; 
+                    }
+
+                    @include for-tablet-landscape-up{
+                        font-size: 62px;
+                        line-height: 70px;
+                    }
+
+                }
+                
+            }
+    
+            .item-detail-content{
+                @include for-tablet-portrait-down{
+                    padding-left: 20px;
+                }
+
+                @include for-tablet-portrait-up{
+                    padding-top: 100px;
+                }
+
+                .carousel-item-headline{
+                    font-family: $primary-bold;
+                    font-size: 20px;
+                    color: $darkblue;
+
+                    @include for-phone-only{
+                        font-size: $medium-mobile;
+                    }
+                    
+                    @include from-iPad-portrait-to-landscape{
+                        font-size: $regular-tablet;
+                    }
+                }
+            
+                .carousel-item-paragraph{
+                    margin-bottom: 20px;
+                    font-family: $primary-light;
+                    font-size: $regular-desktop;
+                    line-height: $regular-lh-desktop;
+                    color: $darkblue;
+
+                    @include for-phone-only{
+                        font-size: $small-mobile;
+                        line-height: $small-lh-mobile;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
