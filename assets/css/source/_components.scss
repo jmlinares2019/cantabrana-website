@@ -48,15 +48,14 @@
 }
 
 %carousel-img-title{
-    @extend %serif-title;
-    font-size: 41px;
-    line-height: 46px;
     padding-top: 35px;
+    @extend %serif-title;
 
-    @include from-iPad-portrait-to-landscape{
-        font-size: 36px;
-        line-height: 40px;
+    @include for-tablet-portrait-up{
+        font-size: 41px;
+        line-height: 46px;
     }
+    
 }
 
 %cntb-button{
