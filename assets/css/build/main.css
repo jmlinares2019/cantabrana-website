@@ -39,7 +39,7 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
   }
 }
 
-.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
+.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
   font-family: "Canela-Bold", serif;
   font-size: 55px;
   line-height: 61px;
@@ -49,14 +49,14 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
+  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
     font-size: 46px;
     line-height: 48px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
+  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
     font-size: 34px;
     line-height: 36px;
   }
@@ -69,16 +69,14 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
   color: #003b61;
 }
 
-.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title {
-  font-size: 41px;
-  line-height: 46px;
+.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title {
   padding-top: 35px;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title {
-    font-size: 36px;
-    line-height: 40px;
+@media (min-width: 768px) {
+  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title {
+    font-size: 41px;
+    line-height: 46px;
   }
 }
 
@@ -139,6 +137,7 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .ct
   background-color: #ffffff;
   -webkit-box-shadow: -3px 1px 20px 10px #88888861;
           box-shadow: -3px 1px 20px 10px #88888861;
+  display: none;
 }
 
 .cntb-navbar .container {
@@ -1694,6 +1693,7 @@ section.protegemos-img img {
 .asistencia-detail-page .container-bg .assist-phone-item .item-phone {
   font-family: "GT America Bold", sans-serif;
   font-size: 20px;
+  color: #003b61;
 }
 
 @media (max-width: 575.98px) {
@@ -1895,5 +1895,135 @@ section.protegemos-img img {
   position: absolute;
   top: 15px;
   right: 20px;
+}
+
+.carousel-detail-page .bg-container {
+  height: 1440px;
+  background-image: url(../../img/detail_carousel/Carousel-detail-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.carousel-detail-page .bg-container .top-navs {
+  top: 15%;
+}
+
+.carousel-detail-page .bg-container .top-navs span.prev {
+  position: relative;
+  padding-left: 70px;
+  font-family: "GT America Black", sans-serif;
+  font-size: 32px;
+  color: #fed198;
+}
+
+@media (max-width: 575.98px) {
+  .carousel-detail-page .bg-container .top-navs span.prev {
+    font-size: 20px;
+    padding-left: 50px;
+  }
+}
+
+.carousel-detail-page .bg-container .top-navs span.prev::before {
+  content: url(../../img/detail_asistencia/arrow-back.svg);
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  display: inline;
+}
+
+@media (min-width: 576px) {
+  .carousel-detail-page .bg-container .top-navs span.prev::before {
+    top: 0;
+  }
+}
+
+.carousel-detail-page .bg-container .top-navs .cancel {
+  width: 20px;
+}
+
+@media (min-width: 576px) {
+  .carousel-detail-page .bg-container .top-navs .cancel {
+    padding-top: 10px;
+    width: 30px;
+  }
+}
+
+.carousel-detail-page .bg-container main {
+  padding-top: 40px;
+}
+
+.carousel-detail-page .bg-container main .item-detail-img {
+  margin: auto;
+  position: relative;
+}
+
+.carousel-detail-page .bg-container main .item-detail-img .featured-img {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title {
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title {
+    font-size: 62px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carousel-detail-page .bg-container main .item-detail-content {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-detail-page .bg-container main .item-detail-content {
+    padding-top: 100px;
+  }
+}
+
+.carousel-detail-page .bg-container main .item-detail-content .carousel-item-headline {
+  font-family: "GT America Bold", sans-serif;
+  font-size: 20px;
+  color: #003b61;
+}
+
+@media (max-width: 575.98px) {
+  .carousel-detail-page .bg-container main .item-detail-content .carousel-item-headline {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-detail-page .bg-container main .item-detail-content .carousel-item-headline {
+    font-size: 13px;
+  }
+}
+
+.carousel-detail-page .bg-container main .item-detail-content .carousel-item-paragraph {
+  margin-bottom: 20px;
+  font-family: "GT America Light", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #003b61;
+}
+
+@media (max-width: 575.98px) {
+  .carousel-detail-page .bg-container main .item-detail-content .carousel-item-paragraph {
+    font-size: 10px;
+    line-height: 13px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
