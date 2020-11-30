@@ -8,10 +8,6 @@ a:hover {
   color: inherit;
 }
 
-/* $paragraph-tablet: 13px-.2rem;
-$tiny-tablet: 10px-.2rem; */
-/* $paragraph-mobile: 13px; */
-/* $tiny-lh-tablet: 13px; */
 header.header-cntb .top-contact .top-contact-phone, .contacto-card .hq-contact-info .hq-phone {
   font-family: "GT America Bold", sans-serif;
   font-size: 13px;
@@ -940,6 +936,14 @@ section.protegemos-img img {
 
 .tab-content {
   padding-top: 60px;
+}
+
+@media (max-width: 575.98px) {
+  .tab-content .seguros-icons {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
 }
 
 .tab-content .seguros-item {
