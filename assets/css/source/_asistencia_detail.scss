@@ -63,6 +63,7 @@
 
             .cancel{
                 width: 20px;
+                margin-right: 10px;
 
                 @include for-phone-landscape-up{
                     padding-top: 10px;
