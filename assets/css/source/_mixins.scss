@@ -15,7 +15,6 @@
   }
 
   // From phone landscape to tablet portrait
-
   @mixin phone-landscape-to-tablet-landscape{
     @media (min-width: 576px) and (max-width: 991.98px){ @content; }
   }
@@ -38,6 +37,7 @@
   @mixin for-tablet-landscape-up {
     @media (min-width: 992px) { @content; }
   }
+
   @mixin for-desktop-up {
     @media (min-width: 1200px) { @content; }
   }
