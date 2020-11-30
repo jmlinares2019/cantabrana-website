@@ -137,7 +137,6 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .ct
   background-color: #ffffff;
   -webkit-box-shadow: -3px 1px 20px 10px #88888861;
           box-shadow: -3px 1px 20px 10px #88888861;
-  display: none;
 }
 
 .cntb-navbar .container {
@@ -1620,6 +1619,7 @@ section.protegemos-img img {
 
 .asistencia-detail-page .asistencia-top-banner .banner-navs .cancel {
   width: 20px;
+  margin-right: 10px;
 }
 
 @media (min-width: 576px) {
