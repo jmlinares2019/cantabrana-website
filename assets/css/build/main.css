@@ -425,7 +425,7 @@ section.protegemos-img img {
 }
 
 .home-page .home-card.equipo-card {
-  background-image: url(../../img/home/jpeg/equipo-mask.jpg);
+  background-image: url(../../img/home/jpeg/equipo-mask@2x.jpg);
 }
 
 @media (min-width: 576px) {
@@ -904,7 +904,11 @@ section.protegemos-img img {
   padding-bottom: 50px;
 }
 
-.nav-link {
+.nav-tabs {
+  border-bottom: transparent;
+}
+
+.nav-tabs .nav-link {
   font-family: 'GT America Expanded Ultra Light', sans-serif;
   font-size: 10px;
   text-transform: uppercase;
@@ -912,23 +916,23 @@ section.protegemos-img img {
 }
 
 @media (max-width: 575.98px) {
-  .nav-link {
+  .nav-tabs .nav-link {
     font-size: 8px;
     line-height: 10px;
   }
 }
 
-.nav-link.active {
+.nav-tabs .nav-link.active {
   background-color: inherit !important;
   border-color: transparent !important;
   border-bottom: 8px solid #003b61 !important;
 }
 
-.nav-link.active span {
+.nav-tabs .nav-link.active span {
   font-weight: bolder;
 }
 
-.nav-link:hover {
+.nav-tabs .nav-link:hover {
   border-color: transparent !important;
   border-bottom: 8px solid #003b61 !important;
 }
@@ -1282,12 +1286,22 @@ section.protegemos-img img {
 
 .equipo-page .container-bg section.presentation .presentation-highlight {
   margin-top: 25px;
-  padding: 60px 2.5em;
+  padding: 60px 1em;
   font-family: "GT America Light", sans-serif;
   font-size: 15px;
   line-height: 17px;
   color: #003b61;
   background-color: #fed198;
+  border: 20px solid;
+  -o-border-image: url(/assets/img/equipo/corners-card.svg) 20;
+     border-image: url(/assets/img/equipo/corners-card.svg) 20;
+  border-image-outset: 15px;
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  .equipo-page .container-bg section.presentation .presentation-highlight {
+    border-image-outset: 10px;
+  }
 }
 
 .equipo-page .container-bg section.presentation .presentation-highlight span {

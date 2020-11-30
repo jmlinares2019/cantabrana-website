@@ -63,29 +63,33 @@
     padding-bottom: $sp-50;
 }
 
-.nav-link{
-    font-family: 'GT America Expanded Ultra Light', sans-serif;
-    font-size: 10px;
-    text-transform: uppercase;
-    text-align: center;
+.nav-tabs{
+    border-bottom: transparent;
 
-    @include for-phone-only{
-        font-size: $tiny-mobile;
-        line-height: $tiny-lh-mobile;
-    }
-    &.active{
-        background-color: inherit !important;
-        border-color: transparent !important;
-        border-bottom: 8px solid $darkblue !important;
-        span{
-            font-weight: bolder;
+    .nav-link{
+        font-family: 'GT America Expanded Ultra Light', sans-serif;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-align: center;
+    
+        @include for-phone-only{
+            font-size: $tiny-mobile;
+            line-height: $tiny-lh-mobile;
         }
+        &.active{
+            background-color: inherit !important;
+            border-color: transparent !important;
+            border-bottom: 8px solid $darkblue !important;
+            span{
+                font-weight: bolder;
+            }
+        }
+        &:hover{
+            border-color: transparent !important;
+            border-bottom: 8px solid $darkblue !important;
+        }
+    
     }
-    &:hover{
-        border-color: transparent !important;
-        border-bottom: 8px solid $darkblue !important;
-    }
-
 }
 
 .tab-content{

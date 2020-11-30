@@ -63,16 +63,24 @@
     
             .presentation-highlight{
                 margin-top: 25px;
-                padding: 60px 2.5em;
-                font-family: $primary-light;
-                font-size: $small-desktop;
-                line-height: $regular-lh-desktop;
-                color: $darkblue;
-                background-color: $lightpeach;
+                padding: 60px 1em;
+                font-family: "GT America Light", sans-serif;
+                font-size: 15px;
+                line-height: 17px;
+                color: #003b61;
+                background-color: #fed198;
+                border: 20px solid;
+                border-image: url(/assets/img/equipo/corners-card.svg) 20;
+                border-image-outset: 15px;
+
+                @include from-phone-landscape-to-desktop{
+                    border-image-outset: 10px;
+                }
 
                 span{
                     font-family: $primary-bold;
                 }
+
             }
 
             .equipo-presentation-slogan{
