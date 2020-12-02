@@ -76,7 +76,7 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
   }
 }
 
-header.header-cntb .login-btn a, section.llamanos-cta .col-10 .cta-btn .cta-call, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button, .home-page section.index-seguros .ver-seguros-button, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, .home-page section.equipo .equipo-text .equipo-button {
+section.llamanos-cta .col-10 .cta-btn .cta-call, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button, .home-page section.index-seguros .ver-seguros-button, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, .home-page section.equipo .equipo-text .equipo-button {
   font-family: "GT America Black", sans-serif;
   font-size: 13px;
   padding: 7px 30px;
@@ -85,12 +85,12 @@ header.header-cntb .login-btn a, section.llamanos-cta .col-10 .cta-btn .cta-call
 }
 
 @media (max-width: 991.98px) {
-  header.header-cntb .login-btn a, section.llamanos-cta .col-10 .cta-btn .cta-call, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button, .home-page section.index-seguros .ver-seguros-button, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, .home-page section.equipo .equipo-text .equipo-button {
+  section.llamanos-cta .col-10 .cta-btn .cta-call, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button, .home-page section.index-seguros .ver-seguros-button, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button, .home-page section.equipo .equipo-text .equipo-button {
     font-size: 10px;
   }
 }
 
-header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .cta-call:hover, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button:hover, .home-page section.index-seguros .ver-seguros-button:hover, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button:hover, .home-page section.equipo .equipo-text .equipo-button:hover {
+section.llamanos-cta .col-10 .cta-btn .cta-call:hover, .home-page section.carrusel .carousel-item .carousel-content.carousel-text .carousel-button:hover, .home-page section.index-seguros .ver-seguros-button:hover, .home-page section.seguros-reminder .seguros-reminder-text .seguros-reminder-button:hover, .home-page section.equipo .equipo-text .equipo-button:hover {
   background-color: #003b61;
   color: #ffffff;
 }
@@ -244,24 +244,6 @@ header.header-cntb .top-contact .top-sm-icon {
   padding-right: 5px;
 }
 
-header.header-cntb .login-btn {
-  padding-top: 15px;
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  header.header-cntb .login-btn a {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  header.header-cntb .login-btn a {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
-
 section.llamanos-cta {
   padding-bottom: 190px;
 }
@@ -287,10 +269,16 @@ section.llamanos-cta .col-10 .cta-text .logo-cantabrana-cta {
 }
 
 section.llamanos-cta .col-10 .cta-text .cta-question {
-  padding-top: 20px;
+  padding-top: 10px;
   margin-bottom: 5px;
   color: #003b61;
   letter-spacing: -1px;
+}
+
+@media (min-width: 576px) {
+  section.llamanos-cta .col-10 .cta-text .cta-question {
+    padding-top: 15px;
+  }
 }
 
 section.llamanos-cta .col-10 .cta-text .cta-answer {
@@ -899,12 +887,31 @@ section.protegemos-img img {
   color: #003b61;
 }
 
+@media (max-width: 575.98px) {
+  .index-seguros-page .container-bg section.seguros-banner .banner-text h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
 .index-seguros-page .container-bg section.seguros-banner .banner-text p {
-  padding-top: 25px;
   font-family: "GT America Light", sans-serif;
   font-size: 17px;
   line-height: 17px;
   color: #003b61;
+}
+
+@media (max-width: 575.98px) {
+  .index-seguros-page .container-bg section.seguros-banner .banner-text p {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
+@media (min-width: 576px) {
+  .index-seguros-page .container-bg section.seguros-banner .banner-text p {
+    padding-top: 25px;
+  }
 }
 
 .index-seguros-page .container-bg section.seguros-banner .banner-img img {
@@ -1138,7 +1145,13 @@ section.protegemos-img img {
 }
 
 .seguros-detail-page .container-bg section.section-ventajas {
-  padding-top: 130px;
+  padding-top: 70px;
+}
+
+@media (min-width: 576px) {
+  .seguros-detail-page .container-bg section.section-ventajas {
+    padding-top: 130px;
+  }
 }
 
 .seguros-detail-page .container-bg section.section-ventajas .ventajas-table {
@@ -1179,10 +1192,15 @@ section.protegemos-img img {
   padding-bottom: 75px;
 }
 
-.seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas .col-6 {
-  padding-left: 4em;
-  padding-right: 4em;
+.seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas .col-md-6 {
   min-height: 350px;
+}
+
+@media (max-width: 575.98px) {
+  .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
@@ -1208,7 +1226,13 @@ section.protegemos-img img {
 }
 
 .seguros-detail-page .container-bg section.promo-img-banner {
-  padding-top: 220px;
+  padding-top: 80px;
+}
+
+@media (min-width: 576px) {
+  .seguros-detail-page .container-bg section.promo-img-banner {
+    padding-top: 220px;
+  }
 }
 
 .seguros-detail-page .container-bg section.promo-img-banner .col {
