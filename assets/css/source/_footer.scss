@@ -18,7 +18,6 @@ section.llamanos-cta{
 
             .logo-cantabrana-cta{
                 width: 115px;
-
             }
         
             .cta-question{
@@ -64,13 +63,16 @@ section.llamanos-cta{
 }
 
 section.protegemos-img{
-    padding:{
+    padding: {
         top: 80px;
-        bottom: 180px;
+        bottom: 100px;
     }
 
     @include for-phone-landscape-up{
-        padding-top: 150px;
+        padding: {
+            top: 150px;
+            bottom: 180px;
+        }
     }
 
     img{

@@ -27,7 +27,7 @@
     line-height: $huge-title-lh-desktop;
     color: $darkblue;
     font-weight: $bold;
-    letter-spacing: -2px; // is it normal?
+    letter-spacing: -1px; // needed to fix too loose letter-spacing
 
     @include from-iPad-portrait-to-landscape{
         font-size: $huge-title-tablet;
