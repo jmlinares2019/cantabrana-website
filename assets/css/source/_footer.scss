@@ -21,11 +21,15 @@ section.llamanos-cta{
             }
         
             .cta-question{
-                padding-top: 20px;
+                padding-top: 10px;
                 margin-bottom: 5px;
                 @extend %main-title;
                 color: $darkblue;
                 letter-spacing: -1px;
+
+                @include for-phone-landscape-up{
+                    padding-top: 15px;
+                }
             }
 
             .cta-answer{

@@ -24,14 +24,27 @@
                     line-height: $big-title-lh-desktop + 5px;
                     letter-spacing: -1px;
                     color: $darkblue;
+
+                    @include for-phone-only{
+                        font-size: $big-title-mobile;
+                        line-height: $big-title-lh-mobile;
+                    }
                 }
     
                 p{
-                    padding-top: 25px;
                     font-family: $primary-light;
                     font-size: $regular-desktop;
                     line-height: $regular-lh-desktop;
                     color: $darkblue;
+
+                    @include for-phone-only{
+                        font-size: $small-mobile;
+                        line-height: $small-lh-mobile;
+                    }
+
+                    @include for-phone-landscape-up{
+                        padding-top: 25px;
+                    }
                 }
             }
     
