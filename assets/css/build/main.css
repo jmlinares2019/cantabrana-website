@@ -41,7 +41,7 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
   line-height: 61px;
   color: #003b61;
   font-weight: 600;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -189,11 +189,22 @@ header.header-cntb .login-btn a:hover, section.llamanos-cta .col-10 .cta-btn .ct
 }
 
 header.header-cntb {
-  padding-top: 75px;
+  padding-top: 25px;
+}
+
+@media (min-width: 576px) {
+  header.header-cntb {
+    padding-top: 75px;
+  }
 }
 
 header.header-cntb .col-5 {
   padding-right: 0;
+}
+
+header.header-cntb .home-brand {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 header.header-cntb .home-brand img {
@@ -313,12 +324,13 @@ section.llamanos-cta .col-10 .cta-btn {
 
 section.protegemos-img {
   padding-top: 80px;
-  padding-bottom: 180px;
+  padding-bottom: 100px;
 }
 
 @media (min-width: 576px) {
   section.protegemos-img {
     padding-top: 150px;
+    padding-bottom: 180px;
   }
 }
 
@@ -404,6 +416,7 @@ section.protegemos-img img {
 
 @media (max-width: 575.98px) {
   .home-page .home-card.seguros-card {
+    max-height: 230px;
     background-size: cover;
   }
 }
@@ -469,6 +482,10 @@ section.protegemos-img img {
   color: #003b61;
 }
 
+.home-page .home-card .home-card-paragraph.asistencia {
+  color: #f9fdbf;
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .home-page .home-card .home-card-paragraph {
     font-size: 13px;
@@ -524,6 +541,10 @@ section.protegemos-img img {
 .home-page .home-card .home-card-text {
   position: absolute;
   bottom: 20px;
+}
+
+.home-page .home-card .home-card-text:not(.seguros-text) {
+  left: 0;
 }
 
 .home-page section.carrusel {
