@@ -39,6 +39,14 @@ a:hover {
 }
 
 @font-face {
+  font-family: 'Canela-Light';
+  src: url("../../fonts/Canela-Light.woff2") format("woff2"), url("../../fonts/Canela-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Canela';
   src: url("../../fonts/Canela-Regular.woff2") format("woff2"), url("../../fonts/Canela-Regular.woff") format("woff");
   font-weight: normal;
@@ -81,7 +89,7 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
   }
 }
 
-.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
+.home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .asistencia-detail-page .container-bg h2.agency-name {
   font-family: "Canela-Bold", serif;
   font-size: 55px;
   line-height: 61px;
@@ -91,14 +99,14 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
+  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .asistencia-detail-page .container-bg h2.agency-name {
     font-size: 46px;
     line-height: 48px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .equipo-page .container-bg section.keywords p, .asistencia-detail-page .container-bg h2.agency-name {
+  .home-page section.carrusel .carousel-item .carousel-content.carousel-img .slide-img-title, .carousel-detail-page .bg-container main .item-detail-img .carousel-img-title, .home-page section.equipo .equipo-text .equipo-slogan, .home-page section.contacto .promo-contacto .col-promo .contacto-slogan, .seguros-title, .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title, .asistencia-detail-page .container-bg h2.agency-name {
     font-size: 34px;
     line-height: 36px;
   }
@@ -1412,7 +1420,7 @@ section.protegemos-img img {
 .equipo-page .container-bg section.keywords p {
   padding-top: 15px;
   padding-bottom: 15px;
-  font-family: "Canela", serif;
+  font-family: 'Canela-Light', sans-serif;
   font-size: 32px;
   line-height: 35px;
   border-top: 4px solid #ffffff;
