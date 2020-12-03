@@ -8,30 +8,30 @@
         background-position: top;
 
         .top-navs{
-            // position: absolute;
-            top: 15%;
+            position: absolute;
+            top: 5%;
+            left: 0;
+
+            .col-1{
+            
+                @include for-phone-only{
+                    padding-left: 0;
+                }
+            }
 
             span.prev{
                 position: relative;
-                padding-left: 70px;
-                font-family: $primary-black;
-                font-size: $big-title-desktop;
-                color: $lightpeach;
-                
-                @include for-phone-only{
-                    font-size: $big-title-mobile;
-                    padding-left: 50px;
-                }
 
                 &::before{
                     content: url(../../img/detail_asistencia/arrow-back.svg);
                     position: absolute;
-                    top: -10px;
-                    left: 0px;
+                    top: 0;
+                    left: 0;
+                    width: 24px;
                     display: inline;
 
                     @include for-phone-landscape-up{
-                        top: 0;
+                        width: 48px;
                     }
                 }
             }
@@ -47,7 +47,7 @@
         }
 
         main{
-            padding-top: 40px;
+            padding-top: 140px;
 
             .item-detail-img{
                 margin: auto;
@@ -115,7 +115,6 @@
                 }
             }
         }
-
         
     }
 }
