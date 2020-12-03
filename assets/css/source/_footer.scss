@@ -3,7 +3,10 @@ section.llamanos-cta{
     padding-bottom: 190px;
 
     @include for-tablet-portrait-down{
-        padding-top: 100px !important;
+        padding: {
+            top: 100px !important;
+            bottom: 100px !important;
+        }
     }
 
     .col-10{
