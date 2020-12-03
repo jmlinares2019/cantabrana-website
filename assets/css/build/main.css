@@ -1104,8 +1104,10 @@ section.protegemos-img img {
   color: #ffffff;
 }
 
-.seguros-detail-page section, .seguros-detail-page div, .seguros-detail-page p {
-  border: 1px solid blue;
+.seguros-detail-page {
+  /*     section, div, p{
+        border: 1px solid blue;
+    } */
 }
 
 .seguros-detail-page .seguros-detail-top-banner {
@@ -1208,32 +1210,23 @@ section.protegemos-img img {
 }
 
 .seguros-detail-page .container-bg section.section-ventajas .ventajas-table {
-  position: relative;
   background-color: #ccfeff;
+  border: 20px solid;
+  -o-border-image: url(../../img/detail_seguros/ico/svg/card-border.svg) 20;
+     border-image: url(../../img/detail_seguros/ico/svg/card-border.svg) 20;
+  border-image-outset: 10px;
 }
 
-.seguros-detail-page .container-bg section.section-ventajas .ventajas-table::before {
-  content: '';
-  position: absolute;
-  display: inline;
-  top: -1.5%;
-  left: 90%;
-  width: 100px;
-  height: 100px;
-  z-index: -1;
-  background-color: #ffffff;
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .seguros-detail-page .container-bg section.section-ventajas .ventajas-table {
+    border-image-outset: 15px;
+  }
 }
 
-.seguros-detail-page .container-bg section.section-ventajas .ventajas-table::after {
-  content: '';
-  position: absolute;
-  display: inline;
-  bottom: -1.5%;
-  right: 90%;
-  width: 100px;
-  height: 100px;
-  z-index: -1;
-  background-color: #ffffff;
+@media (min-width: 768px) {
+  .seguros-detail-page .container-bg section.section-ventajas .ventajas-table {
+    border-image-outset: 20px;
+  }
 }
 
 .seguros-detail-page .container-bg section.section-ventajas .ventajas-table .ventajas-title {
@@ -1315,14 +1308,6 @@ section.protegemos-img img {
 
 .seguros-detail-page .container-bg section.llamanos-cta svg .st0 {
   fill: #ecf0f3;
-}
-
-.equipo-page {
-  /*     
-     section, div{
-        border: 1px solid orange;
-    }
- */
 }
 
 .equipo-page .top-banner {
@@ -1722,27 +1707,35 @@ section.protegemos-img img {
 @media (max-width: 575.98px) {
   .asistencia-detail-page .asistencia-top-banner .banner-navs span.prev {
     font-size: 20px;
-    padding-left: 50px;
+    padding-left: 30px;
   }
 }
 
 .asistencia-detail-page .asistencia-top-banner .banner-navs span.prev::before {
   content: url(../../img/detail_asistencia/arrow-back.svg);
   position: absolute;
-  top: -10px;
+  top: 0px;
   left: 0px;
+  width: 24px;
   display: inline;
 }
 
 @media (min-width: 576px) {
   .asistencia-detail-page .asistencia-top-banner .banner-navs span.prev::before {
-    top: 0;
+    width: 48px;
   }
+}
+
+.asistencia-detail-page .asistencia-top-banner .banner-navs span.prev::after {
+  content: '';
+  display: inline;
+  width: 1px;
+  padding-left: 10px;
+  border-right: 4px solid #fed198;
 }
 
 .asistencia-detail-page .asistencia-top-banner .banner-navs .cancel {
   width: 20px;
-  margin-right: 15px;
 }
 
 @media (min-width: 576px) {
@@ -1802,7 +1795,6 @@ section.protegemos-img img {
 }
 
 .asistencia-detail-page .container-bg .assist-phone-item .item-name {
-  padding: 0;
   font-family: "GT America Light", sans-serif;
   font-size: 17px;
   color: #003b61;
@@ -1810,12 +1802,12 @@ section.protegemos-img img {
 
 @media (max-width: 575.98px) {
   .asistencia-detail-page .container-bg .assist-phone-item .item-name {
+    padding: 0;
     font-size: 13px;
   }
 }
 
 .asistencia-detail-page .container-bg .assist-phone-item .item-phone {
-  padding: 0;
   font-family: "GT America Black", sans-serif;
   font-size: 20px;
   color: #003b61;
@@ -1823,6 +1815,7 @@ section.protegemos-img img {
 
 @media (max-width: 575.98px) {
   .asistencia-detail-page .container-bg .assist-phone-item .item-phone {
+    padding: 0;
     font-size: 15px;
   }
 }
@@ -2031,35 +2024,33 @@ section.protegemos-img img {
 }
 
 .carousel-detail-page .bg-container .top-navs {
-  top: 15%;
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+
+@media (max-width: 575.98px) {
+  .carousel-detail-page .bg-container .top-navs .col-1 {
+    padding-left: 0;
+  }
 }
 
 .carousel-detail-page .bg-container .top-navs span.prev {
   position: relative;
-  padding-left: 70px;
-  font-family: "GT America Black", sans-serif;
-  font-size: 32px;
-  color: #fed198;
-}
-
-@media (max-width: 575.98px) {
-  .carousel-detail-page .bg-container .top-navs span.prev {
-    font-size: 20px;
-    padding-left: 50px;
-  }
 }
 
 .carousel-detail-page .bg-container .top-navs span.prev::before {
   content: url(../../img/detail_asistencia/arrow-back.svg);
   position: absolute;
-  top: -10px;
-  left: 0px;
+  top: 0;
+  left: 0;
+  width: 24px;
   display: inline;
 }
 
 @media (min-width: 576px) {
   .carousel-detail-page .bg-container .top-navs span.prev::before {
-    top: 0;
+    width: 48px;
   }
 }
 
@@ -2075,7 +2066,7 @@ section.protegemos-img img {
 }
 
 .carousel-detail-page .bg-container main {
-  padding-top: 40px;
+  padding-top: 140px;
 }
 
 .carousel-detail-page .bg-container main .item-detail-img {
