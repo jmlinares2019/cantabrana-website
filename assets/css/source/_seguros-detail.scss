@@ -103,30 +103,18 @@
                 padding-top: 130px;
             }
     
-            .ventajas-table{
-                position: relative;
+            .ventajas-table{         
                 background-color: $lighterblue;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    display: inline;
-                    top: -1.5%;
-                    left: 90%;
-                    width: 100px;
-                    height: 100px;
-                    z-index: -1;
-                    background-color: $white;
+                border: 20px solid;
+                border-image: url(../../img/detail_seguros/ico/svg/Card-border.svg) 20;
+                border-image-outset: 10px;
+
+                @include phone-landscape-to-tablet-portrait{
+                    border-image-outset: 15px;
                 }
-                &::after{
-                    content: '';
-                    position: absolute;
-                    display: inline;
-                    bottom: -1.5%;
-                    right: 90%;
-                    width: 100px;
-                    height: 100px;
-                    z-index: -1;
-                    background-color: $white;
+
+                @include for-tablet-portrait-up{
+                    border-image-outset: 20px;
                 }
     
                 .ventajas-title{
