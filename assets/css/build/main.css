@@ -8,6 +8,52 @@ a:hover {
   color: inherit;
 }
 
+@font-face {
+  font-family: 'GT America Light';
+  src: url("../../fonts/GT-America-Light.woff"), format("woff");
+}
+
+@font-face {
+  font-family: 'GT America Medium';
+  src: url("../../fonts/GT-America-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'GT America Bold';
+  src: url("../../fonts/GT-America-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'GT America Black';
+  src: url("../../fonts/GT-America-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'GT America Expanded Light';
+  src: url("../../fonts/GT-America-Expanded-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'GT America Expanded Black';
+  src: url("../../fonts/GT-America-Expanded-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url("../../fonts/Canela-Regular.woff2") format("woff2"), url("../../fonts/Canela-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Canela-Bold';
+  src: url("../../fonts/Canela-Bold.woff2") format("woff2"), url("../../fonts/Canela-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 header.header-cntb .top-contact .top-contact-phone, .contacto-card .hq-contact-info .hq-phone {
   font-family: "GT America Bold", sans-serif;
   font-size: 13px;
@@ -251,6 +297,7 @@ section.llamanos-cta {
 @media (max-width: 767.98px) {
   section.llamanos-cta {
     padding-top: 100px !important;
+    padding-bottom: 100px !important;
   }
 }
 
@@ -716,7 +763,7 @@ section.protegemos-img img {
 }
 
 .home-page section.equipo .equipo-text .equipo-slogan {
-  font-family: "Canela-Regular", serif;
+  font-family: "Canela", serif;
   font-weight: 500;
   color: #ffffff;
 }
@@ -937,7 +984,7 @@ section.protegemos-img img {
 }
 
 .nav-tabs .nav-link {
-  font-family: 'GT America Expanded Ultra Light', sans-serif;
+  font-family: 'GT America Expanded Light', sans-serif;
   font-size: 10px;
   text-transform: uppercase;
   text-align: center;
@@ -957,7 +1004,7 @@ section.protegemos-img img {
 }
 
 .nav-tabs .nav-link.active span {
-  font-weight: bolder;
+  font-family: 'GT America Expanded Black', sans-serif;
 }
 
 .nav-tabs .nav-link:hover {
@@ -1049,10 +1096,8 @@ section.protegemos-img img {
   color: #ffffff;
 }
 
-.seguros-detail-page {
-  /*     section, div, p{
-        border: 1px solid blue;
-    } */
+.seguros-detail-page section, .seguros-detail-page div, .seguros-detail-page p {
+  border: 1px solid blue;
 }
 
 .seguros-detail-page .seguros-detail-top-banner {
@@ -1367,7 +1412,7 @@ section.protegemos-img img {
 .equipo-page .container-bg section.keywords p {
   padding-top: 15px;
   padding-bottom: 15px;
-  font-family: "Canela-Regular", serif;
+  font-family: "Canela", serif;
   font-size: 32px;
   line-height: 35px;
   border-top: 4px solid #ffffff;
@@ -1583,7 +1628,8 @@ section.protegemos-img img {
 }
 
 .index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item:hover {
-  border: 4px solid #003b61;
+  background-color: #003b61;
+  opacity: .4;
   -webkit-box-shadow: #fed198;
           box-shadow: #fed198;
 }
@@ -1648,7 +1694,13 @@ section.protegemos-img img {
 
 .asistencia-detail-page .asistencia-top-banner .banner-navs {
   position: absolute;
-  top: 15%;
+  top: 7.5%;
+}
+
+@media (min-width: 576px) {
+  .asistencia-detail-page .asistencia-top-banner .banner-navs {
+    top: 15%;
+  }
 }
 
 .asistencia-detail-page .asistencia-top-banner .banner-navs span.prev {
@@ -1682,7 +1734,7 @@ section.protegemos-img img {
 
 .asistencia-detail-page .asistencia-top-banner .banner-navs .cancel {
   width: 20px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 @media (min-width: 576px) {
@@ -1736,12 +1788,13 @@ section.protegemos-img img {
 }
 
 .asistencia-detail-page .container-bg .assist-phone-item {
-  padding: 15px;
+  padding: 15px 10px;
   margin-top: 15px;
   background-color: #ffffff;
 }
 
 .asistencia-detail-page .container-bg .assist-phone-item .item-name {
+  padding: 0;
   font-family: "GT America Light", sans-serif;
   font-size: 17px;
   color: #003b61;
@@ -1749,19 +1802,20 @@ section.protegemos-img img {
 
 @media (max-width: 575.98px) {
   .asistencia-detail-page .container-bg .assist-phone-item .item-name {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
 .asistencia-detail-page .container-bg .assist-phone-item .item-phone {
-  font-family: "GT America Bold", sans-serif;
+  padding: 0;
+  font-family: "GT America Black", sans-serif;
   font-size: 20px;
   color: #003b61;
 }
 
 @media (max-width: 575.98px) {
   .asistencia-detail-page .container-bg .assist-phone-item .item-phone {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
