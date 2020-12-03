@@ -80,7 +80,7 @@
     border-bottom: transparent;
 
     .nav-link{
-        font-family: 'GT America Expanded Ultra Light', sans-serif;
+        font-family: 'GT America Expanded Light', sans-serif;
         font-size: 10px;
         text-transform: uppercase;
         text-align: center;
@@ -94,7 +94,7 @@
             border-color: transparent !important;
             border-bottom: 8px solid $darkblue !important;
             span{
-                font-weight: bolder;
+                font-family: 'GT America Expanded Black', sans-serif;
             }
         }
         &:hover{
