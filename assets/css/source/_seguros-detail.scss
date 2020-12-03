@@ -106,7 +106,7 @@
             .ventajas-table{         
                 background-color: $lighterblue;
                 border: 20px solid;
-                border-image: url(../../img/detail_seguros/ico/svg/Card-border.svg) 20;
+                border-image: url(../../img/detail_seguros/ico/svg/card-border.svg) 20;
                 border-image-outset: 10px;
 
                 @include phone-landscape-to-tablet-portrait{
