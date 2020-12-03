@@ -95,7 +95,6 @@ section.llamanos-cta .col-10 .cta-text .cta-question, .home-page .home-card .hom
   line-height: 61px;
   color: #003b61;
   font-weight: 600;
-  letter-spacing: -1px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1736,6 +1735,7 @@ section.protegemos-img img {
 
 .asistencia-detail-page .asistencia-top-banner .banner-navs .cancel {
   width: 20px;
+  margin-right: 15px;
 }
 
 @media (min-width: 576px) {
