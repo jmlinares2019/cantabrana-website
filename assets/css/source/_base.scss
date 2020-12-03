@@ -29,6 +29,14 @@
 }
 
 @font-face {
+    font-family: 'Canela-Light';
+    src: url('../../fonts/Canela-Light.woff2') format('woff2'), url('../../fonts/Canela-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Canela';
     src: url('../../fonts/Canela-Regular.woff2') format('woff2'), url('../../fonts/Canela-Regular.woff') format('woff');
     font-weight: normal;
