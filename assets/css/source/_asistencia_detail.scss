@@ -34,7 +34,11 @@
 
         .banner-navs{
             position: absolute;
-            top: 15%;
+            top: 7.5%;
+
+            @include for-phone-landscape-up{
+                top: 15%;
+            }
 
             span.prev{
                 position: relative;
@@ -45,26 +49,36 @@
                 
                 @include for-phone-only{
                     font-size: $big-title-mobile;
-                    padding-left: 50px;
+                    padding-left: 30px;
                 }
 
                 &::before{
                     content: url(../../img/detail_asistencia/arrow-back.svg);
                     position: absolute;
-                    top: -10px;
+                    top: 0px;
                     left: 0px;
+                    width: 24px;
                     display: inline;
 
                     @include for-phone-landscape-up{
-                        top: 0;
+                        width: 48px;
                     }
+                }
+
+                &::after{
+                    content: '';
+                    display: inline;
+                    width: 1px;
+                    padding-left: 10px;
+                    border-right: 4px solid $lightpeach;
+
                 }
             }
 
             .cancel{
                 width: 20px;
-                margin-right: 10px;
-
+                margin-right: 15px;
+                
                 @include for-phone-landscape-up{
                     padding-top: 10px;
                     width: 30px;
@@ -119,7 +133,7 @@
         }
 
         .assist-phone-item{
-            padding: 15px;
+            padding: 15px 10px;
             margin-top: 15px;
             background-color: $white;
 
@@ -129,18 +143,20 @@
                 color: $darkblue;
 
                 @include for-phone-only{
-                    font-size: $small-mobile;
+                    padding: 0;
+                    font-size: $regular-mobile;
                 }
                 
             }
 
             .item-phone{
-                font-family: $primary-bold;
+                font-family: $primary-black;
                 font-size: 20px;
                 color: $darkblue;
 
                 @include for-phone-only{
-                    font-size: $regular-mobile;
+                    padding: 0;
+                    font-size: $medium-mobile;
                 }
 
 

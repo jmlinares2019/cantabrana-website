@@ -20,15 +20,6 @@
   <!--Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  
-  <!-- Fonts    -->
-  <link href="https://db.onlinewebfonts.com/c/76cad44852ba93f820a16d446f80c5e2?family=GT+America+Light" rel="stylesheet" type="text/css"/>
-  <link href="https://db.onlinewebfonts.com/c/bb1ecf827e7c7df1eecc6cd8567a0d73?family=GT+America+Medium" rel="stylesheet" type="text/css"/>
-  <link href="https://db.onlinewebfonts.com/c/0d30d9b619fc0894461b13fd4eaee3df?family=GT+America+Bold" rel="stylesheet" type="text/css"/>
-  <link href="https://db.onlinewebfonts.com/c/c0258d0a88bb573793e04c989f6e88dc?family=GT+America+Black" rel="stylesheet" type="text/css"/>
-  <link href="https://db.onlinewebfonts.com/c/3def92f7b2ad644bd382798ecc8ca4c7?family=Canela" rel="stylesheet" type="text/css"/>
-  <link href="https://db.onlinewebfonts.com/c/4a24899e94d8236f671c1090cd9e068c?family=Canela" rel="stylesheet" type="text/css"/>
-  <link href="https://db.onlinewebfonts.com/c/3ac3a8ff95fa504fd32a78dcd993f7ec?family=GT+America+Expanded+Ultra+Light" rel="stylesheet" type="text/css"/>
 
 </head>
 
@@ -101,8 +92,7 @@
                         <a class="stretched-link" href="seguros.html">
                             <p class="home-card-title">Selecciona <span class="d-block">el tipo de seguro</span></p>
                         </a>
-                        
-                        <div class="home-card-text">
+                        <div class="home-card-text seguros-text">
                             <p class="home-card-paragraph seguros">Te ayudamos a encontrar<span class="d-block">el seguro que mejor se adapte a ti.</span> ¡Comencemos!</p>
                             <h3 class="home-card-name">Seguros</h3>
                         </div>
@@ -116,31 +106,23 @@
             <div class="col-12 col-md-6 pt-3 pt-md-0">
                 <div class="row justify-content-between">
                     <div class="col col-6 home-card asistencia-card">
-                        <div class="row">
-                            <div class="col">
-                                <svg class="home-card-icon danger" width="45px" viewBox="0 0 45.354 39.169">
-                                    <path fill="#f9fdbf" d="M1 41.169h45.354L23.677 2zm24.738-6.185h-4.123v-4.123h4.123zm0-8.246h-4.123v-8.246h4.123z" transform="translate(-1 -2)"/>
-                                </svg>
-                            </div>
-                            <div class="col col-xl-6 home-card-text">
-                                <a href="/asistencia.html" class="stretched-link">
-                                    <p class="home-card-paragraph">Los teléfonos que necesitas</p>
-                                    <h3 class="home-card-name">Asistencia</h3>
-                                </a>
-                            </div>
+                        <a href="/asistencia.html" class="stretched-link">
+                            <svg class="home-card-icon danger" width="45px" viewBox="0 0 45.354 39.169">
+                                <path fill="#f9fdbf" d="M1 41.169h45.354L23.677 2zm24.738-6.185h-4.123v-4.123h4.123zm0-8.246h-4.123v-8.246h4.123z" transform="translate(-1 -2)"/>
+                            </svg>
+                        </a>   
+                        <div class="col col-xl-6 home-card-text">   
+                            <p class="home-card-paragraph asistencia">Los teléfonos que necesitas</p>
+                            <h3 class="home-card-name">Asistencia</h3>
                         </div>
                     </div>
                     <div class="col col-6 home-card equipo-card">
-                        <div class="row">
-                        <div class="col">
+                        <a href="/equipo.html" class="stretched-link">
                             <img class="home-card-icon iconx" src="assets/img/home/ico/png/equipo-icon.png">
-                            </div>
-                            <div class="col col-xl-7 home-card-text">
-                                <p class="home-card-paragraph">Somos personas de carne y hueso</p>
-                                <a href="/equipo.html" class="stretched-link">
-                                    <h3 class="home-card-name">Cantabrana</h3>
-                                </a>
-                            </div>
+                        </a>
+                        <div class="col col-xl-7 home-card-text">
+                            <p class="home-card-paragraph">Somos personas de carne y hueso</p>
+                            <h3 class="home-card-name">Cantabrana</h3>
                         </div>
                     </div>
                 </div>
@@ -203,7 +185,7 @@
             <section class="row justify-content-center index-seguros">
             <div class="col col-10 px-0">
                 <p class="text-center">Los seguros destacados</p>
-                <h2 class="text-center seguros-title">¿Qué tipo de seguro buscas?</h2>
+                <h2 class="text-center seguros-title">¿Qué tipo de <span class="d-block d-sm-inline"> seguro busca?</span></h2>
 
                 <!-- Nav tabs section -->
                 <nav class="row">

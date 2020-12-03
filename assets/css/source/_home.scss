@@ -19,6 +19,7 @@
             background-size: contain;
 
             @include for-phone-only{
+                max-height: 230px;
                 background-size: cover;
             }
         }
@@ -70,6 +71,10 @@
             &.seguros{
                 color: $darkblue;
             }
+            &.asistencia{
+                color: $cream;
+            }
+
 
             @include from-iPad-portrait-to-landscape{
                 font-size: $regular-tablet;
@@ -120,6 +125,9 @@
         .home-card-text{
             position: absolute;
             bottom: 20px;
+            &:not(.seguros-text){
+                left: 0;        
+            }
         }
     }
 

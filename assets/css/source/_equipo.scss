@@ -1,9 +1,5 @@
 .equipo-page{
-/*     
-     section, div{
-        border: 1px solid orange;
-    }
- */
+
     .top-banner{
         color: $darkblue;
         &.top-banner{
@@ -95,12 +91,11 @@
             padding-top: 85px;
 
             p{
-                padding:{
+                padding: {
                     top: 15px;
                     bottom: 15px;
                 }
-                @extend %serif-title; // truco. Cambiar!
-                font-family: $secondary-regular; // no funciona!!
+                font-family: 'Canela-Light', sans-serif;
                 font-size: $big-title-desktop;
                 line-height: $big-title-lh-desktop;
                 border-top: 4px solid $white;
@@ -219,7 +214,6 @@
             }
 
         }
-
 
     }
 
