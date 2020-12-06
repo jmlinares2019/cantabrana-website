@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <defs>
+        <style>
+            .cls-2{fill:#0b4269}
+        </style>
+    </defs>
+    <g id="Grupo_488" transform="translate(-728 -8)">
+        <path id="Rectángulo_10" fill="none" d="M0 0H120V120H0z" transform="translate(728 8)"/>
+        <g id="noun_flats_483091" transform="translate(752.687 32.687)">
+            <path id="Trazado_466" d="M218.5 218.219v42.318h10.589v-21.216h21.178v21.2h10.551V218.2H218.5zm14.106 14.049h-7.053v-7.053h7.053zm21.178 0h-7.053v-7.053h7.053z" class="cls-2" transform="translate(-190.288 -190.045)"/>
+            <path id="Trazado_467" d="M107.3 68.5H68.5v70.53h21.159V89.621H107.3zm-24.675 56.33h-7.053v-7.053h7.053zm0-14.106h-7.053v-7.053h7.053zm0-14.106h-7.053v-7.053h7.053zm0-14.106h-7.053v-7.053h7.053zm17.642 0h-7.053v-7.053h7.053z" class="cls-2" transform="translate(-68.5 -68.5)"/>
+            <path id="Rectángulo_48" d="M0 0H7.053V14.144H0z" class="cls-2" transform="translate(45.872 56.33)"/>
+        </g>
+    </g>
+</svg>
