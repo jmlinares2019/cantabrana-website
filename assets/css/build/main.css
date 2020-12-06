@@ -988,6 +988,7 @@ section.protegemos-img img {
 
 .nav-tabs {
   border-bottom: transparent;
+  padding: 0;
 }
 
 .nav-tabs .nav-link {
@@ -1031,6 +1032,22 @@ section.protegemos-img img {
   }
 }
 
+@media (min-width: 576px) {
+  .tab-content .owl-carousel {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+.tab-content .owl-carousel .owl-stage-outer {
+  max-height: 205px;
+}
+
+.tab-content .owl-carousel .owl-stage-outer .owl-item {
+  max-width: 175px !important;
+}
+
 .tab-content .seguros-item {
   margin-bottom: 25px;
   position: relative;
@@ -1053,10 +1070,6 @@ section.protegemos-img img {
           box-shadow: 5px 5px 40px 5px #d5c195;
 }
 
-.tab-content .seguros-item svg {
-  width: 85px;
-}
-
 .tab-content .seguros-item .vehicle-class {
   position: absolute;
   bottom: 5px;
@@ -1069,8 +1082,8 @@ section.protegemos-img img {
   border-color: #003b61;
 }
 
-.tab-content #nav-contact .seguros-item svg {
-  fill: #003b61;
+.tab-content #nav-contact .seguros-item img {
+  mix-blend-mode: screen;
 }
 
 .tab-content #nav-contact .seguros-item:hover {
