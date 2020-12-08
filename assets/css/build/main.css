@@ -1677,6 +1677,10 @@ section.protegemos-img img {
           box-shadow: #fed198;
 }
 
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item:hover .fussion {
+  mix-blend-mode: multiply;
+}
+
 @media (max-width: 767.98px) {
   .index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item {
     max-width: 44%;
@@ -1687,6 +1691,10 @@ section.protegemos-img img {
   .index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item {
     max-width: 14.5%;
   }
+}
+
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item img {
+  min-width: 50px;
 }
 
 .index-asistencia-page .container-bg section.llamanos-cta {
