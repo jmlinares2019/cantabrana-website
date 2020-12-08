@@ -68,6 +68,10 @@
                         background-color: $lightblue;
                         opacity: .4;
                         box-shadow: $lightpeach;
+
+                        .fussion{
+                            mix-blend-mode: multiply;
+                        }
                     }
 
                     @include for-tablet-portrait-down{
@@ -76,6 +80,10 @@
 
                     @include for-tablet-portrait-up{
                         max-width: 14.5%;
+                    }
+
+                    img{
+                        min-width: 50px;
                     }
                 }
             }
