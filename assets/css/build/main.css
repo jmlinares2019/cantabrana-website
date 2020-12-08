@@ -1103,9 +1103,6 @@ section.protegemos-img img {
           flex: 0 0 auto;
   height: 175px;
   border: 8px solid #ffffff;
-  /*  img path{
-            fill: red;
-        } */
 }
 
 @media (min-width: 576px) {
@@ -1132,18 +1129,15 @@ section.protegemos-img img {
   border-color: #003b61;
 }
 
-.tab-content #nav-contact .seguros-item img {
-  mix-blend-mode: screen;
-}
-
 .tab-content #nav-contact .seguros-item:hover {
   background-color: #003b61;
   -webkit-box-shadow: 5px 5px 40px 5px inherit;
           box-shadow: 5px 5px 40px 5px inherit;
 }
 
-.tab-content #nav-contact .seguros-item:hover svg {
-  fill: #ffffff;
+.tab-content #nav-contact .seguros-item:hover img {
+  -webkit-filter: brightness(0) saturate(100%) invert(97%) sepia(12%) saturate(289%) hue-rotate(214deg) brightness(120%) contrast(100%);
+          filter: brightness(0) saturate(100%) invert(97%) sepia(12%) saturate(289%) hue-rotate(214deg) brightness(120%) contrast(100%);
 }
 
 .tab-content #nav-contact .seguros-item:hover span {
