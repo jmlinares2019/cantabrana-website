@@ -443,7 +443,6 @@
         // more styles at _contacto.scss
 
         .email-footer{
-            height: 150px;
             margin-top: 20px;
             padding: 20px;
             background-color: $darkblue;
@@ -461,6 +460,7 @@
             }
 
             .email-address{
+                padding-bottom: 10px;
                 font-family: $primary-medium;
                 font-size: $small-desktop;
                 color: $lighterblue
