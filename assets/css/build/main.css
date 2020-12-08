@@ -933,7 +933,6 @@ section.protegemos-img img {
 }
 
 .home-page section.contacto .email-footer {
-  height: 150px;
   margin-top: 20px;
   padding: 20px;
   background-color: #003b61;
@@ -954,6 +953,7 @@ section.protegemos-img img {
 }
 
 .home-page section.contacto .email-footer .email-address {
+  padding-bottom: 10px;
   font-family: "GT America Medium", sans-serif;
   font-size: 15px;
   color: #ccfeff;
@@ -1671,7 +1671,7 @@ section.protegemos-img img {
 }
 
 .index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item:hover {
-  background-color: #003b61;
+  background-color: #22d3c5;
   opacity: .4;
   -webkit-box-shadow: #fed198;
           box-shadow: #fed198;
@@ -1695,10 +1695,6 @@ section.protegemos-img img {
 
 .index-asistencia-page .container-bg section.llamanos-cta svg .st0 {
   fill: #ecf0f3;
-}
-
-.asistencia-detail-page section, .asistencia-detail-page div {
-  border: 1px solid lightsalmon;
 }
 
 .asistencia-detail-page .asistencia-top-banner {
