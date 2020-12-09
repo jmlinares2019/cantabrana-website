@@ -6,7 +6,7 @@ $(function() {
             responsiveClass: true,
             responsive: {
                 0:{
-                    items:1.25
+                    items:1.75
                 },
                 600:{
                     items:3
