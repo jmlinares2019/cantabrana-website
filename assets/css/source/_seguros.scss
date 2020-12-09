@@ -7,7 +7,7 @@
             padding-bottom: 100px;
     
             .banner-text{
-                padding:{
+                padding: {
                     top: 40px;
                     bottom: 40px;
                     right: 0;
@@ -107,7 +107,11 @@
 }
 
 .tab-content{
-    padding-top: $sp-60;
+    padding: {
+        top: $sp-60;
+        left: 0;
+        right: 0;
+    }
 
     .seguros-icons{
 
@@ -160,23 +164,17 @@
 
     }
 
-    
-
     #nav-contact{
         
         .seguros-item{
             border-color: $darkblue;
-
-            img{
-                mix-blend-mode: screen;
-            }
             
             &:hover{
                 background-color: $darkblue;
                 box-shadow: 5px 5px 40px 5px inherit;
 
-                svg{
-                    fill: $white;
+                img{
+                    filter: brightness(0) saturate(100%) invert(97%) sepia(12%) saturate(289%) hue-rotate(214deg) brightness(120%) contrast(100%);
                 }
 
                 span{

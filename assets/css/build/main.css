@@ -155,6 +155,12 @@ section.llamanos-cta .col-10 .cta-btn .cta-call:hover, .home-page section.carrus
   background-position: center;
 }
 
+@media (max-width: 575.98px) {
+  .seguros-detail-page .seguros-detail-top-banner.top-banner, .equipo-page .top-banner, .index-asistencia-page .asistencia-top-banner.top-banner, .asistencia-detail-page .asistencia-top-banner.top-banner {
+    height: 225px;
+  }
+}
+
 .seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title, .equipo-page .top-banner .banner-title, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-title {
   height: 100%;
 }
@@ -179,6 +185,47 @@ section.llamanos-cta .col-10 .cta-btn .cta-call:hover, .home-page section.carrus
 @media (max-width: 575.98px) {
   .seguros-detail-page .seguros-detail-top-banner.top-banner .banner-title .banner-title-text, .equipo-page .top-banner .banner-title .banner-title-text, .index-asistencia-page .asistencia-top-banner.top-banner .banner-title .banner-title-text, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-title .banner-title-text {
     font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+}
+
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-seguros-detail.banner-navs, .equipo-page .top-banner .banner-seguros-detail.banner-navs, .index-asistencia-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs {
+  position: absolute;
+  top: 45%;
+}
+
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-seguros-detail.banner-navs .arrow-nav, .equipo-page .top-banner .banner-seguros-detail.banner-navs .arrow-nav, .index-asistencia-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .arrow-nav, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .arrow-nav {
+  position: absolute;
+  width: 24px;
+  top: 0;
+}
+
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-seguros-detail.banner-navs .arrow-nav.prev, .equipo-page .top-banner .banner-seguros-detail.banner-navs .arrow-nav.prev, .index-asistencia-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .arrow-nav.prev, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .arrow-nav.prev {
+  left: 0;
+}
+
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-seguros-detail.banner-navs .arrow-nav.next, .equipo-page .top-banner .banner-seguros-detail.banner-navs .arrow-nav.next, .index-asistencia-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .arrow-nav.next, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .arrow-nav.next {
+  right: 0;
+}
+
+.seguros-detail-page .seguros-detail-top-banner.top-banner .banner-seguros-detail.banner-navs .item-icon, .equipo-page .top-banner .banner-seguros-detail.banner-navs .item-icon, .index-asistencia-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .item-icon, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .item-icon {
+  position: absolute;
+  top: -15px;
+  left: 25%;
+  height: 40px;
+}
+
+@media (min-width: 576px) {
+  .seguros-detail-page .seguros-detail-top-banner.top-banner .banner-seguros-detail.banner-navs .item-icon, .equipo-page .top-banner .banner-seguros-detail.banner-navs .item-icon, .index-asistencia-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .item-icon, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .item-icon {
+    top: -25px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .seguros-detail-page .seguros-detail-top-banner.top-banner .banner-seguros-detail.banner-navs .item-icon, .equipo-page .top-banner .banner-seguros-detail.banner-navs .item-icon, .index-asistencia-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .item-icon, .asistencia-detail-page .asistencia-top-banner.top-banner .banner-seguros-detail.banner-navs .item-icon {
+    left: 35%;
   }
 }
 
@@ -886,7 +933,6 @@ section.protegemos-img img {
 }
 
 .home-page section.contacto .email-footer {
-  height: 150px;
   margin-top: 20px;
   padding: 20px;
   background-color: #003b61;
@@ -907,6 +953,7 @@ section.protegemos-img img {
 }
 
 .home-page section.contacto .email-footer .email-address {
+  padding-bottom: 10px;
   font-family: "GT America Medium", sans-serif;
   font-size: 15px;
   color: #ccfeff;
@@ -1022,6 +1069,8 @@ section.protegemos-img img {
 
 .tab-content {
   padding-top: 60px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (max-width: 575.98px) {
@@ -1082,18 +1131,15 @@ section.protegemos-img img {
   border-color: #003b61;
 }
 
-.tab-content #nav-contact .seguros-item img {
-  mix-blend-mode: screen;
-}
-
 .tab-content #nav-contact .seguros-item:hover {
   background-color: #003b61;
   -webkit-box-shadow: 5px 5px 40px 5px inherit;
           box-shadow: 5px 5px 40px 5px inherit;
 }
 
-.tab-content #nav-contact .seguros-item:hover svg {
-  fill: #ffffff;
+.tab-content #nav-contact .seguros-item:hover img {
+  -webkit-filter: brightness(0) saturate(100%) invert(97%) sepia(12%) saturate(289%) hue-rotate(214deg) brightness(120%) contrast(100%);
+          filter: brightness(0) saturate(100%) invert(97%) sepia(12%) saturate(289%) hue-rotate(214deg) brightness(120%) contrast(100%);
 }
 
 .tab-content #nav-contact .seguros-item:hover span {
@@ -1116,18 +1162,12 @@ section.protegemos-img img {
   color: #ffffff;
 }
 
-.seguros-detail-page {
-  /*     section, div, p{
-        border: 1px solid blue;
-    } */
-}
-
 .seguros-detail-page .seguros-detail-top-banner {
   color: #003b61;
 }
 
 .seguros-detail-page .seguros-detail-top-banner.top-banner.automovil {
-  background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner@3x.jpg);
+  background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner@2x.jpg);
 }
 
 @media (max-width: 575.98px) {
@@ -1633,10 +1673,14 @@ section.protegemos-img img {
 }
 
 .index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item:hover {
-  background-color: #003b61;
+  background-color: #22d3c5;
   opacity: .4;
   -webkit-box-shadow: #fed198;
           box-shadow: #fed198;
+}
+
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item:hover .fussion {
+  mix-blend-mode: multiply;
 }
 
 @media (max-width: 767.98px) {
@@ -1651,12 +1695,22 @@ section.protegemos-img img {
   }
 }
 
+.index-asistencia-page .container-bg section.selection-grid .selection-grid-content .company-item img {
+  min-width: 50px;
+}
+
 .index-asistencia-page .container-bg section.llamanos-cta {
   padding-top: 220px;
 }
 
 .index-asistencia-page .container-bg section.llamanos-cta svg .st0 {
   fill: #ecf0f3;
+}
+
+.asistencia-detail-page {
+  /*     section, div{
+        border: 1px solid lime;
+    } */
 }
 
 .asistencia-detail-page .asistencia-top-banner {
@@ -1759,6 +1813,7 @@ section.protegemos-img img {
 }
 
 .asistencia-detail-page .banner-bottom {
+  margin: 0;
   background-color: #fed198;
 }
 
