@@ -1069,6 +1069,8 @@ section.protegemos-img img {
 
 .tab-content {
   padding-top: 60px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (max-width: 575.98px) {
@@ -1088,18 +1090,7 @@ section.protegemos-img img {
 }
 
 .tab-content .owl-carousel .owl-stage-outer {
-  position: relative;
   max-height: 205px;
-}
-
-.tab-content .owl-carousel .owl-stage-outer .owl-stage::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: -webkit-gradient(linear, right left white 0%, color-stop(50%, transparent), to(white));
-  background-image: linear-gradient(left right white 0%, transparent 50%, white 100%);
 }
 
 .tab-content .owl-carousel .owl-stage-outer .owl-item {
@@ -1176,7 +1167,7 @@ section.protegemos-img img {
 }
 
 .seguros-detail-page .seguros-detail-top-banner.top-banner.automovil {
-  background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner@3x.jpg);
+  background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner@2x.jpg);
 }
 
 @media (max-width: 575.98px) {
