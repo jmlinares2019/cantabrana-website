@@ -1,4 +1,8 @@
 .asistencia-detail-page{
+
+/*     section, div{
+        border: 1px solid lime;
+    } */
     
     .asistencia-top-banner{
         color: $darkblue;
@@ -89,6 +93,7 @@
     }
 
     .banner-bottom{
+        margin: 0;
         background-color: $lightpeach;
 
         .caution-icon{
