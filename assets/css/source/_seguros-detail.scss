@@ -5,7 +5,7 @@
         &.top-banner{
             @extend %top-img-banner;
             &.automovil{
-                background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner@3x.jpg);
+                background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner@2x.jpg);
 
                 @include for-phone-only{
                     background-image: url(/assets/img/detail_seguros/jpeg/seguro_auto_banner-mobile@2x.jpg);
