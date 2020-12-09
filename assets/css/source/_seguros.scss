@@ -107,7 +107,11 @@
 }
 
 .tab-content{
-    padding-top: $sp-60;
+    padding: {
+        top: $sp-60;
+        left: 0;
+        right: 0;
+    }
 
     .seguros-icons{
 
